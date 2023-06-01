@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --font-header: "League Gothic", sans-serif;
+  --font-default: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+p,
+li,
+a {
+  font-family: var(--font-default);
+  color: var(--black);
+}
+
+p {
+  line-height: 1.5;
+}
