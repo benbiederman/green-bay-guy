@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --font-header: "League Gothic", sans-serif;
+  --font-default: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 400;
+}
+
+p,
+li,
+a,
+button {
+  font-family: var(--font-default);
+  color: var(--black);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile */
+header {
+  width: 100%;
+  background-color: var(--black);
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+}
+
+.skip-to-content-btn {
+  width: 100%;
+  height: inherit;
+  font-size: 1.6rem;
+  background-color: var(--black);
+  color: var(--white);
+  top: -100%;
+  left: 0;
+  position: absolute;
+  transition: top 0.25s ease;
+}
+
+.skip-to-content-btn:focus {
+  left: 0;
+  top: 0;
+}
+
+header img {
+  height: 7vh;
+}
+
+.nav-list {
+  position: absolute;
+  background-color: transparent;
+  top: 8vh;
+  left: 0;
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 5vh 2.5vh;
+}
+
+.header-menu-toggle {
+  background-color: transparent;
+}
+
+.nav-list a,
+.header-menu-toggle {
+  font-size: 3rem;
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.nav-list a {
+  margin: 1.25vh 0;
+}
