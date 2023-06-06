@@ -7,8 +7,8 @@ const logo = document.querySelector("header img");
 function buildNavigation() {
   const navLinks = `
   <a href="/">Home</a>
-  <a href="/locals-guide/">Local's Guide</a>
-  <a href="/podcast/">Watch</a>
+  <a href="/locals-guide">Local's Guide</a>
+  <a href="/podcast">Podcast</a>
   `;
 
   navList.innerHTML = navLinks;
@@ -28,6 +28,14 @@ function navigationFunctionality() {
     window.location = "/";
   });
 
+  logo.addEventListener("mouseover", () => {
+    logo.src = "../assets/logo-hover.png";
+  });
+
+  logo.addEventListener("mouseleave", () => {
+    logo.src = "../assets/logo.png";
+  });
+
   menuBtn.addEventListener("click", () => {
     navList.classList.toggle("nav-list-active");
     navBarUpdateWindowWidth();
@@ -37,6 +45,7 @@ function navigationFunctionality() {
 
   window.addEventListener("resize", () => {
     navBarUpdateWindowWidth();
+    updateTabIndexLinks();
   });
 
   window.addEventListener("scroll", () => {
