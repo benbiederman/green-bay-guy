@@ -45,13 +45,19 @@ button {
 /* Mobile */
 header {
   width: 100%;
-  background-color: var(--black);
+  background-color: transparent;
   height: 8vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
+  position: fixed;
+  transition: background 0.25s ease;
+}
+
+.header-active {
+  background-color: var(--black);
 }
 
 .skip-to-content-btn {
@@ -77,9 +83,9 @@ header img {
 
 .nav-list {
   position: absolute;
-  background-color: transparent;
+  background-color: var(--black);
   top: 8vh;
-  left: 0;
+  left: -100%;
   min-height: 60vh;
   width: 100%;
   display: flex;
@@ -87,6 +93,11 @@ header img {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5vh 2.5vh;
+  transition: left 0.25s ease;
+}
+
+.nav-list-active {
+  left: 0;
 }
 
 .header-menu-toggle {
@@ -103,4 +114,9 @@ header img {
 
 .nav-list a {
   margin: 1.25vh 0;
+}
+
+main {
+  height: 800vh;
+  padding-top: 8vh;
 }
