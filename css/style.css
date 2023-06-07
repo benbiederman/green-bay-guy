@@ -177,7 +177,8 @@ header img {
   color: var(--white);
 }
 
-.footer-callout p {
+.footer-callout p,
+.footer-callout h4 {
   margin-bottom: 2.5vh;
 }
 
@@ -205,12 +206,13 @@ hr {
   height: 1px;
   background-color: var(--green);
   border: none;
-  margin: 5vh auto;
+  margin: 2.5vh auto;
 }
 
 .socials {
   display: flex;
   justify-content: center;
+  margin-top: 5vh;
 }
 
 .socials img {
@@ -222,7 +224,9 @@ hr {
 
 .footer p:last-child {
   text-align: center;
-  padding: 5vh 0 2.5vh;
+  margin-top: 5vh;
+  padding-bottom: 2.5vh;
+  font-size: 2rem;
 }
 
 main {
