@@ -102,6 +102,39 @@ function navigationFunctionality() {
 function buildFooter() {
   const year = new Date().getFullYear();
 
+  const icons = [
+    {
+      name: "Facebook",
+      img: "./assets/icons/facebook.png",
+      alt: "Facebook icon",
+      id: 001,
+    },
+    {
+      name: "Instagram",
+      img: "./assets/icons/instagram.png",
+      alt: "Instagram icon",
+      id: 002,
+    },
+    {
+      name: "Twitter",
+      img: "./assets/icons/twitter.png",
+      alt: "Twitter icon",
+      id: 003,
+    },
+    {
+      name: "YouTube",
+      img: "./assets/icons/youtube.png",
+      alt: "YouTube icon",
+      id: 004,
+    },
+    {
+      name: "Snapchat",
+      img: "./assets/icons/snapchat.png",
+      alt: "Snapchat icon",
+      id: 005,
+    },
+  ];
+
   // Build footerCTA
   const footerCta = document.createElement("aside");
   footerCta.classList.add("footer-callout");
@@ -146,30 +179,14 @@ function buildFooter() {
   socialMediaContainer.classList.add("socials-container");
   footer.appendChild(socialMediaContainer);
 
-  const fbIcon = document.createElement("img");
-  fbIcon.src = "./assets/icons/facebook.png";
-  fbIcon.alt = "Facebook icon";
-  socialMediaContainer.appendChild(fbIcon);
-
-  const twitterIcon = document.createElement("img");
-  twitterIcon.src = "./assets/icons/twitter.png";
-  twitterIcon.alt = "Twitter icon";
-  socialMediaContainer.appendChild(twitterIcon);
-
-  const instagramIcon = document.createElement("img");
-  instagramIcon.src = "./assets/icons/instagram.png";
-  instagramIcon.alt = "Instagram icon";
-  socialMediaContainer.appendChild(instagramIcon);
-
-  const youtubeIcon = document.createElement("img");
-  youtubeIcon.src = "./assets/icons/youtube.png";
-  youtubeIcon.alt = "YouTube icon";
-  socialMediaContainer.appendChild(youtubeIcon);
-
-  const snapchatIcon = document.createElement("img");
-  snapchatIcon.src = "./assets/icons/snapchat.png";
-  snapchatIcon.alt = "Snapchat icon";
-  socialMediaContainer.appendChild(snapchatIcon);
+  icons.forEach((icon) => {
+    const iconImg = document.createElement("img");
+    iconImg.src = icon.img;
+    iconImg.alt = icon.alt;
+    iconImg.tabIndex = 0;
+    iconImg.key = icon.id;
+    socialMediaContainer.appendChild(iconImg);
+  });
 
   // Copyright
   const copyright = document.createElement("p");
@@ -177,10 +194,17 @@ function buildFooter() {
   footer.appendChild(copyright);
 
   const ctaBtns = document.querySelectorAll(".footer-callout button");
+  const socialIcons = document.querySelectorAll(".socials-container img");
 
   ctaBtns.forEach((button) => {
     button.addEventListener("click", (e) => {
       ctaHandler(e.target.innerHTML.toLowerCase());
+    });
+  });
+
+  socialIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      iconHandler(icon);
     });
   });
 
@@ -191,6 +215,26 @@ function buildFooter() {
         break;
       case "text":
         window.location.href = "sms:9207703933";
+        break;
+    }
+  }
+
+  function iconHandler(icon) {
+    switch (icon.alt) {
+      case "Facebook icon":
+        window.open("https://www.facebook.com/TheGreenBayGuy", "_blank");
+        break;
+      case "Instagram icon":
+        window.open("https://www.instagram.com/thegreenbayguy/", "_blank");
+        break;
+      case "Twitter icon":
+        window.open("https://twitter.com/thegreenbayguy", "_blank");
+        break;
+      case "Snapchat icon":
+        window.open("https://www.snapchat.com/add/thegbguy", "_blank");
+        break;
+      case "YouTube icon":
+        window.open("https://www.youtube.com/thegreenbayguy", "_blank");
         break;
     }
   }
