@@ -111,6 +111,7 @@ header {
   position: absolute;
   transition: top 0.25s ease;
   z-index: 500;
+  margin: 0;
 }
 
 .skip-to-content-btn:focus {
@@ -209,13 +210,13 @@ hr {
   margin: 2.5vh auto;
 }
 
-.socials {
+.socials-container {
   display: flex;
   justify-content: center;
   margin-top: 5vh;
 }
 
-.socials img {
+.socials-container img {
   width: 50px;
   margin: 0 0vw;
   object-fit: contain;
@@ -226,11 +227,12 @@ hr {
   text-align: center;
   margin-top: 5vh;
   padding-bottom: 2.5vh;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 main {
-  height: 30vh;
+  height: 100vh;
+  padding-bottom: 5vh;
   padding-top: 10vh;
 }
 
