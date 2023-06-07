@@ -2,6 +2,7 @@ const skipToContentBtn = document.querySelector(".skip-to-content-btn");
 const menuBtn = document.querySelector(".header-menu-toggle");
 const navList = document.querySelector(".nav-list");
 const logo = document.querySelector("header img");
+const footer = document.querySelector(".footer");
 
 // Build initial Navigation
 function buildNavigation() {
@@ -99,26 +100,81 @@ function navigationFunctionality() {
 }
 
 function buildFooter() {
-  const footerCallout = document.querySelector(".footer-callout");
-  const footerCTA = `
-  <h4>Green Bay Bound?</h4>
-  <p>
-    A visit to Green Bay holds a unique significance. For many, it
-    represents years of anticipation, diligent saving, and meticulous
-    planning. My biggest priority is to help make sure this trip surpasses
-    all expectations.
-  </p>
-  <p>
-    If there's anything you're curious about that hasn't been covered, or
-    if you simply want to reach out and say hello, please feel free to
-    contact me without any hesitation. It would be my privilege to offer
-    any assistance within my capabilities.
-  </p>
-  <button class="color-primary-btn">Email</button>
-  <button class="color-secondary-btn">Text</button>
-  `;
+  const year = new Date().getFullYear();
 
-  footerCallout.innerHTML = footerCTA;
+  // Build footerCTA
+  const footerCta = document.createElement("aside");
+  footerCta.classList.add("footer-callout");
+  footer.appendChild(footerCta);
+
+  // Header
+  const footerCtaHeader = document.createElement("h4");
+  footerCtaHeader.innerHTML = "Green Bay Bound?";
+  footerCta.appendChild(footerCtaHeader);
+
+  // Paragraphs
+  const footerP1 = document.createElement("p");
+  footerP1.innerHTML = `A visit to Green Bay holds a unique significance. For many, it
+  represents years of anticipation, diligent saving, and meticulous
+  planning. My biggest priority is to help make sure this trip surpasses
+  all expectations.`;
+  footerCta.appendChild(footerP1);
+
+  const footerP2 = document.createElement("p");
+  footerP2.innerHTML = `If there's anything you're curious about that hasn't been covered, or
+  if you simply want to reach out and say hello, please feel free to
+  contact me without any hesitation. It would be my privilege to offer
+  any assistance within my capabilities.`;
+  footerCta.appendChild(footerP2);
+
+  const emailBtn = document.createElement("button");
+  emailBtn.classList.add("color-primary-btn");
+  emailBtn.innerHTML = "Email";
+  footerCta.append(emailBtn);
+
+  const textBtn = document.createElement("button");
+  textBtn.classList.add("color-secondary-btn");
+  textBtn.innerHTML = "Text";
+  footerCta.append(textBtn);
+
+  // Thematic break
+  const thematicBreak = document.createElement("hr");
+  footer.appendChild(thematicBreak);
+
+  // Social media icons
+  const socialMediaContainer = document.createElement("div");
+  socialMediaContainer.classList.add("socials-container");
+  footer.appendChild(socialMediaContainer);
+
+  const fbIcon = document.createElement("img");
+  fbIcon.src = "./assets/icons/facebook.png";
+  fbIcon.alt = "Facebook icon";
+  socialMediaContainer.appendChild(fbIcon);
+
+  const twitterIcon = document.createElement("img");
+  twitterIcon.src = "./assets/icons/twitter.png";
+  twitterIcon.alt = "Twitter icon";
+  socialMediaContainer.appendChild(twitterIcon);
+
+  const instagramIcon = document.createElement("img");
+  instagramIcon.src = "./assets/icons/instagram.png";
+  instagramIcon.alt = "Instagram icon";
+  socialMediaContainer.appendChild(instagramIcon);
+
+  const youtubeIcon = document.createElement("img");
+  youtubeIcon.src = "./assets/icons/youtube.png";
+  youtubeIcon.alt = "YouTube icon";
+  socialMediaContainer.appendChild(youtubeIcon);
+
+  const snapchatIcon = document.createElement("img");
+  snapchatIcon.src = "./assets/icons/snapchat.png";
+  snapchatIcon.alt = "Snapchat icon";
+  socialMediaContainer.appendChild(snapchatIcon);
+
+  // Copyright
+  const copyright = document.createElement("p");
+  copyright.innerHTML = `The Green Bay Guy &copy; ${year}`;
+  footer.appendChild(copyright);
 }
 
 buildNavigation();
