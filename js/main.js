@@ -175,6 +175,25 @@ function buildFooter() {
   const copyright = document.createElement("p");
   copyright.innerHTML = `The Green Bay Guy &copy; ${year}`;
   footer.appendChild(copyright);
+
+  const ctaBtns = document.querySelectorAll(".footer-callout button");
+
+  ctaBtns.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      ctaHandler(e.target.innerHTML.toLowerCase());
+    });
+  });
+
+  function ctaHandler(name) {
+    switch (name) {
+      case "email":
+        window.location.href = "mailto:thegreenbayguy@gmail.com";
+        break;
+      case "text":
+        window.location.href = "sms:9207703933";
+        break;
+    }
+  }
 }
 
 buildNavigation();
