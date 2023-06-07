@@ -47,6 +47,7 @@ button {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
+  margin-top: 2.5vh;
 }
 
 .color-primary-btn,
@@ -193,10 +194,10 @@ header img {
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
   position: absolute;
-  top: -5%;
+  top: -2%;
   width: 100%;
   background: var(--black);
-  height: 5%;
+  height: 2%;
 }
 
 hr {
