@@ -23,7 +23,7 @@ h6 {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 p,
@@ -32,7 +32,7 @@ a {
   font-family: var(--font-default);
   color: var(--black);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -44,15 +44,16 @@ button {
   border: none;
   cursor: pointer;
   font-family: var(--font-default);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
+  line-height: 1;
 }
 
 .color-primary-btn,
 .color-secondary-btn,
 .black-primary-btn,
 .black-secondary-btn {
-  padding: 0.5vh 5vw;
+  padding: 1vh 5vw;
   margin-right: 2.5vw;
   border-radius: 2px;
 }
@@ -212,7 +213,7 @@ hr {
 }
 
 .socials img {
-  width: 40px;
+  width: 50px;
   margin: 0 0vw;
   object-fit: contain;
   cursor: pointer;
