@@ -98,4 +98,28 @@ function navigationFunctionality() {
   updateMenuBtn();
 }
 
+function buildFooter() {
+  const footerCallout = document.querySelector(".footer-callout");
+  const footerCTA = `
+  <h4>Green Bay Bound?</h4>
+  <p>
+    A visit to Green Bay holds a unique significance. For many, it
+    represents years of anticipation, diligent saving, and meticulous
+    planning. My biggest priority is to help make sure this trip surpasses
+    all expectations.
+  </p>
+  <p>
+    If there's anything you're curious about that hasn't been covered, or
+    if you simply want to reach out and say hello, please feel free to
+    contact me without any hesitation. It would be my privilege to offer
+    any assistance within my capabilities.
+  </p>
+  <button class="color-primary-btn">Email</button>
+  <button class="color-secondary-btn">Text</button>
+  `;
+
+  footerCallout.innerHTML = footerCTA;
+}
+
 buildNavigation();
+buildFooter();
