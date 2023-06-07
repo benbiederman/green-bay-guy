@@ -23,15 +23,17 @@ h6 {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
+  font-size: 3rem;
 }
 
 p,
 li,
-a,
-button {
+a {
   font-family: var(--font-default);
   color: var(--black);
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 p {
@@ -41,6 +43,40 @@ p {
 button {
   border: none;
   cursor: pointer;
+  font-family: var(--font-default);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.color-primary-btn,
+.color-secondary-btn,
+.black-primary-btn,
+.black-secondary-btn {
+  padding: 0.5vh 5vw;
+  margin-right: 2.5vw;
+  border-radius: 2px;
+}
+
+.color-primary-btn {
+  background-color: var(--green);
+  border: 2px solid var(--green);
+}
+
+.color-secondary-btn {
+  border: 2px solid var(--green);
+  background-color: transparent;
+  color: var(--white);
+}
+
+.black-primary-btn {
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  color: var(--white);
+}
+
+.black-secondary-btn {
+  border: 2px solid var(--black);
+  background-color: var(--white);
 }
 
 /* Mobile */
@@ -55,6 +91,7 @@ header {
   padding: 0 5vw;
   position: fixed;
   transition: background 0.25s ease;
+  z-index: 500;
 }
 
 .header-active {
@@ -97,6 +134,7 @@ header img {
   justify-content: flex-start;
   padding: 5vh 2.5vh;
   transition: left 0.25s ease;
+  z-index: 500;
 }
 
 .nav-list-active {
@@ -124,8 +162,69 @@ header img {
   color: var(--green);
 }
 
+.footer-callout {
+  min-height: 10vh;
+  background-color: var(--black);
+  width: 100%;
+  padding: 2.5vh 15vw;
+  margin: 0 auto;
+}
+
+.footer-callout h4,
+.footer p {
+  color: var(--white);
+}
+
+.footer-callout p {
+  margin-bottom: 2.5vh;
+}
+
+.footer {
+  position: relative;
+  background: var(--black);
+  min-height: 20vh;
+  width: 100%;
+  z-index: 50;
+}
+
+.footer::before {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  top: -5%;
+  width: 100%;
+  background: var(--black);
+  height: 5%;
+}
+
+hr {
+  width: 75%;
+  height: 1px;
+  background-color: var(--green);
+  border: none;
+  margin: 5vh auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials img {
+  width: 40px;
+  margin: 0 0vw;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.footer p:last-child {
+  text-align: center;
+  padding: 5vh 0 2.5vh;
+}
+
 main {
-  height: 800vh;
+  height: 30vh;
   padding-top: 10vh;
 }
 
@@ -172,7 +271,6 @@ main {
   }
 
   main {
-    height: 800vh;
     padding-top: 8vh;
   }
 }
