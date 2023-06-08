@@ -202,11 +202,32 @@ function buildFooter() {
     });
   });
 
+  window.addEventListener("resize", () => {
+    ctaUpdate();
+  });
+
   socialIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
       iconHandler(icon);
     });
+
+    icon.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        iconHandler(icon);
+      }
+    });
   });
+
+  function ctaUpdate() {
+    let windowWidth = window.innerWidth;
+    let textBtn = ctaBtns[1];
+
+    if (windowWidth >= 1024) {
+      textBtn.style.display = "none";
+    } else {
+      textBtn.style.display = "inline";
+    }
+  }
 
   function ctaHandler(name) {
     switch (name) {
@@ -238,6 +259,8 @@ function buildFooter() {
         break;
     }
   }
+
+  ctaUpdate();
 }
 
 buildNavigation();
