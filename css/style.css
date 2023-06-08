@@ -8,6 +8,7 @@
   --white: #fff;
   --black: #000;
   --green: #4f7942;
+  --darkGreen: #2e4426;
   --font-header: "League Gothic", sans-serif;
   --font-default: "Roboto", sans-serif;
   font-size: 62.5%;
@@ -54,31 +55,55 @@ button {
 .color-secondary-btn,
 .black-primary-btn,
 .black-secondary-btn {
-  padding: 1vh 5vw;
+  padding: 1vh 2.5vw;
   margin-right: 2.5vw;
   border-radius: 2px;
+  transition: background 0.25s ease, color 0.25s ease, border 0.25s ease,
+    box-shadow 0.25s ease;
+  font-weight: 500;
+}
+
+.color-primary-btn,
+.color-secondary-btn {
+  color: var(--white);
+  border: 2px solid var(--green);
 }
 
 .color-primary-btn {
   background-color: var(--green);
-  border: 2px solid var(--green);
 }
 
 .color-secondary-btn {
-  border: 2px solid var(--green);
   background-color: transparent;
-  color: var(--white);
+}
+
+.black-primary-btn,
+.black-secondary-btn {
+  box-shadow: 2px 2px 8px #acacac;
+  border: 2px solid var(--black);
 }
 
 .black-primary-btn {
   background-color: var(--black);
-  border: 2px solid var(--black);
   color: var(--white);
 }
 
 .black-secondary-btn {
-  border: 2px solid var(--black);
   background-color: var(--white);
+}
+
+.color-primary-btn:hover,
+.color-primary-btn:focus,
+.color-secondary-btn:hover,
+.color-secondary-btn:focus,
+.black-primary-btn:hover,
+.black-primary-btn:focus,
+.black-secondary-btn:hover,
+.black-secondary-btn:focus {
+  background-color: var(--darkGreen);
+  border: 2px solid var(--darkGreen);
+  color: var(--white);
+  box-shadow: 2px 2px 8px var(--black);
 }
 
 /* Mobile */
@@ -231,12 +256,27 @@ hr {
 }
 
 main {
-  height: 100vh;
   padding-bottom: 5vh;
   padding-top: 10vh;
 }
 
 @media screen and (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 3.5rem;
+  }
+
+  p,
+  li,
+  button,
+  a {
+    font-size: 1.7rem;
+  }
+
   .header-menu-toggle {
     display: none;
   }
@@ -278,7 +318,30 @@ main {
     margin-bottom: 0.5vh;
   }
 
+  .footer::before {
+    top: -3%;
+    height: 3%;
+  }
+
+  .footer-callout {
+    padding: 2.5vh 30vw;
+    margin: 0 auto;
+  }
+
+  hr {
+    width: 40%;
+  }
+
+  .socials-container img {
+    width: 40px;
+  }
+
+  .footer p:last-child {
+    font-size: 1.5rem;
+  }
+
   main {
     padding-top: 8vh;
+    min-height: 40vh;
   }
 }
