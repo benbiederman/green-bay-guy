@@ -210,6 +210,12 @@ function buildFooter() {
     icon.addEventListener("click", () => {
       iconHandler(icon);
     });
+
+    icon.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        iconHandler(icon);
+      }
+    });
   });
 
   function ctaUpdate() {
