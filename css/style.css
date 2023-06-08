@@ -135,7 +135,7 @@ header {
   left: 0;
   position: absolute;
   transition: top 0.25s ease;
-  z-index: 500;
+  z-index: 9999;
   margin: 0;
 }
 
@@ -296,7 +296,7 @@ main {
   header img {
     height: 7vh;
     position: absolute;
-    z-index: 100;
+    z-index: 600;
   }
 
   .nav-list {
