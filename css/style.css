@@ -49,13 +49,13 @@ button {
   font-weight: 500;
   line-height: 1;
   margin-top: 2.5vh;
+  padding: 1vh 5vw;
 }
 
 .color-primary-btn,
 .color-secondary-btn,
 .black-primary-btn,
 .black-secondary-btn {
-  padding: 1vh 2.5vw;
   margin-right: 2.5vw;
   border-radius: 2px;
   transition: background 0.25s ease, color 0.25s ease, border 0.25s ease,
@@ -275,6 +275,10 @@ main {
   button,
   a {
     font-size: 1.8rem;
+  }
+
+  button {
+    padding: 1vh 2.5vw;
   }
 
   .header-menu-toggle {
