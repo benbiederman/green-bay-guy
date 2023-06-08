@@ -202,11 +202,26 @@ function buildFooter() {
     });
   });
 
+  window.addEventListener("resize", () => {
+    ctaUpdate();
+  });
+
   socialIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
       iconHandler(icon);
     });
   });
+
+  function ctaUpdate() {
+    let windowWidth = window.innerWidth;
+    let textBtn = ctaBtns[1];
+
+    if (windowWidth >= 1024) {
+      textBtn.style.display = "none";
+    } else {
+      textBtn.style.display = "inline";
+    }
+  }
 
   function ctaHandler(name) {
     switch (name) {
@@ -238,6 +253,8 @@ function buildFooter() {
         break;
     }
   }
+
+  ctaUpdate();
 }
 
 buildNavigation();
