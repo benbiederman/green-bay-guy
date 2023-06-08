@@ -256,8 +256,8 @@ hr {
 }
 
 main {
-  padding-bottom: 5vh;
-  padding-top: 10vh;
+  padding: 10vh 0 5vh;
+  min-height: 60vh;
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,14 +267,14 @@ main {
   h4,
   h5,
   h6 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   p,
   li,
   button,
   a {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 
   .header-menu-toggle {
@@ -325,7 +325,6 @@ main {
 
   .footer-callout {
     padding: 2.5vh 30vw;
-    margin: 0 auto;
   }
 
   hr {
@@ -342,6 +341,5 @@ main {
 
   main {
     padding-top: 8vh;
-    min-height: 40vh;
   }
 }
