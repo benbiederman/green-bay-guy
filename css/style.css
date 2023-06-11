@@ -273,8 +273,60 @@ hr {
 }
 
 main {
-  padding: 10vh 0 5vh;
-  min-height: 60vh;
+  padding-bottom: 5vh;
+  min-height: 90vh;
+}
+
+.homepage-hero,
+.homepage-hero-gradient {
+  width: 100%;
+  min-height: 92vh;
+}
+
+.homepage-hero {
+  background-image: url("../assets/homepage-hero-img.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5vw;
+}
+
+.homepage-hero p,
+.homepage-hero h2 {
+  color: var(--white);
+  text-shadow: 0px 0px 5px var(--black);
+}
+
+.homepage-hero h2 {
+  text-align: center;
+}
+
+.homepage-hero p {
+  font-weight: 300;
+  margin: 1.25vh 0;
+}
+
+.homepage-hero-gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to bottom, transparent 70%, var(--black));
+  pointer-events: none;
+}
+
+.homepage-hero button {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 300px) {
+  .homepage-hero {
+    padding: 0 15vw;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -365,6 +417,15 @@ main {
   }
 
   main {
-    padding-top: 8vh;
+    min-height: 92vh;
+  }
+
+  .homepage-hero,
+  .homepage-hero-gradient {
+    height: 100vh;
+  }
+
+  .homepage-hero {
+    padding: 0 30vw;
   }
 }
