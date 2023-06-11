@@ -169,6 +169,23 @@ header img {
   left: 0;
 }
 
+.backdrop {
+  display: none;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  top: 10vh;
+  left: 0;
+  z-index: 50;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity = 50);
+}
+
+.backdrop-active {
+  display: block;
+}
+
 .header-menu-toggle {
   background-color: transparent;
 }
@@ -282,6 +299,10 @@ main {
   }
 
   .header-menu-toggle {
+    display: none;
+  }
+
+  .backdrop-active {
     display: none;
   }
 
