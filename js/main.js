@@ -1,6 +1,7 @@
 const skipToContentBtn = document.querySelector(".skip-to-content-btn");
 const menuBtn = document.querySelector(".header-menu-toggle");
 const navList = document.querySelector(".nav-list");
+const backdrop = document.querySelector(".backdrop");
 const logo = document.querySelector("header img");
 const footer = document.querySelector(".footer");
 
@@ -17,6 +18,8 @@ function buildNavigation() {
   skipToContentBtn.addEventListener("click", () => {
     window.location = "#main";
     navList.classList.remove("nav-list-active");
+    backdrop.classList.remove("backdrop-active");
+    menuBtn.innerHTML = "Menu";
   });
 
   navigationFunctionality();
@@ -39,6 +42,7 @@ function navigationFunctionality() {
 
   menuBtn.addEventListener("click", () => {
     navList.classList.toggle("nav-list-active");
+    backdrop.classList.toggle("backdrop-active");
     navBarUpdateWindowWidth();
     updateTabIndexLinks();
     updateMenuBtn();
@@ -107,31 +111,31 @@ function buildFooter() {
       name: "Facebook",
       img: "./assets/icons/facebook.png",
       alt: "Facebook icon",
-      id: 001,
+      id: 101,
     },
     {
       name: "Instagram",
       img: "./assets/icons/instagram.png",
       alt: "Instagram icon",
-      id: 002,
+      id: 102,
     },
     {
       name: "Twitter",
       img: "./assets/icons/twitter.png",
       alt: "Twitter icon",
-      id: 003,
+      id: 103,
     },
     {
       name: "YouTube",
       img: "./assets/icons/youtube.png",
       alt: "YouTube icon",
-      id: 004,
+      id: 104,
     },
     {
       name: "Snapchat",
       img: "./assets/icons/snapchat.png",
       alt: "Snapchat icon",
-      id: 005,
+      id: 105,
     },
   ];
 
