@@ -74,7 +74,7 @@ button {
 }
 
 .color-secondary-btn {
-  background-color: transparent;
+  background-color: var(--black);
 }
 
 .black-primary-btn,
@@ -293,7 +293,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 5vw;
+  padding: 0 10vw;
 }
 
 .homepage-hero p,
@@ -307,8 +307,12 @@ main {
 }
 
 .homepage-hero p {
-  font-weight: 300;
+  font-weight: 500;
   margin: 1.25vh 0;
+}
+
+.homepage-hero button {
+  font-weight: 500;
 }
 
 .homepage-hero-gradient {
@@ -329,7 +333,14 @@ main {
   }
 
   .homepage-hero {
-    padding: 0 15vw;
+    padding: 2.5vh 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-hero,
+  .homepage-hero-gradient {
+    min-height: 60vh;
   }
 }
 
