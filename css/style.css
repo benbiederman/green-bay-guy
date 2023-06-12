@@ -425,7 +425,7 @@ main {
 
   .homepage-hero,
   .homepage-hero-gradient {
-    min-height: 92vh;
+    min-height: 100vh;
   }
 
   .homepage-hero {
