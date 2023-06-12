@@ -299,7 +299,7 @@ main {
 .homepage-hero p,
 .homepage-hero h2 {
   color: var(--white);
-  text-shadow: 0px 0px 5px var(--black);
+  text-shadow: 0px 0px 10px var(--black);
 }
 
 .homepage-hero h2 {
@@ -309,10 +309,11 @@ main {
 .homepage-hero p {
   font-weight: 500;
   margin: 1.25vh 0;
+  text-align: center;
 }
 
 .homepage-hero button {
-  font-weight: 500;
+  box-shadow: 0px 0px 10px #202020;
 }
 
 .homepage-hero-gradient {
@@ -321,10 +322,6 @@ main {
   top: 0;
   background-image: linear-gradient(to bottom, transparent 70%, var(--black));
   pointer-events: none;
-}
-
-.homepage-hero button {
-  box-shadow: none;
 }
 
 @media screen and (min-width: 300px) {
@@ -340,20 +337,11 @@ main {
 @media screen and (min-width: 768px) {
   .homepage-hero,
   .homepage-hero-gradient {
-    min-height: 60vh;
+    min-height: 70vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 4rem;
-  }
-
   p,
   li,
   button,
@@ -437,10 +425,21 @@ main {
 
   .homepage-hero,
   .homepage-hero-gradient {
-    height: 100vh;
+    min-height: 92vh;
   }
 
   .homepage-hero {
     padding: 0 30vw;
+  }
+
+  .homepage-hero h2 {
+    margin-top: -5vw;
+    font-size: 5rem;
+  }
+
+  .homepage-hero p {
+    font-size: 2rem;
+    font-weight: 300;
+    font-size: 2.2rem;
   }
 }
