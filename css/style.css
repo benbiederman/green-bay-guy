@@ -74,7 +74,7 @@ button {
 }
 
 .color-secondary-btn {
-  background-color: transparent;
+  background-color: var(--black);
 }
 
 .black-primary-btn,
@@ -293,13 +293,13 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 5vw;
+  padding: 0 10vw;
 }
 
 .homepage-hero p,
 .homepage-hero h2 {
   color: var(--white);
-  text-shadow: 0px 0px 5px var(--black);
+  text-shadow: 0px 0px 10px var(--black);
 }
 
 .homepage-hero h2 {
@@ -307,8 +307,13 @@ main {
 }
 
 .homepage-hero p {
-  font-weight: 300;
+  font-weight: 500;
   margin: 1.25vh 0;
+  text-align: center;
+}
+
+.homepage-hero button {
+  box-shadow: 0px 0px 10px #202020;
 }
 
 .homepage-hero-gradient {
@@ -319,30 +324,24 @@ main {
   pointer-events: none;
 }
 
-.homepage-hero button {
-  box-shadow: none;
-}
-
 @media screen and (min-width: 300px) {
   .footer-callout {
     padding: 2.5vh 15vw;
   }
 
   .homepage-hero {
-    padding: 0 15vw;
+    padding: 2.5vh 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-hero,
+  .homepage-hero-gradient {
+    min-height: 70vh;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 4rem;
-  }
-
   p,
   li,
   button,
@@ -426,10 +425,21 @@ main {
 
   .homepage-hero,
   .homepage-hero-gradient {
-    height: 100vh;
+    min-height: 92vh;
   }
 
   .homepage-hero {
     padding: 0 30vw;
+  }
+
+  .homepage-hero h2 {
+    margin-top: -5vw;
+    font-size: 5rem;
+  }
+
+  .homepage-hero p {
+    font-size: 2rem;
+    font-weight: 300;
+    font-size: 2.2rem;
   }
 }
