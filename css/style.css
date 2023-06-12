@@ -211,7 +211,7 @@ header img {
   min-height: 10vh;
   background-color: var(--black);
   width: 100%;
-  padding: 2.5vh 15vw;
+  padding: 2.5vh 10vw;
   margin: 0 auto;
 }
 
@@ -324,6 +324,10 @@ main {
 }
 
 @media screen and (min-width: 300px) {
+  .footer-callout {
+    padding: 2.5vh 15vw;
+  }
+
   .homepage-hero {
     padding: 0 15vw;
   }
