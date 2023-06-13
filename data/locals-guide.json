@@ -1,36 +1,38 @@
-{
-  "data": [
-    {
-      "id": 1,
-      "title": "Green Bay Packers Ticket Guide",
-      "image": "tickets.jpg",
-      "img-alt": "Stack of Green Bay Packers tickets",
-      "category": "Misc",
-      "url": "green-bay-packers-ticket-guide.html"
-    },
-    {
-      "id": 2,
-      "title": "Green Bay Packers Hotel Guide",
-      "image": "hotel.jpg",
-      "img-alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
-      "category": "Misc",
-      "url": "green-bay-hotel-guide.html"
-    },
-    {
-      "id": 3,
-      "title": "Lambeau Field Parking Guide",
-      "image": "lambeau-field-parking.jpg",
-      "img-alt": "Lambeau Field parking lot during game day",
-      "category": "Misc",
-      "url": "lambeau-field-parking-guide.html"
-    },
-    {
-      "id": 4,
-      "title": "Lambeau Field Tailgating Guide",
-      "image": "tailgate.jpg",
-      "img-alt": "Packers fans doing a shotski while tailgating for a Packers game",
-      "category": "Misc",
-      "url": "lambeau-field-tailgating-guide.html"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "title": "Green Bay Packers Ticket Guide",
+    "image": "tickets.jpg",
+    "img-alt": "Stack of Green Bay Packers tickets",
+    "category": "Misc",
+    "url": "green-bay-packers-ticket-guide.html",
+    "rating": null
+  },
+  {
+    "id": 2,
+    "title": "Green Bay Packers Hotel Guide",
+    "image": "hotel.jpg",
+    "img-alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
+    "category": "Misc",
+    "url": "green-bay-hotel-guide.html",
+    "rating": null
+  },
+  {
+    "id": 3,
+    "title": "Lambeau Field Parking Guide",
+    "image": "lambeau-field-parking.jpg",
+    "img-alt": "Lambeau Field parking lot during game day",
+    "category": "Misc",
+    "url": "lambeau-field-parking-guide.html",
+    "rating": null
+  },
+  {
+    "id": 4,
+    "title": "Lambeau Field Tailgating Guide",
+    "image": "tailgate.jpg",
+    "img-alt": "Packers fans doing a shotski while tailgating for a Packers game",
+    "category": "Misc",
+    "url": "lambeau-field-tailgating-guide.html",
+    "rating": null
+  }
+]
