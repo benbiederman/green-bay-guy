@@ -6,7 +6,8 @@
     "img-alt": "Stack of Green Bay Packers tickets",
     "category": "Misc",
     "url": "green-bay-packers-ticket-guide.html",
-    "rating": null
+    "rating": null,
+    "distance": null
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "img-alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
     "category": "Misc",
     "url": "green-bay-hotel-guide.html",
-    "rating": null
+    "rating": null,
+    "distance": null
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "img-alt": "Lambeau Field parking lot during game day",
     "category": "Misc",
     "url": "lambeau-field-parking-guide.html",
-    "rating": null
+    "rating": null,
+    "distance": null
   },
   {
     "id": 4,
@@ -33,6 +36,7 @@
     "img-alt": "Packers fans doing a shotski while tailgating for a Packers game",
     "category": "Misc",
     "url": "lambeau-field-tailgating-guide.html",
-    "rating": null
+    "rating": null,
+    "distance": null
   }
 ]
