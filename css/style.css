@@ -325,6 +325,10 @@ main {
 }
 
 @media screen and (min-width: 300px) {
+  .nav-list {
+    padding: 5vh 5vh;
+  }
+
   .footer-callout {
     padding: 2.5vh 15vw;
   }
@@ -335,6 +339,10 @@ main {
 }
 
 @media screen and (min-width: 768px) {
+  .nav-list {
+    padding: 5vh 10vh;
+  }
+
   .homepage-hero,
   .homepage-hero-gradient {
     min-height: 70vh;
