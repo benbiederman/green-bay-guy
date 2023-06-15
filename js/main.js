@@ -1,10 +1,8 @@
-const menuBtn = document.querySelector(".header-menu-toggle");
-const backdrop = document.querySelector(".backdrop");
+const header = document.querySelector(".main-header");
 const footer = document.querySelector(".footer");
 
 // Build initial Navigation
 function buildNavigation() {
-  const header = document.querySelector(".main-header");
   const links = [
     { name: "Home", url: "/", id: 1 },
     { name: "Local's Guide", url: "/locals-guide", id: 2 },
@@ -45,6 +43,91 @@ function buildNavigation() {
   const blur = document.createElement("div");
   blur.classList.add("backdrop");
   header.appendChild(blur);
+
+  window.addEventListener("scroll", () => headerUpdate());
+
+  window.addEventListener("resize", () => {
+    // Update Tab Index
+    navLinksIndex();
+    headerUpdate();
+  });
+
+  logo.addEventListener("click", () => {
+    window.location = "/";
+  });
+
+  logo.addEventListener("mouseover", () => {
+    logo.src = "../assets/logo-hover.png";
+  });
+
+  logo.addEventListener("mouseleave", () => {
+    logo.src = "../assets/logo.png";
+  });
+
+  menuBtn.addEventListener("click", () => {
+    navListToggle();
+    headerUpdate();
+  });
+
+  skipToContentBtn.addEventListener("click", () => {
+    window.location = "#main";
+    if (navList.classList.contains("nav-list-active")) {
+      navListToggle();
+    }
+    headerUpdate();
+  });
+
+  navLinksIndex();
+}
+
+// Nav list for mobile
+function navListToggle() {
+  const menuBtn = document.querySelector(".header-menu-toggle");
+  const navList = document.querySelector(".nav-list");
+  const backdrop = document.querySelector(".backdrop");
+
+  navList.classList.toggle("nav-list-active");
+  backdrop.classList.toggle("backdrop-active");
+  if (navList.classList.contains("nav-list-active")) {
+    menuBtn.ariaExpanded = "true";
+    menuBtn.innerHTML = "Close";
+  } else {
+    menuBtn.ariaExpanded = "false";
+    menuBtn.innerHTML = "Menu";
+  }
+}
+
+// Update tabIndex for navigation links
+function navLinksIndex() {
+  const navList = document.querySelector(".nav-list");
+  const links = document.querySelectorAll(".nav-list a");
+  let windowWidth = window.innerWidth;
+
+  if (navList.classList.contains("nav-list-active") || windowWidth >= 1024) {
+    links.forEach((link) => {
+      link.tabIndex = 0;
+    });
+  } else {
+    links.forEach((link) => {
+      link.tabIndex = -1;
+    });
+  }
+}
+
+// Adds background color to header
+function headerUpdate() {
+  const navList = document.querySelector(".nav-list");
+  let yPosition = scrollY || window.scrollY;
+  let windowWidth = window.innerWidth;
+
+  if (
+    (windowWidth < 1024 && navList.classList.contains("nav-list-active")) ||
+    yPosition > 0
+  ) {
+    header.classList.add("header-active");
+  } else {
+    header.classList.remove("header-active");
+  }
 }
 
 function buildFooter() {
