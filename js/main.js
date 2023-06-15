@@ -1,32 +1,56 @@
-const skipToContentBtn = document.querySelector(".skip-to-content-btn");
-const menuBtn = document.querySelector(".header-menu-toggle");
-const navList = document.querySelector(".nav-list");
-const backdrop = document.querySelector(".backdrop");
-const logo = document.querySelector("header img");
+const header = document.querySelector(".main-header");
 const footer = document.querySelector(".footer");
 
 // Build initial Navigation
 function buildNavigation() {
-  const navLinks = `
-  <a href="/">Home</a>
-  <a href="/locals-guide">Local's Guide</a>
-  <a href="/podcast">Podcast</a>
-  `;
+  const links = [
+    { name: "Home", url: "/", id: 1 },
+    { name: "Local's Guide", url: "/locals-guide", id: 2 },
+    { name: "Podcast", url: "/podcast", id: 3 },
+  ];
 
-  navList.innerHTML = navLinks;
+  const skipToContentBtn = document.createElement("button");
+  skipToContentBtn.classList.add("skip-to-content-btn");
+  skipToContentBtn.textContent = "Skip to main content";
+  header.appendChild(skipToContentBtn);
 
-  skipToContentBtn.addEventListener("click", () => {
-    window.location = "#main";
-    navList.classList.remove("nav-list-active");
-    backdrop.classList.remove("backdrop-active");
-    menuBtn.innerHTML = "Menu";
+  const logo = document.createElement("img");
+  logo.src = "../assets/logo.png";
+  logo.alt = "The Green Bay Guy logo";
+  header.appendChild(logo);
+
+  const menuBtn = document.createElement("button");
+  menuBtn.class = "button";
+  menuBtn.classList.add("header-menu-toggle");
+  menuBtn.ariaLabel = "Menu";
+  menuBtn.ariaExpanded = "false";
+  menuBtn.ariaControls = "navigation";
+  menuBtn.textContent = "Menu";
+  header.appendChild(menuBtn);
+
+  const navList = document.createElement("nav");
+  navList.classList.add("nav-list");
+  navList.setAttribute("id", "navigation");
+  header.appendChild(navList);
+
+  links.forEach((link) => {
+    const newLink = document.createElement("a");
+    newLink.href = link.url;
+    newLink.textContent = link.name;
+    navList.appendChild(newLink);
   });
 
-  navigationFunctionality();
-}
+  const blur = document.createElement("div");
+  blur.classList.add("backdrop");
+  header.appendChild(blur);
 
-function navigationFunctionality() {
-  const navBar = document.querySelector(".main-header");
+  window.addEventListener("scroll", () => headerUpdate());
+
+  window.addEventListener("resize", () => {
+    // Update Tab Index
+    navLinksIndex();
+    headerUpdate();
+  });
 
   logo.addEventListener("click", () => {
     window.location = "/";
@@ -41,66 +65,69 @@ function navigationFunctionality() {
   });
 
   menuBtn.addEventListener("click", () => {
-    navList.classList.toggle("nav-list-active");
-    backdrop.classList.toggle("backdrop-active");
-    navBarUpdateWindowWidth();
-    updateTabIndexLinks();
-    updateMenuBtn();
+    navListToggle();
+    headerUpdate();
   });
 
-  window.addEventListener("resize", () => {
-    navBarUpdateWindowWidth();
-    updateTabIndexLinks();
-  });
-
-  window.addEventListener("scroll", () => {
-    navBarUpdateWindowWidth(window.scrollY);
-  });
-
-  // Update Menu Text
-  function updateMenuBtn() {
+  skipToContentBtn.addEventListener("click", () => {
+    window.location = "#main";
     if (navList.classList.contains("nav-list-active")) {
-      menuBtn.ariaExpanded = "true";
-      menuBtn.textContent = "Close";
-    } else {
-      menuBtn.ariaExpanded = "false";
-      menuBtn.textContent = "Menu";
+      navListToggle();
     }
+    headerUpdate();
+  });
+
+  navLinksIndex();
+}
+
+// Nav list for mobile
+function navListToggle() {
+  const menuBtn = document.querySelector(".header-menu-toggle");
+  const navList = document.querySelector(".nav-list");
+  const backdrop = document.querySelector(".backdrop");
+
+  navList.classList.toggle("nav-list-active");
+  backdrop.classList.toggle("backdrop-active");
+  if (navList.classList.contains("nav-list-active")) {
+    menuBtn.ariaExpanded = "true";
+    menuBtn.innerHTML = "Close";
+  } else {
+    menuBtn.ariaExpanded = "false";
+    menuBtn.innerHTML = "Menu";
   }
+}
 
-  // Add background color to NavBar
-  function navBarUpdateWindowWidth(scrollY) {
-    let yPosition = scrollY || window.scrollY;
-    let windowWidth = window.innerWidth;
-    if (
-      (windowWidth < 1024 && navList.classList.contains("nav-list-active")) ||
-      yPosition > 0
-    ) {
-      navBar.classList.add("header-active");
-    } else {
-      navBar.classList.remove("header-active");
-    }
+// Update tabIndex for navigation links
+function navLinksIndex() {
+  const navList = document.querySelector(".nav-list");
+  const links = document.querySelectorAll(".nav-list a");
+  let windowWidth = window.innerWidth;
+
+  if (navList.classList.contains("nav-list-active") || windowWidth >= 1024) {
+    links.forEach((link) => {
+      link.tabIndex = 0;
+    });
+  } else {
+    links.forEach((link) => {
+      link.tabIndex = -1;
+    });
   }
+}
 
-  // Update tabIndex based on screen size || if navList is hidden
-  function updateTabIndexLinks() {
-    const links = document.querySelectorAll(".nav-list a");
-    let windowWidth = window.innerWidth;
+// Adds background color to header
+function headerUpdate() {
+  const navList = document.querySelector(".nav-list");
+  let yPosition = scrollY || window.scrollY;
+  let windowWidth = window.innerWidth;
 
-    if (navList.classList.contains("nav-list-active") || windowWidth >= 1024) {
-      links.forEach((link) => {
-        link.tabIndex = 0;
-      });
-    } else {
-      links.forEach((link) => {
-        link.tabIndex = -1;
-      });
-    }
+  if (
+    (windowWidth < 1024 && navList.classList.contains("nav-list-active")) ||
+    yPosition > 0
+  ) {
+    header.classList.add("header-active");
+  } else {
+    header.classList.remove("header-active");
   }
-
-  navBarUpdateWindowWidth();
-  updateTabIndexLinks();
-  updateMenuBtn();
 }
 
 function buildFooter() {
