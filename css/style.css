@@ -11,7 +11,6 @@
   --darkGreen: #2e4426;
   --font-header: "League Gothic", sans-serif;
   --font-default: "Roboto", sans-serif;
-  font-size: 62.5%;
 }
 
 h1,
@@ -24,7 +23,7 @@ h6 {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 p,
@@ -33,7 +32,7 @@ a {
   font-family: var(--font-default);
   color: var(--black);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -45,7 +44,7 @@ button {
   border: none;
   cursor: pointer;
   font-family: var(--font-default);
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
   margin-top: 2.5vh;
@@ -128,7 +127,7 @@ header {
 .skip-to-content-btn {
   width: 100%;
   height: inherit;
-  font-size: 2rem;
+  font-size: 1.25rem;
   background-color: var(--black);
   color: var(--white);
   top: -100%;
@@ -192,7 +191,7 @@ header img {
 
 .nav-list a,
 .header-menu-toggle {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: var(--font-header);
   text-transform: uppercase;
   color: var(--white);
@@ -269,7 +268,7 @@ hr {
   text-align: center;
   margin-top: 5vh;
   padding-bottom: 2.5vh;
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 
 main {
@@ -350,13 +349,6 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  p,
-  li,
-  button,
-  a {
-    font-size: 1.8rem;
-  }
-
   button {
     padding: 1vh 2.5vw;
   }
@@ -371,10 +363,6 @@ main {
 
   header {
     height: 8vh;
-  }
-
-  .skip-to-content-btn {
-    font-size: 1.5rem;
   }
 
   header img {
@@ -398,7 +386,7 @@ main {
   }
 
   .nav-list a {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 0 1.25vw;
   }
 
@@ -424,7 +412,7 @@ main {
   }
 
   .footer p:last-child {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   main {
@@ -442,12 +430,10 @@ main {
 
   .homepage-hero h2 {
     margin-top: -5vw;
-    font-size: 5rem;
   }
 
   .homepage-hero p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    font-size: 2.2rem;
   }
 }
