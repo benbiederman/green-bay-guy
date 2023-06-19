@@ -66,6 +66,7 @@ function buildNavigation() {
 
   menuBtn.addEventListener("click", () => {
     navListToggle();
+    navLinksIndex();
     headerUpdate();
   });
 
