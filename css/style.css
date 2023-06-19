@@ -7,6 +7,7 @@
 :root {
   --white: #fff;
   --black: #000;
+  --lightGray: #e4e4e4;
   --green: #4f7942;
   --darkGreen: #2e4426;
   --font-header: "League Gothic", sans-serif;
@@ -23,7 +24,7 @@ h6 {
   text-transform: uppercase;
   color: var(--black);
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p,
@@ -103,6 +104,54 @@ button {
   border: 2px solid var(--darkGreen);
   color: var(--white);
   box-shadow: 2px 2px 8px var(--black);
+}
+
+.curved-dark,
+.curved-light {
+  position: relative;
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+}
+
+.curved-dark,
+.curved-dark-before::before {
+  background-color: var(--black);
+}
+
+.curved-light,
+.curived-light-before::before {
+  background-color: var(--white);
+}
+
+.curved-dark-before::before,
+.curived-light-before::before {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  top: -2%;
+  width: 100%;
+  height: 2%;
+}
+
+.section,
+.dark-section {
+  padding: 2.5vh 0;
+}
+
+.section h2,
+.dark-section h2 {
+  width: 80%;
+  margin: 0 auto 5vh;
+}
+
+.dark-section {
+  background-color: var(--black);
+}
+
+.dark-section h2,
+.dark-section p {
+  color: var(--white);
 }
 
 /* Mobile */
@@ -191,7 +240,7 @@ header img {
 
 .nav-list a,
 .header-menu-toggle {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-family: var(--font-header);
   text-transform: uppercase;
   color: var(--white);
@@ -232,17 +281,6 @@ header img {
   z-index: 50;
 }
 
-.footer::before {
-  content: "";
-  border-top-left-radius: 50% 100%;
-  border-top-right-radius: 50% 100%;
-  position: absolute;
-  top: -2%;
-  width: 100%;
-  background: var(--black);
-  height: 2%;
-}
-
 hr {
   width: 75%;
   height: 1px;
@@ -279,7 +317,7 @@ main {
 .homepage-hero,
 .homepage-hero-gradient {
   width: 100%;
-  min-height: 92vh;
+  min-height: 100vh;
 }
 
 .homepage-hero {
@@ -303,6 +341,7 @@ main {
 
 .homepage-hero h2 {
   text-align: center;
+  margin-top: -10vh;
 }
 
 .homepage-hero p {
@@ -323,9 +362,118 @@ main {
   pointer-events: none;
 }
 
+.section .locals-guide-item {
+  box-shadow: 0px 0px 10px var(--lightGray);
+}
+
+.locals-guide-item {
+  width: 80%;
+  margin: 2.5vh auto;
+  background-color: var(--white);
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.locals-guide-item:hover .locals-guide-details h3,
+.locals-guide-item:focus-visible .locals-guide-details h3 {
+  color: var(--darkGreen);
+}
+
+.locals-guide-grade {
+  background-color: var(--black);
+  position: absolute;
+  padding: 0.25vh 1vw;
+  border-radius: 5px;
+  top: 0.25rem;
+  right: 0.25rem;
+  box-shadow: 0px 0px 4px var(--black);
+}
+
+.locals-guide-grade p {
+  color: var(--white);
+  font-family: var(--font-header);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.locals-guide-item img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.locals-guide-tags,
+.locals-guide-details {
+  width: 95%;
+}
+
+.locals-guide-tags {
+  margin: 0.25vh auto;
+}
+
+.locals-guide-details {
+  margin: 1vh auto;
+}
+
+.locals-guide-tag {
+  background-color: #2e4426;
+  display: inline-block;
+  padding: 0.25vh 1.25vw;
+  border-radius: 5px;
+  margin: 0.25vh 0;
+}
+
+.locals-guide-details h3 {
+  font-size: 2rem;
+}
+
+.locals-guide-tag p {
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.locals-guide-details {
+  padding-bottom: 0.25vh;
+}
+
+.locals-guide-details hr {
+  margin: 4px auto;
+  width: 100%;
+}
+
+.locals-guide-details p {
+  font-size: 1rem;
+  color: var(--black);
+}
+
 @media screen and (min-width: 300px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 3rem;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 1.25rem;
+  }
+
+  .section h2,
+  .dark-section h2 {
+    width: 70%;
+  }
+
   .nav-list {
     padding: 5vh 5vh;
+  }
+
+  .nav-list a,
+  .header-menu-toggle {
+    font-size: 2.5rem;
   }
 
   .footer-callout {
@@ -334,6 +482,14 @@ main {
 
   .homepage-hero {
     padding: 2.5vh 15vw;
+  }
+
+  .locals-guide-item {
+    width: 80%;
+  }
+
+  .locals-guide-item h2 {
+    font-size: 2rem;
   }
 }
 
@@ -346,9 +502,27 @@ main {
   .homepage-hero-gradient {
     min-height: 70vh;
   }
+
+  .locals-guide-item {
+    width: 45%;
+  }
+
+  .locals-guide-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .section h2,
+  .dark-section h2 {
+    width: 40%;
+  }
+
   button {
     padding: 1vh 2.5vw;
   }
@@ -394,11 +568,6 @@ main {
     margin-bottom: 0.5vh;
   }
 
-  .footer::before {
-    top: -3%;
-    height: 3%;
-  }
-
   .footer-callout {
     padding: 2.5vh 30vw;
   }
@@ -435,5 +604,18 @@ main {
   .homepage-hero p {
     font-size: 1.5rem;
     font-weight: 300;
+  }
+
+  .locals-guide-item {
+    width: 22.5%;
+  }
+
+  .locals-guide-details,
+  .locals-guide-tags {
+    width: 85%;
+  }
+
+  .locals-guide-tag {
+    padding: 0.25vh 1vw;
   }
 }
