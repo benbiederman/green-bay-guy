@@ -503,17 +503,17 @@ main {
     min-height: 70vh;
   }
 
-  .locals-guide-item {
-    width: 45%;
-  }
-
   .locals-guide-container {
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: 47.5% auto;
+  }
+
+  .locals-guide-item {
+    width: 100%;
+    margin: 1.25vh 0;
   }
 }
 
@@ -606,8 +606,17 @@ main {
     font-weight: 300;
   }
 
+  .locals-guide-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 1.5%;
+    grid-template-columns: 24% auto auto auto;
+  }
+
   .locals-guide-item {
-    width: 22.5%;
+    width: 100%;
+    margin: 1.25vh 0;
   }
 
   .locals-guide-details,
