@@ -416,11 +416,10 @@ main {
 }
 
 .locals-guide-tag {
-  background-color: #2e4426;
   display: inline-block;
   padding: 0.25vh 1.25vw;
   border-radius: 5px;
-  margin: 0.25vh 0;
+  margin: 0.25vh 0.5vw;
 }
 
 .locals-guide-details h3 {
@@ -619,6 +618,10 @@ main {
     margin: 1.25vh 0;
   }
 
+  .locals-guide-grade {
+    padding: 0.25vh 0.25vw;
+  }
+
   .locals-guide-details,
   .locals-guide-tags {
     width: 85%;
@@ -626,5 +629,6 @@ main {
 
   .locals-guide-tag {
     padding: 0.25vh 1vw;
+    margin: 0.25vh 0.125vw;
   }
 }
