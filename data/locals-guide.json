@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "Packers Ticket Guide",
-    "image": "tickets.jpg",
-    "img-alt": "Stack of Green Bay Packers tickets",
+    "image": "misc/packers-tickets.jpg",
+    "alt": "Stack of Green Bay Packers tickets",
     "category": "Misc",
     "tags": ["Guide"],
     "url": "green-bay-packers-ticket-guide.html",
@@ -13,10 +13,10 @@
   {
     "id": 2,
     "title": "Green Bay Hotel Guide",
-    "image": "hotel.jpg",
-    "img-alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
+    "image": "misc/green-bay-hotel.jpg",
+    "alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
     "category": "Misc",
-    "tags": ["Guide"],
+    "tags": ["Guide", "Test", "123456"],
     "url": "green-bay-hotel-guide.html",
     "rating": null,
     "distance": null
@@ -24,8 +24,8 @@
   {
     "id": 3,
     "title": "Lambeau Field Parking Guide",
-    "image": "lambeau-field-parking.jpg",
-    "img-alt": "Lambeau Field parking lot during game day",
+    "image": "misc/lambeau-field-parking.jpg",
+    "alt": "Lambeau Field parking lot during game day",
     "category": "Misc",
     "tags": ["Guide"],
     "url": "lambeau-field-parking-guide.html",
@@ -35,8 +35,8 @@
   {
     "id": 4,
     "title": "Lambeau Field Tailgating Guide",
-    "image": "tailgate.jpg",
-    "img-alt": "Packers fans doing a shotski while tailgating for a Packers game",
+    "image": "misc/lambeau-field-tailgating.jpg",
+    "alt": "Packers fans doing a shotski while tailgating for a Packers game",
     "category": "Misc",
     "tags": ["Guide"],
     "url": "lambeau-field-tailgating-guide.html",
