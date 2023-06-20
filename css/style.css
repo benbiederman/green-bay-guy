@@ -136,7 +136,7 @@ button {
 
 .section,
 .dark-section {
-  padding: 2.5vh 0;
+  padding: 2.5vh 0 5vh;
 }
 
 .section h2,
@@ -408,7 +408,7 @@ main {
 }
 
 .locals-guide-tags {
-  margin: 0.25vh auto;
+  margin: 0.5vh auto 0.25vh;
 }
 
 .locals-guide-details {
@@ -417,7 +417,7 @@ main {
 
 .locals-guide-tag {
   display: inline-block;
-  padding: 0.25vh 1.25vw;
+  padding: 0.25vh 2.5vw;
   border-radius: 5px;
   margin: 0.25vh 0.5vw;
 }
@@ -429,10 +429,11 @@ main {
 .locals-guide-tag p {
   line-height: 1;
   font-size: 1rem;
+  margin-top: 0.125rem;
 }
 
 .locals-guide-details {
-  padding-bottom: 0.25vh;
+  padding-bottom: 0.5vh;
 }
 
 .locals-guide-details hr {
@@ -606,16 +607,22 @@ main {
   }
 
   .locals-guide-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     column-gap: 1.5%;
-    grid-template-columns: 24% auto auto auto;
+    grid-template-columns: 23.5% auto auto auto;
   }
 
   .locals-guide-item {
     width: 100%;
     margin: 1.25vh 0;
+  }
+
+  .locals-guide-item img {
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
   }
 
   .locals-guide-grade {
@@ -627,8 +634,16 @@ main {
     width: 85%;
   }
 
+  .locals-guide-details {
+    padding: 0;
+  }
+
   .locals-guide-tag {
-    padding: 0.25vh 1vw;
+    padding: 0.25vh 0.75vw;
     margin: 0.25vh 0.125vw;
+  }
+
+  .locals-guide-tag p {
+    font-size: 0.7rem;
   }
 }
