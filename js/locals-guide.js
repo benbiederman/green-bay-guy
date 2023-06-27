@@ -46,7 +46,7 @@ function buildGuide(container, item) {
   lgItem.appendChild(lgFigure);
 
   const lgImg = document.createElement("img");
-  lgImg.src = `../assets/locals-guide/${item.image}`;
+  lgImg.src = `../assets/locals-guide/${item.mainImg}`;
   lgImg.alt = item.alt;
   lgFigure.appendChild(lgImg);
 
