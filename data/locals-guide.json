@@ -1,46 +1,1581 @@
 [
   {
-    "id": 1,
+    "id": 1001,
     "title": "Packers Ticket Guide",
-    "image": "misc/packers-tickets.jpg",
-    "alt": "Stack of Green Bay Packers tickets",
-    "category": "Misc",
+    "mainImg": "misc/packers-tickets.jpg",
+    "mainAlt": "Stack of Green Bay Packers tickets",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Misc"],
     "tags": ["Guide"],
-    "url": "green-bay-packers-ticket-guide.html",
     "rating": null,
-    "distance": null
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "green-bay-packers-ticket-guide.html"
   },
   {
-    "id": 2,
+    "id": 1002,
     "title": "Green Bay Hotel Guide",
-    "image": "misc/green-bay-hotel.jpg",
-    "alt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
-    "category": "Misc",
+    "mainImg": "misc/green-bay-hotel.jpg",
+    "mainAlt": "Fans walkign through The Titletown District, with Lodge Kohler in the background",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Misc"],
     "tags": ["Guide"],
-    "url": "green-bay-hotel-guide.html",
     "rating": null,
-    "distance": null
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "green-bay-hotel-guide.html"
   },
   {
-    "id": 3,
+    "id": 1003,
     "title": "Lambeau Field Parking Guide",
-    "image": "misc/lambeau-field-parking.jpg",
-    "alt": "Lambeau Field parking lot during game day",
-    "category": "Misc",
+    "mainImg": "misc/lambeau-field-parking.jpg",
+    "mainAlt": "Lambeau Field parking lot during game day",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Misc"],
     "tags": ["Guide"],
-    "url": "lambeau-field-parking-guide.html",
     "rating": null,
-    "distance": null
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "lambeau-field-parking-guide.html"
   },
   {
-    "id": 4,
+    "id": 1004,
     "title": "Lambeau Field Tailgating Guide",
-    "image": "misc/lambeau-field-tailgating.jpg",
-    "alt": "Packers fans doing a shotski while tailgating for a Packers game",
-    "category": "Misc",
+    "mainImg": "misc/lambeau-field-tailgating.jpg",
+    "mainAlt": "Packers fans doing a shotski while tailgating for a Packers game",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Misc"],
     "tags": ["Guide"],
-    "url": "lambeau-field-tailgating-guide.html",
     "rating": null,
-    "distance": null
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "lambeau-field-tailgating-guide.html"
+  },
+  {
+    "id": 1005,
+    "title": "1919 Kitchen and Tap",
+    "mainImg": "eat/1919-kitchen-and-tap.jpg",
+    "mainAlt": "Cheese burger and fries from 1919 Kitchen and Tap",
+    "secondaryImg": "drink/1919-kitchen-and-tap.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/1919-kitchen-and-tap.jpg",
+        "alt": "#",
+        "street": "1265 Lombardi Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0,
+    "url": "1919-kitchen-and-tap"
+  },
+  {
+    "id": 1006,
+    "title": "888 Cheese and Co.",
+    "mainImg": "eat/888-cheese-and-co.jpg",
+    "mainAlt": "The MAC Daddy grilled cheese - a grilled cheese filled with macaroni and cheese",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.6,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/888-cheese-and-co.jpg",
+        "alt": "#",
+        "street": "1582 Lineville Rd.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54313"
+      }
+    ],
+    "distance": 10.1,
+    "url": "888-cheese-and-co"
+  },
+  {
+    "id": 1007,
+    "title": "Aldo's Pizza",
+    "mainImg": "eat/aldos-pizza.jpg",
+    "mainAlt": "Aldo's square pepperoni pizza",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 3.8,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/aldo-pizza.jpg",
+        "alt": "#",
+        "street": "1247 Velp Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 4.5,
+    "url": "aldos-pizza"
+  },
+  {
+    "id": 1008,
+    "title": "Al's Hamburger",
+    "mainImg": "eat/als-hamburger.jpg",
+    "mainAlt": "Al's famous Cheeseburger with fries",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/als-hamburger.jpg",
+        "alt": "#",
+        "street": "131 S Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.3,
+    "url": "als-hamburger"
+  },
+  {
+    "id": 1009,
+    "title": "Anduzzi's",
+    "mainImg": "eat/anduzzis.jpg",
+    "mainAlt": "Anduzzi's cheesy bacon burger with a side of battered fries.",
+    "secondaryImg": "drink/anduzzis.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "1992 Holmgren Way",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "900 Kepler Dr.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54311"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2555 Lineville Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54313"
+      }
+    ],
+    "distance": 0.8,
+    "url": "anduzzis"
+  },
+  {
+    "id": 1010,
+    "title": "Angelina",
+    "mainImg": "eat/angelina.jpg",
+    "mainAlt": "Angelina homemade cheese ravioli in bolognese sauce",
+    "secondaryImg": "drink/angelina.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.75,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/als-hamburger.jpg",
+        "alt": "#",
+        "street": "117 N Adams St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.4,
+    "url": "angelina"
+  },
+  {
+    "id": 1011,
+    "title": "Basil's II",
+    "mainImg": "eat/basils-ii.jpg",
+    "mainAlt": "Basil II's butter burger",
+    "secondaryImg": "drink/basil-ii.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.6,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/basils-ii.jpg",
+        "alt": "#",
+        "street": "5595 S, Co Hwy P.",
+        "city": "Denmark",
+        "state": "WI",
+        "zip": "54208"
+      }
+    ],
+    "distance": 19.8,
+    "url": "basils-ii"
+  },
+  {
+    "id": 1012,
+    "title": "Bay Family Restaurant",
+    "mainImg": "eat/bay-family-restaurant.jpg",
+    "mainAlt": "Bay Family Restaurant's hasbrown skillet with toast",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch", "Dinner"],
+    "rating": 4.6,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/basils-ii.jpg",
+        "alt": "#",
+        "street": "5595 S, Co Hwy P.",
+        "city": "Denmark",
+        "state": "WI",
+        "zip": "54208"
+      }
+    ],
+    "distance": 1.2,
+    "url": "bay-family-restaurant"
+  },
+  {
+    "id": 1064,
+    "title": "Bhava Coffee",
+    "mainImg": "drink/bhava-coffee.jpg",
+    "mainAlt": "Black Honey Hashery's biscuits and gravy with a side of potatoes and eggs",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Coffee"],
+    "rating": 4.75,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/bhava-coffee.jpg",
+        "alt": "#",
+        "street": "1538 W Mason St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 1.9,
+    "url": "bhava-coffee"
+  }
+  {
+    "id": 1013,
+    "title": "Black Honey Hashery",
+    "mainImg": "eat/black-honey-hashery.jpg",
+    "mainAlt": "Black Honey Hashery's biscuits and gravy with a side of potatoes and eggs",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch"],
+    "rating": 4.75,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/basils-ii.jpg",
+        "alt": "#",
+        "street": "1104 Honey Ct.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 6.7,
+    "url": "black-honey-hashery"
+  },
+  {
+    "id": 1014,
+    "title": "Black Sheep Pub and Grill",
+    "mainImg": "eat/black-sheep-pub-and-grill.jpg",
+    "mainAlt": "Black Sheep Pub and Grill's couch potato burger with a side of fries.",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/black-sheep-pub-and-grill.jpg",
+        "alt": "#",
+        "street": "2638 Bay Settlement Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54311"
+      }
+    ],
+    "distance": 15.1,
+    "url": "black-sheep-pub"
+  },
+  {
+    "id": 1015,
+    "title": "Brickhouse Craft Burgers",
+    "mainImg": "eat/brickhouse-craft-burgers.jpg",
+    "mainAlt": "Brickhouse Craft Burgers' double cheeseburger with fries",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.0,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/brickhouse-craft-burgers.jpg",
+        "alt": "#",
+        "street": "500 Grant St.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.4,
+    "url": "brickhouse-craft-burgers"
+  },
+  {
+    "id": 1016,
+    "title": "Cheese Cake Heaven",
+    "mainImg": "eat/cheese-cake-heaven.jpg",
+    "mainAlt": "Cheese Cake Heaven's deli sandwich",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner", "Dessert"],
+    "rating": 4.0,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/cheese-cake-heaven.jpg",
+        "alt": "#",
+        "street": "2075 S Oneida St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0.7,
+    "url": "cheese-cake-heaven"
+  },
+  {
+    "id": 1017,
+    "title": "Cheesesteak Rebellion",
+    "mainImg": "eat/cheesesteak-rebellion.jpg",
+    "mainAlt": "Cheesesteak Rebellion's basic cheesesteak with a side of steak fries",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/cheesesteak-rebellion.jpg",
+        "alt": "#",
+        "street": "1301 S Broadway.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 1.9,
+    "url": "cheesesteak-rebellion"
+  },
+  {
+    "id": 1018,
+    "title": "China Kitchen",
+    "mainImg": "eat/china-kitchen.jpg",
+    "mainAlt": "China Kitchen's chicken broccoli with a pork eggroll on the side.",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/china-kitchen.jpg",
+        "alt": "#",
+        "street": "2030 E Mason St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 5.7,
+    "url": "china-kitchen"
+  },
+  {
+    "id": 1019,
+    "title": "Chives",
+    "mainImg": "eat/chives.jpg",
+    "mainAlt": "Chive's pork chop on a bed of veggies and potatoes",
+    "secondaryImg": "#",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/chives.jpg",
+        "alt": "#",
+        "street": "1749 Riverside Dr.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54173"
+      }
+    ],
+    "distance": 11.4,
+    "url": "chives"
+  },
+  {
+    "id": 1020,
+    "title": "Coffee Wizardz",
+    "mainImg": "drink/coffee-wizardz.jpg",
+    "mainAlt": "Coffee Wizardz latte",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Coffee"],
+    "rating": 4.9,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/coffee-wizardz.jpg",
+        "alt": "#",
+        "street": "536 Greene Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 5.5,
+    "url": "coffee-wizardz"
+  },
+  {
+    "id": 1021,
+    "title": "Copper State Brewing Co.",
+    "mainImg": "eat/copper-state-brewing-co.jpg",
+    "mainAlt": "Copper State Brewing Co's Macaroni and cheese burger with a side of fries",
+    "secondaryImg": "drink/copper-state-brewing-co.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol", "Coffee"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/copper-state-brewing-co.jpg",
+        "alt": "#",
+        "street": "313 Dousman St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 3.3,
+    "url": "copper-state-brewing-co"
+  },
+  {
+    "id": 1022,
+    "title": "Daily Buzz Espresso Bar",
+    "mainImg": "eat/daily-buzz.jpg",
+    "mainAlt": "Daily Buzz latte",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Coffee"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/daily-buzz.jpg",
+        "alt": "#",
+        "street": "124 E Walnut St #124",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.3,
+    "url": "daily-buzz-espresso-bar"
+  },
+  {
+    "id": 1023,
+    "title": "Drift Inn",
+    "mainImg": "eat/drift-inn.jpg",
+    "mainAlt": "Drift Inn butter burger with crinkle cut fries",
+    "secondaryImg": "drink/drift-inn.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/drift-inn.jpg",
+        "alt": "#",
+        "street": "1535 S Ashland Ave.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 4.1,
+    "url": "drift-inn"
+  },
+  {
+    "id": 1024,
+    "title": "El Maya",
+    "mainImg": "eat/el-maya.jpg",
+    "mainAlt": "El Maya burrito with rice and beans",
+    "secondaryImg": "drink/el-maya.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/el-maya.jpg",
+        "alt": "#",
+        "street": "1049 Main Ave.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.7,
+    "url": "el-maya"
+  },
+  {
+    "id": 1025,
+    "title": "El Sarape",
+    "mainImg": "eat/el-sarape.jpg",
+    "mainAlt": "El Sarape burrito with fresh tortilla chips",
+    "secondaryImg": "drink/el-sarape.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2615 S Oneida St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2030 East Mason Street Suite H-I",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 2.4,
+    "url": "el-sarape"
+  },
+  {
+    "id": 1026,
+    "title": "Four Way Bar",
+    "mainImg": "eat/four-way-bar.jpg",
+    "mainAlt": "Four Way Bar boneless wings with fries",
+    "secondaryImg": "drink/four-way-bar.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/four-way-bar.jpg",
+        "alt": "#",
+        "street": "1801 Riverside Dr.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54173"
+      }
+    ],
+    "distance": 11.3,
+    "url": "four-way-bar"
+  },
+  {
+    "id": 1027,
+    "title": "Glass Nickel Pizza",
+    "mainImg": "eat/glass-nickel-pizza.jpg",
+    "mainAlt": "Glass Nickel pepperoni pizza",
+    "secondaryImg": "drink/glass-nickel-pizza.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/glass-nickel-pizza.jpg",
+        "alt": "#",
+        "street": "416 Dousman St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 3.2,
+    "url": "glass-nickel-pizza"
+  },
+  {
+    "id": 1028,
+    "title": "Graystone Ale House",
+    "mainImg": "eat/graystone-ale-house.jpg",
+    "mainAlt": "Graystone Ale House's cheeseburger with a side of tator tots.",
+    "secondaryImg": "drink/graystone-ale-house.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/graystone-ale-house.jpg",
+        "alt": "#",
+        "street": "3711 Monroe Rd.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 9.0,
+    "url": "graystone-ale-house"
+  },
+  {
+    "id": 1029,
+    "title": "Green Bay Distillery",
+    "mainImg": "eat/green-bay-distillery.jpg",
+    "mainAlt": "Green Bay Distillery cheesecurd burger",
+    "secondaryImg": "drink/green-bay-distillery.jpg",
+    "secondaryAlt": "#",
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/green-bay-distillery.jpg",
+        "alt": "#",
+        "street": "835 Mike McCarthy Way",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0.7,
+    "url": "green-bay-distillery"
+  },
+  {
+    "id": 1030,
+    "title": "Green Tea Chinese",
+    "mainImg": "eat/green-tea-chinese.jpg",
+    "mainAlt": "Green Tea Chinese's sweet and sour chicken",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/green-tea-chinese.jpg",
+        "alt": "#",
+        "street": "2276 E Mason St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 5.0,
+    "url": "green-tea-chinese"
+  },
+  {
+    "id": 1031,
+    "title": "Hagemeister Park",
+    "mainImg": "eat/hagemeister-park.jpg",
+    "mainAlt": "Hagemeister Park pasta dish with grilled chicken",
+    "secondaryImg": "drink/hagemeister-park.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.5,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/hagemeister-park.jpg",
+        "alt": "#",
+        "street": "325 N Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.6,
+    "url": "hagemeister-park"
+  },
+  {
+    "id": 1032,
+    "title": "Happy Joe's Pizza",
+    "mainImg": "eat/happy-joes-pizza.jpg",
+    "mainAlt": "Happy Joe's pepperoni pizza",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/happy-joes-pizza.jpg",
+        "alt": "#",
+        "street": "1675 E Mason St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 4.9,
+    "url": "happy-joes-pizza"
+  },
+  {
+    "id": 1033,
+    "title": "Hill Top Cafe",
+    "mainImg": "eat/hill-top-cafe.jpg",
+    "mainAlt": "Hill Top Cafe cheeseburger and fries",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/hill-top-cafe.jpg",
+        "alt": "#",
+        "street": "2278 Bay Settlement Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54311"
+      }
+    ],
+    "distance": 14.3,
+    "url": "hill-top-cafe"
+  },
+  {
+    "id": 1034,
+    "title": "Jake's Pizza",
+    "mainImg": "eat/jakes-pizza.jpg",
+    "mainAlt": "Jake's pepperoni pizza",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/jakes-pizza.jpg",
+        "alt": "#",
+        "street": "112 S Broadway",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 3.0,
+    "url": "jakes-pizza"
+  },
+  {
+    "id": 1035,
+    "title": "Julie's Cafe",
+    "mainImg": "eat/julies-cafe.jpg",
+    "mainAlt": "Julie's blueberry pancake with a side of hashbrowns",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch", "Dinner"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "500 Grant St",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "112 S Broadway",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "1685 Main St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 5.3,
+    "url": "julies-cafe"
+  },
+  {
+    "id": 1036,
+    "title": "Krolls",
+    "mainImg": "eat/krolls.jpg",
+    "mainAlt": "Kroll's deep fried cheese curds",
+    "secondaryImg": "drink/krolls.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "1990 S Ridge Rd.",
+        "city": "Ashwaubenon",
+        "state": "WI",
+        "zip": "54304"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "1658 Main St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 0.1,
+    "url": "krolls"
+  },
+  {
+    "id": 1037,
+    "title": "Legend Larrys",
+    "mainImg": "eat/legend-larrys.jpg",
+    "mainAlt": "Legend Larry's DOA traditional wings",
+    "secondaryImg": "drink/legend-larrys.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.75,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/legend-larrys.jpg",
+        "alt": "#",
+        "street": "2035 University Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 6.0,
+    "url": "legend-larrys"
+  },
+  {
+    "id": 1038,
+    "title": "Luigi's Italian Bistro",
+    "mainImg": "eat/luigis-italian-bistro.jpg",
+    "mainAlt": "Luigi's pepperoni pizza",
+    "secondaryImg": "drink/luigis-italian-bistro.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2733 Manitowoc Rd #5",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54311"
+      }
+    ],
+    "distance": 9.8,
+    "url": "luigis-italian-bistro"
+  },
+  {
+    "id": 1039,
+    "title": "Luna Coffee Roasters",
+    "mainImg": "drink/luna-coffee-roasters.jpg",
+    "mainAlt": "Luna Coffee Roasters store front",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Coffee"],
+    "rating": 4.5,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "330 Main Ave.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2665 Monroe Rd.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.8,
+    "url": "luna-coffee-roasters"
+  },
+  {
+    "id": 1040,
+    "title": "MACS - Mac and Cheese Shop",
+    "mainImg": "eat/mac-and-cheese-shop.jpg",
+    "mainAlt": "MACS loaded baked potato mac n cheese",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.5,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/mac-and-cheese-shop",
+        "alt": "#",
+        "street": "2654 S Oneida St #101",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 2.0,
+    "url": "mac-and-cheese-shop"
+  },
+  {
+    "id": 1041,
+    "title": "Mad Chicken",
+    "mainImg": "eat/mad-chicken.jpg",
+    "mainAlt": "Mad Chicken spicy chicken tenders with waffle fries",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner"],
+    "rating": 4.2,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/mad-chicken",
+        "alt": "#",
+        "street": "229 N Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.4,
+    "url": "mad-chicken"
+  },
+  {
+    "id": 1042,
+    "title": "Narrow Bridge",
+    "mainImg": "eat/narrow-bridge.jpg",
+    "mainAlt": "Narrow Bridge cheeseburger with a side of triple fries",
+    "secondaryImg": "drink/narrow-bridge.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/narrow-bridge",
+        "alt": "#",
+        "street": "2840 Shawano Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54313"
+      }
+    ],
+    "distance": 5.2,
+    "url": "narrow-bridge"
+  },
+  {
+    "id": 1043,
+    "title": "Nicolet Cafe",
+    "mainImg": "eat/nicolet-cafe.jpg",
+    "mainAlt": "French toast with a side of hashbrowns and toast",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch"],
+    "rating": 3.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/nicolet-cafe",
+        "alt": "#",
+        "street": "525 Reid St.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.2,
+    "url": "nicolet-cafe"
+  },
+  {
+    "id": 1044,
+    "title": "Not By Bread Alone",
+    "mainImg": "eat/not-by-bread-alone.jpg",
+    "mainAlt": "Fresh deli turkey sandwich with a pickle on the side",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch", "Dinner"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/not-by-bread-alone",
+        "alt": "#",
+        "street": "940 Hansen Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 2.3,
+    "url": "not-by-bread-alone"
+  },
+  {
+    "id": 1045,
+    "title": "Old Mexico",
+    "mainImg": "eat/old-mexico.jpg",
+    "mainAlt": "Old Mexico enchiladas",
+    "secondaryImg": "drink/old-mexico.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/old-mexico",
+        "alt": "#",
+        "street": "11884 Velp Ave.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54313"
+      }
+    ],
+    "distance": 7.8,
+    "url": "old-mexico"
+  },
+  {
+    "id": 1046,
+    "title": "R & D's House Divided",
+    "mainImg": "eat/r-&-ds-house-divided.jpg",
+    "mainAlt": "R & D's House Divided hot beef",
+    "secondaryImg": "drink/r-&-ds-house-divided.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/r-&-ds-house-divided",
+        "alt": "#",
+        "street": "2148 University Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 6.1,
+    "url": "r-&-ds-house-divided"
+  },
+  {
+    "id": 1047,
+    "title": "Rustique Pizzeria",
+    "mainImg": "eat/rustique-pizzeria.jpg",
+    "mainAlt": "Rustique's pepperoni pizza next to a macaroni and cheese pizza",
+    "secondaryImg": "drink/rustique-pizzeria.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.75,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/rustique-pizzeria",
+        "alt": "#",
+        "street": "13201 Velp Ave.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54313"
+      }
+    ],
+    "distance": 11.2,
+    "url": "rustique-pizzeria"
+  },
+  {
+    "id": 1048,
+    "title": "Sammy's Pizza",
+    "mainImg": "eat/sammys-pizza.jpg",
+    "mainAlt": "Sammy's pepperoni pizza.",
+    "secondaryImg": "drink/sammys-pizza.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.6,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/sammys-pizza",
+        "alt": "#",
+        "street": "2161 S Oneida St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0.9,
+    "url": "sammys-pizza"
+  },
+  {
+    "id": 1049,
+    "title": "Sara's Artisan Gelato",
+    "mainImg": "eat/saras-artisan-gelato.jpg",
+    "mainAlt": "A fresh brownie with a scoop of Sara's Artisan Gelato on top, with caramel drizzle.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Dessert"],
+    "rating": 4.75,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/saras-artisan-gelato",
+        "alt": "#",
+        "street": "933 Anderson Dr. Ste F",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 1.6,
+    "url": "saras-artisan-gelato"
+  },
+  {
+    "id": 1050,
+    "title": "Sgambati's",
+    "mainImg": "eat/sgambatis.jpg",
+    "mainAlt": "A fresh brownie with a scoop of Sara's Artisan Gelato on top, with caramel drizzle.",
+    "secondaryImg": "drink/sgambatis.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.3,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/sgambatis",
+        "alt": "#",
+        "street": "1700 Sand Acres Dr.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 8.0,
+    "url": "sgambatis"
+  },
+  {
+    "id": 1051,
+    "title": "Smart Cow",
+    "mainImg": "eat/smart-cow.jpg",
+    "mainAlt": "Smart Cow frozen yogurt topped with candies and fruit.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Dessert"],
+    "rating": 4.0,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2321 S Oneida St.",
+        "city": "Ashwaubenon",
+        "state": "WI",
+        "zip": "54304"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2450 E Mason St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 1.3,
+    "url": "smart-cow"
+  },
+  {
+    "id": 1052,
+    "title": "Stadium View",
+    "mainImg": "eat/stadium-view.jpg",
+    "mainAlt": "Stadium View french dip with fries.",
+    "secondaryImg": "drink/stadium-view.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Dessert"],
+    "rating": 4.25,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/stadium-view",
+        "alt": "#",
+        "street": "1963 Holmgren Way",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0.7,
+    "url": "stadium-view"
+  },
+  {
+    "id": 1053,
+    "title": "Stir-Ups Bar",
+    "mainImg": "drink/stir-ups-bar.jpg",
+    "mainAlt": "Stir-Ups dance floor.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Alcohol"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/stir-ups-bar.jpg",
+        "alt": "#",
+        "street": "123 S Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.3,
+    "url": "stir-ups-bar"
+  },
+  {
+    "id": 1054,
+    "title": "The Abbey",
+    "mainImg": "eat/the-abbey.jpg",
+    "mainAlt": "Buffalo chicken wrap with a side of fries.",
+    "secondaryImg": "drink/the-abbey.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/the-abbey",
+        "alt": "#",
+        "street": "303 Reid St.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.5,
+    "url": "the-abbey"
+  },
+  {
+    "id": 1055,
+    "title": "The Bar",
+    "mainImg": "eat/the-bar.jpg",
+    "mainAlt": "The Bar's buffalo wings",
+    "secondaryImg": "drink/the-bar.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.0,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2001 Holmgren Way",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "606 Lime Kiln Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 0.8,
+    "url": "the-bar"
+  },
+  {
+    "id": 1056,
+    "title": "The Exchange",
+    "mainImg": "drink/the-exchange.jpg",
+    "mainAlt": "The Exchange's coffee flight.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Drink"],
+    "tags": ["Coffee"],
+    "rating": 4.1,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/the-exchange",
+        "alt": "#",
+        "street": "317 Main Ave.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 2.2,
+    "url": "the-exchange"
+  },
+  {
+    "id": 1057,
+    "title": "The Pancake Place",
+    "mainImg": "eat/the-pancake-place.jpg",
+    "mainAlt": "The Pancake Place's famous stuffed hashbrowns",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Breakfast", "Lunch"],
+    "rating": 4.6,
+    "favorite": true,
+    "address": [
+      {
+        "image": "location/the-pancake-place",
+        "alt": "#",
+        "street": "143 Military Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303"
+      }
+    ],
+    "distance": 2.2,
+    "url": "the-pancake-place"
+  },
+  {
+    "id": 1058,
+    "title": "Zesty's",
+    "mainImg": "eat/zestys.jpg",
+    "mainAlt": "Zesty's butter burger with cheese curds",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Lunch", "Dinner", "Dessert"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "2639 Lineville Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54313"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "508 Greene Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      },
+      {
+        "image": "#",
+        "alt": "#",
+        "street": "3718 Riverside Dr.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115"
+      }
+    ],
+    "distance": 5.4,
+    "url": "zestys"
+  },
+  {
+    "id": 1059,
+    "title": "Lambeau Field",
+    "mainImg": "see/lambeau-field.jpg",
+    "mainAlt": "Lambeau Field building facade",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Free", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/lambeau-field",
+        "alt": "#",
+        "street": "1265 Lombardi Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0,
+    "url": "lambeau-field"
+  },
+  {
+    "id": 1060,
+    "title": "Packers Heritage Trail",
+    "mainImg": "see/packers-heritage-trail.jpg",
+    "mainAlt": "Curly Lambeau's childhood home",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Free", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "packers-heritage-trail"
+  },
+  {
+    "id": 1061,
+    "title": "Titletown District",
+    "mainImg": "see/titletown-district.jpg",
+    "mainAlt": "Overlook of the Titletown District from Ariens Hill",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Free", "$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/lambeau-field",
+        "alt": "#",
+        "street": "1065 Lombardi Ave.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54304"
+      }
+    ],
+    "distance": 0.1,
+    "url": "titletown-district"
+  },
+  {
+    "id": 1062,
+    "title": "Bay Beach",
+    "mainImg": "see/bay-beach.jpg",
+    "mainAlt": "The entrance of the Zippin' Pippin'.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/lambeau-field",
+        "alt": "#",
+        "street": "1313 Bay Beach Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302"
+      }
+    ],
+    "distance": 6.1,
+    "url": "bay-beach"
+  },
+  {
+    "id": 1063,
+    "title": "CityDeck",
+    "mainImg": "see/citydeck.jpg",
+    "mainAlt": "A view of the CityDeck with a large boat sailing past on the river.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Free"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "image": "location/lambeau-field",
+        "alt": "#",
+        "street": "301 N Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301"
+      }
+    ],
+    "distance": 3.4,
+    "url": "citydeck"
   }
 ]
