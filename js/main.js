@@ -172,10 +172,14 @@ function buildFooter() {
   footerCta.classList.add("footer-callout");
   footer.appendChild(footerCta);
 
+  const calloutContainer = document.createElement("div");
+  calloutContainer.classList.add("callout-container");
+  footerCta.appendChild(calloutContainer);
+
   // Header
   const footerCtaHeader = document.createElement("h4");
   footerCtaHeader.innerHTML = "Green Bay Bound?";
-  footerCta.appendChild(footerCtaHeader);
+  calloutContainer.appendChild(footerCtaHeader);
 
   // Paragraphs
   const footerP1 = document.createElement("p");
@@ -183,24 +187,24 @@ function buildFooter() {
   represents years of anticipation, diligent saving, and meticulous
   planning. My biggest priority is to help make sure this trip surpasses
   all expectations.`;
-  footerCta.appendChild(footerP1);
+  calloutContainer.appendChild(footerP1);
 
   const footerP2 = document.createElement("p");
   footerP2.innerHTML = `If there's anything you're curious about that hasn't been covered, or
   if you simply want to reach out and say hello, please feel free to
   contact me without any hesitation. It would be my privilege to offer
   any assistance within my capabilities.`;
-  footerCta.appendChild(footerP2);
+  calloutContainer.appendChild(footerP2);
 
   const emailBtn = document.createElement("button");
   emailBtn.classList.add("color-primary-btn");
   emailBtn.innerHTML = "Email";
-  footerCta.append(emailBtn);
+  calloutContainer.append(emailBtn);
 
   const textBtn = document.createElement("button");
   textBtn.classList.add("color-secondary-btn");
   textBtn.innerHTML = "Text";
-  footerCta.append(textBtn);
+  calloutContainer.append(textBtn);
 
   // Thematic break
   const thematicBreak = document.createElement("hr");

@@ -258,8 +258,12 @@ header img {
 .footer-callout {
   min-height: 10vh;
   background-color: var(--black);
-  width: 100%;
-  padding: 2.5vh 10vw;
+  padding: 2.5vh 0;
+  margin: 0 auto;
+}
+
+.callout-container {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -282,7 +286,7 @@ header img {
 }
 
 hr {
-  width: 75%;
+  width: 80%;
   height: 1px;
   background-color: var(--green);
   border: none;
@@ -476,8 +480,12 @@ main {
     font-size: 2.5rem;
   }
 
-  .footer-callout {
-    padding: 2.5vh 15vw;
+  .callout-container {
+    width: 70%;
+  }
+
+  hr {
+    width: 70%;
   }
 
   .homepage-hero {
@@ -563,8 +571,8 @@ main {
     margin-bottom: 0.5vh;
   }
 
-  .footer-callout {
-    padding: 2.5vh 30vw;
+  .callout-container {
+    width: 40%;
   }
 
   hr {
