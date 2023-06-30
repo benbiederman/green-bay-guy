@@ -48,15 +48,15 @@ button {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
-  margin-top: 2.5vh;
-  padding: 1vh 5vw;
+  margin-top: 1.25rem;
+  padding: 0.5rem 1rem;
 }
 
 .color-primary-btn,
 .color-secondary-btn,
 .black-primary-btn,
 .black-secondary-btn {
-  margin-right: 2.5vw;
+  margin-right: 1rem;
   border-radius: 2px;
   transition: background 0.25s ease, color 0.25s ease, border 0.25s ease,
     box-shadow 0.25s ease;
@@ -136,13 +136,13 @@ button {
 
 .section,
 .dark-section {
-  padding: 2.5vh 0 5vh;
+  padding: 1.25rem 0 2.5rem;
 }
 
 .section h2,
 .dark-section h2 {
   width: 80%;
-  margin: 0 auto 5vh;
+  margin: 0 auto 2.5rem;
 }
 
 .dark-section {
@@ -163,7 +163,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5vw;
+  padding: 0 1rem;
   position: fixed;
   transition: background 0.25s ease;
   z-index: 500;
@@ -208,7 +208,7 @@ header img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 5vh 2.5vh;
+  padding: 2.5rem 1.25rem;
   transition: left 0.25s ease;
   z-index: 500;
 }
@@ -247,7 +247,7 @@ header img {
 }
 
 .nav-list a {
-  margin: 1.25vh 0;
+  margin: 0.5rem 0;
 }
 
 .nav-list a:hover,
@@ -258,7 +258,7 @@ header img {
 .footer-callout {
   min-height: 10vh;
   background-color: var(--black);
-  padding: 2.5vh 0;
+  padding: 1.25rem 0;
   margin: 0 auto;
 }
 
@@ -274,7 +274,7 @@ header img {
 
 .footer-callout p,
 .footer-callout h4 {
-  margin-bottom: 2.5vh;
+  margin-bottom: 1.25rem;
 }
 
 .footer {
@@ -290,31 +290,31 @@ hr {
   height: 1px;
   background-color: var(--green);
   border: none;
-  margin: 2.5vh auto;
+  margin: 1.25rem auto;
 }
 
 .socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 2.5rem;
 }
 
 .socials-container img {
   width: 50px;
-  margin: 0 0vw;
+  margin: 0;
   object-fit: contain;
   cursor: pointer;
 }
 
 .footer p:last-child {
   text-align: center;
-  margin-top: 5vh;
-  padding-bottom: 2.5vh;
+  margin-top: 2.5rem;
+  padding-bottom: 1.25rem;
   font-size: 1rem;
 }
 
 main {
-  padding-bottom: 5vh;
+  padding-bottom: 2.5rem;
   min-height: 90vh;
 }
 
@@ -330,11 +330,14 @@ main {
   background-size: cover;
   position: relative;
   color: #fcfcfc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 10vw;
+  padding-top: 85px;
+}
+
+.hero-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
 .homepage-hero p,
@@ -345,17 +348,16 @@ main {
 
 .homepage-hero h2 {
   text-align: center;
-  margin-top: -10vh;
 }
 
 .homepage-hero p {
   font-weight: 500;
-  margin: 1.25vh 0;
-  text-align: center;
+  margin: 0.75rem 0;
 }
 
 .homepage-hero button {
   box-shadow: 0px 0px 10px #202020;
+  margin: 1.25rem auto 0;
 }
 
 .homepage-hero-gradient {
@@ -372,7 +374,7 @@ main {
 
 .locals-guide-item {
   width: 80%;
-  margin: 2.5vh auto;
+  margin: 1.25rem auto;
   background-color: var(--white);
   border-radius: 5px;
   position: relative;
@@ -387,7 +389,7 @@ main {
 .locals-guide-grade {
   background-color: var(--black);
   position: absolute;
-  padding: 0.25vh 1vw;
+  padding: 0.125rem;
   border-radius: 5px;
   top: 0.25rem;
   right: 0.25rem;
@@ -412,18 +414,18 @@ main {
 }
 
 .locals-guide-tags {
-  margin: 0.5vh auto 0.25vh;
+  margin: 0.25rem auto;
 }
 
 .locals-guide-details {
-  margin: 1vh auto;
+  margin: 0.5rem auto;
 }
 
 .locals-guide-tag {
   display: inline-block;
-  padding: 0.25vh 2.5vw;
+  padding: 0.125rem 1.25rem;
   border-radius: 5px;
-  margin: 0.25vh 0.5vw;
+  margin: 0.125rem 0.25rem;
 }
 
 .locals-guide-details h3 {
@@ -437,7 +439,7 @@ main {
 }
 
 .locals-guide-details {
-  padding-bottom: 0.5vh;
+  padding-bottom: 0.25rem;
 }
 
 .locals-guide-details hr {
@@ -448,6 +450,12 @@ main {
 .locals-guide-details p {
   font-size: 1rem;
   color: var(--black);
+}
+
+@media (orientation: landscape) {
+  .homepage-hero-gradient {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 300px) {
@@ -472,7 +480,7 @@ main {
   }
 
   .nav-list {
-    padding: 5vh 5vh;
+    padding: 2.5rem;
   }
 
   .nav-list a,
@@ -489,7 +497,13 @@ main {
   }
 
   .homepage-hero {
-    padding: 2.5vh 15vw;
+    padding: 1.25rem 0;
+  }
+
+  .hero-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10rem 0;
   }
 
   .locals-guide-item {
@@ -503,12 +517,16 @@ main {
 
 @media screen and (min-width: 768px) {
   .nav-list {
-    padding: 5vh 10vh;
+    padding: 2.5rem 5rem;
   }
 
   .homepage-hero,
   .homepage-hero-gradient {
-    min-height: 70vh;
+    min-height: 60vh;
+  }
+
+  .hero-container {
+    padding: 12.5rem 0;
   }
 
   .locals-guide-container {
@@ -521,7 +539,7 @@ main {
 
   .locals-guide-item {
     width: 100%;
-    margin: 1.25vh 0;
+    margin: 0.75rem 0;
   }
 }
 
@@ -532,7 +550,7 @@ main {
   }
 
   button {
-    padding: 1vh 2.5vw;
+    padding: 0.5rem 1rem;
   }
 
   .header-menu-toggle {
@@ -564,11 +582,11 @@ main {
 
   .nav-list a {
     font-size: 2rem;
-    padding: 0 1.25vw;
+    padding: 0 0.75rem;
   }
 
   .nav-list a {
-    margin-bottom: 0.5vh;
+    margin-bottom: 0.25rem;
   }
 
   .callout-container {
@@ -596,12 +614,17 @@ main {
     min-height: 100vh;
   }
 
-  .homepage-hero {
-    padding: 0 30vw;
+  .homepage-hero-gradient {
+    display: block;
+  }
+
+  .hero-container {
+    width: 40%;
+    padding: 15rem 0;
   }
 
   .homepage-hero h2 {
-    margin-top: -5vw;
+    margin-top: -2.5rem;
   }
 
   .homepage-hero p {
@@ -619,7 +642,7 @@ main {
 
   .locals-guide-item {
     width: 100%;
-    margin: 1.25vh 0;
+    margin: 0.75rem 0;
   }
 
   .locals-guide-item img {
@@ -629,7 +652,7 @@ main {
   }
 
   .locals-guide-grade {
-    padding: 0.25vh 0.25vw;
+    padding: 0.125rem;
   }
 
   .locals-guide-details,
@@ -642,8 +665,8 @@ main {
   }
 
   .locals-guide-tag {
-    padding: 0.25vh 0.75vw;
-    margin: 0.25vh 0.125vw;
+    padding: 0.125rem 0.5rem;
+    margin: 0.125rem;
   }
 
   .locals-guide-tag p {
@@ -662,5 +685,9 @@ main {
 
   header img {
     height: 65px;
+  }
+
+  .hero-container {
+    padding: 20rem 0;
   }
 }
