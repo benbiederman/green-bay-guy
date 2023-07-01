@@ -318,14 +318,10 @@ main {
   min-height: 90vh;
 }
 
-.homepage-hero,
-.homepage-hero-gradient {
-  width: 100%;
-  min-height: 100vh;
-}
-
 .homepage-hero {
-  background-image: url("../assets/homepage-hero-img.jpg");
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 70%, var(--black)),
+    url("../assets/homepage-hero-img.jpg");
   background-position: top;
   background-size: cover;
   position: relative;
@@ -358,14 +354,6 @@ main {
 .homepage-hero button {
   box-shadow: 0px 0px 10px #202020;
   margin: 1.25rem auto 0;
-}
-
-.homepage-hero-gradient {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: linear-gradient(to bottom, transparent 70%, var(--black));
-  pointer-events: none;
 }
 
 .section .locals-guide-item {
@@ -452,12 +440,6 @@ main {
   color: var(--black);
 }
 
-@media (orientation: landscape) {
-  .homepage-hero-gradient {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 300px) {
   h1,
   h2,
@@ -520,8 +502,7 @@ main {
     padding: 2.5rem 5rem;
   }
 
-  .homepage-hero,
-  .homepage-hero-gradient {
+  .homepage-hero {
     min-height: 60vh;
   }
 
@@ -609,13 +590,8 @@ main {
     min-height: 92vh;
   }
 
-  .homepage-hero,
-  .homepage-hero-gradient {
+  .homepage-hero {
     min-height: 100vh;
-  }
-
-  .homepage-hero-gradient {
-    display: block;
   }
 
   .hero-container {
