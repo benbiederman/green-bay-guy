@@ -276,7 +276,7 @@
     "secondaryAlt": null,
     "category": ["Drink"],
     "tags": ["Coffee"],
-    "rating": 4.75,
+    "rating": 4.8,
     "favorite": true,
     "address": [
       {
@@ -1157,7 +1157,7 @@
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
     "rating": 4.75,
-    "favorite": false,
+    "favorite": true,
     "address": [
       {
         "image": "location/rustique-pizzeria",
