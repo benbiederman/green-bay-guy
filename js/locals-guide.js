@@ -8,17 +8,28 @@ function sortGuides(items) {
 
   if (path === "/" || path === "/index.html") {
     const miscContainer = document.querySelector(".misc-container");
-    const miscGuides = [];
+    const goToContainer = document.querySelector(".go-to-container");
+    let miscGuides = [];
+    let goToGuides = [];
     items.forEach((item) => {
       item.tags.forEach((tag) => {
         if (tag === "Guide") {
           miscGuides.push(item);
         }
       });
+      if (item.favorite) {
+        goToGuides.push(item);
+      }
     });
 
     miscGuides.forEach((guide) => {
       buildGuide(miscContainer, guide);
+    });
+
+    goToGuides = filterData("rating-descending", goToGuides);
+
+    goToGuides.forEach((guide) => {
+      buildGuide(goToContainer, guide);
     });
   }
 }
@@ -89,13 +100,46 @@ function buildGuide(container, item) {
   lgItem.addEventListener("click", () => {
     window.location.href = `locals-guide/${item.url}`;
   });
+
+  lgItem.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      window.location.href = `locals-guide/${item.url}`;
+    }
+  });
 }
 
 function generateTagColor(tag) {
   switch (tag) {
+    case "$$$":
+      return "#9d3131";
+    case "Alcohol":
+      return "#060303";
+    case "Breakfast":
+      return "#a27b02";
+    case "Coffee":
+      return "#78593a";
+    case "Dessert":
+      return "#965ba3";
+    case "Dinner":
+      return "#9d3131";
+    case "Free":
+      return "#3b7144";
     case "Guide":
-      return "black";
+      return "#5e5e5e";
+    case "Lunch":
+      return "#ea661f";
     default:
-      return "yellow";
+      return "black";
+  }
+}
+
+function filterData(filter, data) {
+  switch (filter) {
+    case "rating-descending":
+      return data.sort(function (a, b) {
+        return b.rating - a.rating;
+      });
+    default:
+      null;
   }
 }

@@ -7,7 +7,8 @@
 :root {
   --white: #fff;
   --black: #000;
-  --lightGray: #e4e4e4;
+  --lightGray: #a3a3a3;
+  --darkGray: #3a3a3a;
   --green: #4f7942;
   --darkGreen: #2e4426;
   --font-header: "League Gothic", sans-serif;
@@ -154,6 +155,10 @@ button {
   color: var(--white);
 }
 
+.section-no-body h2 {
+  text-align: center;
+}
+
 /* Mobile */
 header {
   width: 100%;
@@ -262,7 +267,7 @@ header img {
   margin: 0 auto;
 }
 
-.callout-container {
+.container {
   width: 80%;
   margin: 0 auto;
 }
@@ -330,8 +335,6 @@ main {
 }
 
 .hero-container {
-  width: 80%;
-  margin: 0 auto;
   text-align: center;
   padding: 2.5rem 0;
 }
@@ -358,6 +361,11 @@ main {
 
 .section .locals-guide-item {
   box-shadow: 0px 0px 10px var(--lightGray);
+}
+
+.section .locals-guide-item:hover,
+.section .locals-guide-item:focus-visible {
+  box-shadow: 0px 0px 10px var(--darkGray);
 }
 
 .locals-guide-item {
@@ -424,6 +432,7 @@ main {
   line-height: 1;
   font-size: 1rem;
   margin-top: 0.125rem;
+  color: var(--white);
 }
 
 .locals-guide-details {
@@ -440,6 +449,36 @@ main {
   color: var(--black);
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.about-me figure {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-me img {
+  width: 100%;
+}
+
+.about-me h2 {
+  margin: 1.25rem 0;
+}
+
+.about-me p:first-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.about-me-information {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 300px) {
   h1,
   h2,
@@ -453,7 +492,7 @@ main {
   p,
   li,
   a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .section h2,
@@ -470,7 +509,7 @@ main {
     font-size: 2.5rem;
   }
 
-  .callout-container {
+  .container {
     width: 70%;
   }
 
@@ -483,8 +522,6 @@ main {
   }
 
   .hero-container {
-    width: 70%;
-    margin: 0 auto;
     padding: 10rem 0;
   }
 
@@ -495,11 +532,26 @@ main {
   .locals-guide-item h2 {
     font-size: 2rem;
   }
+
+  .about-me figure,
+  .about-me-information {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .nav-list {
     padding: 2.5rem 5rem;
+  }
+
+  .section h2,
+  .dark-section h2 {
+    width: 60%;
+  }
+
+  .container,
+  hr {
+    width: 60%;
   }
 
   .homepage-hero {
@@ -521,6 +573,11 @@ main {
   .locals-guide-item {
     width: 100%;
     margin: 0.75rem 0;
+  }
+
+  .about-me-information,
+  .about-me figure {
+    width: 70%;
   }
 }
 
@@ -570,7 +627,7 @@ main {
     margin-bottom: 0.25rem;
   }
 
-  .callout-container {
+  .container {
     width: 40%;
   }
 
@@ -595,7 +652,6 @@ main {
   }
 
   .hero-container {
-    width: 40%;
     padding: 15rem 0;
   }
 
@@ -648,6 +704,22 @@ main {
   .locals-guide-tag p {
     font-size: 0.7rem;
   }
+
+  .about-me {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2.5rem auto 0;
+  }
+
+  .about-me figure {
+    width: 40%;
+  }
+
+  .about-me-information {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -665,5 +737,9 @@ main {
 
   .hero-container {
     padding: 20rem 0;
+  }
+
+  .about-me-information {
+    width: 40%;
   }
 }
