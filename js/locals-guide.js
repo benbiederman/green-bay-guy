@@ -9,8 +9,8 @@ function sortGuides(items) {
   if (path === "/" || path === "/index.html") {
     const miscContainer = document.querySelector(".misc-container");
     const goToContainer = document.querySelector(".go-to-container");
-    const miscGuides = [];
-    const goToGuides = [];
+    let miscGuides = [];
+    let goToGuides = [];
     items.forEach((item) => {
       item.tags.forEach((tag) => {
         if (tag === "Guide") {
@@ -26,9 +26,7 @@ function sortGuides(items) {
       buildGuide(miscContainer, guide);
     });
 
-    goToGuides.sort(function (a, b) {
-      return b.rating - a.rating;
-    });
+    goToGuides = filterData("rating-descending", goToGuides);
 
     goToGuides.forEach((guide) => {
       buildGuide(goToContainer, guide);
@@ -102,6 +100,12 @@ function buildGuide(container, item) {
   lgItem.addEventListener("click", () => {
     window.location.href = `locals-guide/${item.url}`;
   });
+
+  lgItem.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      window.location.href = `locals-guide/${item.url}`;
+    }
+  });
 }
 
 function generateTagColor(tag) {
@@ -126,5 +130,16 @@ function generateTagColor(tag) {
       return "#ea661f";
     default:
       return "black";
+  }
+}
+
+function filterData(filter, data) {
+  switch (filter) {
+    case "rating-descending":
+      return data.sort(function (a, b) {
+        return b.rating - a.rating;
+      });
+    default:
+      null;
   }
 }
