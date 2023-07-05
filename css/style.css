@@ -575,9 +575,12 @@ main {
     margin: 0.75rem 0;
   }
 
-  .about-me-information,
   .about-me figure {
-    width: 70%;
+    width: 50%;
+  }
+
+  .about-me-information {
+    width: 60%;
   }
 }
 
