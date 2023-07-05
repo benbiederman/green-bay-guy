@@ -174,6 +174,7 @@ function buildFooter() {
 
   const calloutContainer = document.createElement("div");
   calloutContainer.classList.add("callout-container");
+  calloutContainer.classList.add("container");
   footerCta.appendChild(calloutContainer);
 
   // Header
