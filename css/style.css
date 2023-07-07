@@ -174,6 +174,10 @@ header {
   z-index: 500;
 }
 
+#header {
+  background-color: var(--black);
+}
+
 .header-active {
   background-color: var(--black);
 }
@@ -319,7 +323,6 @@ hr {
 }
 
 main {
-  padding-bottom: 2.5rem;
   min-height: 90vh;
 }
 
@@ -479,6 +482,51 @@ main {
   margin: 0 auto;
 }
 
+/* Locals Guide */
+.locals-guide-options {
+  min-height: 100vh;
+  padding-top: 85px;
+  padding-bottom: 1.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.locals-guide-option {
+  margin: 0;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  font-size: 3rem;
+  font-family: var(--font-header);
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: var(--black);
+}
+
+.locals-guide-option:hover,
+.locals-guide-option:focus {
+  color: var(--green);
+}
+
+.locals-guide-eat {
+  background-image: url("/assets/locals-guide/backgrounds/eat.jpg");
+}
+.locals-guide-drink {
+  background-image: url("/assets/locals-guide/backgrounds/drink.jpg");
+}
+
+.locals-guide-do {
+  background-image: url("/assets/locals-guide/backgrounds/do.jpg");
+}
+.locals-guide-misc {
+  background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
+}
+
 @media screen and (min-width: 300px) {
   h1,
   h2,
@@ -575,9 +623,12 @@ main {
     margin: 0.75rem 0;
   }
 
-  .about-me-information,
   .about-me figure {
-    width: 70%;
+    width: 50%;
+  }
+
+  .about-me-information {
+    width: 60%;
   }
 }
 
@@ -720,6 +771,60 @@ main {
   .about-me-information {
     width: 50%;
   }
+
+  /* Locals Guide */
+  .locals-guide-options {
+    min-height: 102vh;
+    flex-direction: row;
+  }
+
+  .locals-guide-option {
+    margin: 0;
+    height: 85vh;
+    width: 24.5%;
+    font-size: 4rem;
+  }
+
+  .locals-guide-option:hover,
+  .locals-guide-option:focus {
+    color: var(--green);
+  }
+
+  .locals-guide-eat {
+    background-image: url("/assets/locals-guide/backgrounds/eat-dark.jpg");
+  }
+
+  .locals-guide-eat:hover,
+  .locals-guide-eat:focus {
+    background-image: url("/assets/locals-guide/backgrounds/eat.jpg");
+  }
+
+  .locals-guide-drink {
+    background-image: url("/assets/locals-guide/backgrounds/drink-dark.jpg");
+  }
+
+  .locals-guide-drink:hover,
+  .locals-guide-drink:focus {
+    background-image: url("/assets/locals-guide/backgrounds/drink.jpg");
+  }
+
+  .locals-guide-do {
+    background-image: url("/assets/locals-guide/backgrounds/do-dark.jpg");
+  }
+
+  .locals-guide-do:hover,
+  .locals-guide-do:focus {
+    background-image: url("/assets/locals-guide/backgrounds/do.jpg");
+  }
+
+  .locals-guide-misc {
+    background-image: url("/assets/locals-guide/backgrounds/misc-dark.jpg");
+  }
+
+  .locals-guide-misc:hover,
+  .locals-guide-misc:focus {
+    background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -741,5 +846,19 @@ main {
 
   .about-me-information {
     width: 40%;
+  }
+
+  /* Locals Guide */
+  .locals-guide-options {
+    padding-top: 70px;
+    min-height: 100vh;
+  }
+
+  .locals-guide-option {
+    margin: 0;
+    height: 90vh;
+    width: 24.5%;
+    font-size: 4rem;
+    margin-top: 0.5rem;
   }
 }
