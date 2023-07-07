@@ -98,12 +98,12 @@ function buildGuide(container, item) {
   lgDetails.appendChild(moreInfo);
 
   lgItem.addEventListener("click", () => {
-    window.location.href = `locals-guide/${item.url}`;
+    window.location.href = `locals-guide/${item.url}.html`;
   });
 
   lgItem.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      window.location.href = `locals-guide/${item.url}`;
+      window.location.href = `locals-guide/${item.url}.html`;
     }
   });
 }
