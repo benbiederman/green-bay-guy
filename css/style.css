@@ -30,12 +30,14 @@ h6 {
 
 p,
 li,
-a {
+a,
+address {
   font-family: var(--font-default);
   color: var(--black);
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 300;
+  font-style: normal;
 }
 
 p {
@@ -155,7 +157,8 @@ button {
   color: var(--white);
 }
 
-.section-no-body h2 {
+.section-no-body h2,
+.section-no-body h3 {
   text-align: center;
 }
 
@@ -527,6 +530,119 @@ main {
   background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
 }
 
+.location-information-section {
+  position: relative;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+}
+
+.prev-btn {
+  left: 0.25rem;
+}
+
+.next-btn {
+  right: 0.25rem;
+}
+
+.locals-guide-section {
+  padding-top: 85px;
+}
+
+#main-img {
+  width: 90%;
+  margin: 1.25rem auto;
+}
+
+#main-img img {
+  box-shadow: 0px 0px 8px var(--lightGray);
+}
+
+.locals-guide-section img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.locals-guide-section figure {
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+.locals-guide-content-container h1 {
+  margin: 1.25rem 0;
+}
+
+.locals-guide-content-container p {
+  margin-bottom: 1.25rem;
+}
+
+.rating {
+  background-color: var(--black);
+  width: auto;
+  width: 50%;
+  margin: 2.5rem auto;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.rating p {
+  color: var(--white);
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+}
+
+.rating p:first-of-type {
+  font-size: 2rem;
+}
+
+.rating p:last-of-type {
+  font-size: 4rem;
+}
+
+.donation-container {
+  margin-bottom: 1.25rem;
+}
+
+.donation-container {
+  margin: 1.25rem auto;
+}
+
+.donation-callout h3,
+.donation-callout p {
+  color: var(--white);
+}
+
+.donation-callout h3 {
+  margin-bottom: 1.25rem;
+}
+
+.location-details {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.location-details ul {
+  list-style-type: none;
+  margin: 1.25rem 0;
+}
+
+.location-details button {
+  margin-right: 0;
+}
+
+.day-of-week {
+  font-weight: 500;
+}
+
 @media screen and (min-width: 300px) {
   h1,
   h2,
@@ -539,7 +655,12 @@ main {
 
   p,
   li,
-  a {
+  a,
+  address {
+    font-size: 1.5rem;
+  }
+
+  button {
     font-size: 1.5rem;
   }
 
