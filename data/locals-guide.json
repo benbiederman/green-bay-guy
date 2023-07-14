@@ -72,12 +72,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "1919 Kitchen & Tap",
         "image": "location/1919-kitchen-and-tap.jpg",
-        "alt": "#",
+        "alt": "1919 Kitchen and Tap signage",
         "street": "1265 Lombardi Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.1919kitchenandtap.com/",
+        "phone": "(920) 965-6970",
+        "hours": [
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 7:00pm"
+        ]
       }
     ],
     "distance": 0,
@@ -96,12 +108,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "888 Cheese and Co.",
         "image": "location/888-cheese-and-co.jpg",
-        "alt": "#",
+        "alt": "888 Cheese and Co. store front",
         "street": "1582 Lineville Rd.",
         "city": "Suamico",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://www.888cheeseandco.com/",
+        "phone": "(920) 455-0097",
+        "hours": [
+          "Closed",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "8:00am - 6:00pm"
+        ]
       }
     ],
     "distance": 10.1,
@@ -115,17 +139,29 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Eat"],
-    "tags": ["Lunch", "Dinner"],
+    "tags": ["Dinner"],
     "rating": 3.8,
     "favorite": false,
     "address": [
       {
-        "image": "location/aldo-pizza.jpg",
-        "alt": "#",
+        "name": "Aldo's Pizza",
+        "image": "location/aldos-pizza.jpg",
+        "alt": "Aldo's Pizza interior decor",
         "street": "1247 Velp Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://waitron.menu/menu/klinur",
+        "phone": "(920) 499-5449",
+        "hours": [
+          "Closed",
+          "Closed",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 8:00pm"
+        ]
       }
     ],
     "distance": 4.5,
@@ -144,12 +180,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Al's Hamburger",
         "image": "location/als-hamburger.jpg",
-        "alt": "#",
+        "alt": "Al's Hamburger storefront",
         "street": "131 S Washington St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://alshamburgergb.com/",
+        "phone": "(920) 437-5114",
+        "hours": [
+          "11:00am - 3:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11am - 8pm / 10pm - 2am",
+          "11am - 8pm / 10pm - 2am",
+          "11:00am - 7:00pm"
+        ]
       }
     ],
     "distance": 3.3,
@@ -168,28 +216,64 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Anduzzi's - Holmgren Way",
+        "image": "location/anduzzis-west.jpg",
+        "alt": "Anduzzi's bloody mary on their balcony",
         "street": "1992 Holmgren Way",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.anduzzis.com/",
+        "phone": "(920) 965-1111",
+        "hours": [
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:30am",
+          "10:00am - 2:30am",
+          "10:00am - 2:00am"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Anduzzi's - GB East",
+        "image": "location/anduzzis-east.jpg",
+        "alt": "Anduizz's East storefront",
         "street": "900 Kepler Dr.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54311"
+        "zip": "54311",
+        "website": "https://alshamburgergb.com/",
+        "phone": "(920) 544-0874",
+        "hours": [
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 1:00am",
+          "10:00am - 1:00am",
+          "10:00am - 11:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Anduzzi's - Howard",
+        "image": "location/anduzzis-howard.jpg",
+        "alt": "Anduizz's Howard storefront",
         "street": "2555 Lineville Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://alshamburgergb.com/",
+        "phone": "(920) 544-8268",
+        "hours": [
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 1:00am",
+          "10:00am - 1:00am",
+          "10:00am - 11:00pm"
+        ]
       }
     ],
     "distance": 0.8,
@@ -208,12 +292,24 @@
     "favorite": true,
     "address": [
       {
-        "image": "location/als-hamburger.jpg",
-        "alt": "#",
+        "name": "Angelina",
+        "image": "location/angelina.jpg",
+        "alt": "Angelina storefront",
         "street": "117 N Adams St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://www.angelinagb.com/",
+        "phone": "(920) 437-7248",
+        "hours": [
+          "5:00pm - 10:00pm",
+          "5:00pm - 10:00pm",
+          "5:00pm - 10:00pm",
+          "5:00pm - 10:00pm",
+          "5:00pm - 10:00pm",
+          "5:00pm - 10:00pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 3.4,
@@ -232,12 +328,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Basil's II",
         "image": "location/basils-ii.jpg",
-        "alt": "#",
+        "alt": "Basil's II bar with patrons around the bar",
         "street": "5595 S, Co Hwy P.",
         "city": "Denmark",
         "state": "WI",
-        "zip": "54208"
+        "zip": "54208",
+        "website": "https://www.facebook.com/profile.php?id=100063650405262",
+        "phone": "(920) 863-8454",
+        "hours": [
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm"
+        ]
       }
     ],
     "distance": 19.8,
@@ -256,12 +364,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/basils-ii.jpg",
-        "alt": "#",
-        "street": "5595 S, Co Hwy P.",
-        "city": "Denmark",
+        "name": "Bay Family Restaurant",
+        "image": "location/bay-family-restaurant.jpg",
+        "alt": "Bay Family Restaurant storefront",
+        "street": "1301 Military Ave.",
+        "city": "Green Bay",
         "state": "WI",
-        "zip": "54208"
+        "zip": "54304",
+        "website": "https://www.baymotelgreenbay.com/",
+        "phone": "(920) 494-3441",
+        "hours": [
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 2:00pm"
+        ]
       }
     ],
     "distance": 1.2,
@@ -280,12 +400,24 @@
     "favorite": true,
     "address": [
       {
+        "name": "Bhava Coffee",
         "image": "location/bhava-coffee.jpg",
-        "alt": "#",
+        "alt": "Bhava Coffee storefront",
         "street": "1538 W Mason St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://www.bhavacoffee.com/",
+        "phone": "(920) 544-0003",
+        "hours": [
+          "6:00am - 6:00pm",
+          "6:00am - 6:00pm",
+          "6:00am - 6:00pm",
+          "6:00am - 6:00pm",
+          "6:00am - 6:00pm",
+          "7:00am - 4:00pm",
+          "7:00am - 4:00pm"
+        ]
       }
     ],
     "distance": 1.9,
@@ -304,12 +436,24 @@
     "favorite": true,
     "address": [
       {
-        "image": "location/basils-ii.jpg",
-        "alt": "#",
+        "name": "Black Honey Hashery",
+        "image": "location/black-honey-hashery.jpg",
+        "alt": "Black Honey Hashery storefront",
         "street": "1104 Honey Ct.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.facebook.com/blackhoneyhashery?paipv=0&eav=AfaHIBCSPQj3vszhYGEEhMBV_GvEyeWXmCk6YOsE3M5cl4OuJZFVsv3wuePyopV7LwY&_rdr",
+        "phone": "(920) 632-4746",
+        "hours": [
+          "closed",
+          "closed",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm"
+        ]
       }
     ],
     "distance": 6.7,
@@ -328,12 +472,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Black Sheep Pub and Grill",
         "image": "location/black-sheep-pub-and-grill.jpg",
-        "alt": "#",
+        "alt": "Black Sheep Pub and Grill's outdoor patio",
         "street": "2638 Bay Settlement Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54311"
+        "zip": "54311",
+        "website": "https://blacksheeppubandgrill.com/",
+        "phone": "(920) 469-3200",
+        "hours": [
+          "3:00pm - 12:00am",
+          "3:00pm - 12:00am",
+          "3:00pm - 12:00am",
+          "3:00pm - 1:00am",
+          "11:00am - 2:30am",
+          "11:00am - 2:30am",
+          "11:00am - 12:00am"
+        ]
       }
     ],
     "distance": 15.1,
@@ -341,7 +497,7 @@
   },
   {
     "id": 1015,
-    "title": "Brickhouse Craft Burgers",
+    "title": "Brickhouse Burgers and Brews",
     "mainImg": "eat/brickhouse-craft-burgers.jpg",
     "mainAlt": "Brickhouse Craft Burgers' double cheeseburger with fries",
     "secondaryImg": "#",
@@ -352,16 +508,28 @@
     "favorite": false,
     "address": [
       {
+        "name": "Brickhouse Burgers and Brews",
         "image": "location/brickhouse-craft-burgers.jpg",
-        "alt": "#",
+        "alt": "Brickhouse Burgers and Brews deep fried cheesecurds",
         "street": "500 Grant St.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://brickhouseburgersandbrews.com/",
+        "phone": "(920) 338-2337",
+        "hours": [
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 10:00pm"
+        ]
       }
     ],
     "distance": 5.4,
-    "url": "brickhouse-craft-burgers"
+    "url": "brickhouse-burgers-and-brews"
   },
   {
     "id": 1016,
@@ -376,12 +544,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Cheese Cake Heaven",
         "image": "location/cheese-cake-heaven.jpg",
-        "alt": "#",
+        "alt": "Cheese Cake Heaven storefront",
         "street": "2075 S Oneida St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.cheesecakeheaven.com/",
+        "phone": "(920) 490-1200",
+        "hours": [
+          "Closed",
+          "9:00am - 8:00pm",
+          "9:00am - 8:00pm",
+          "9:00am - 8:00pm",
+          "9:00am - 8:00pm",
+          "9:00am - 8:00pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 0.7,
@@ -400,12 +580,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Cheesesteak Rebellion",
         "image": "location/cheesesteak-rebellion.jpg",
-        "alt": "#",
+        "alt": "Interior of Cheesesteak Rebellion",
         "street": "1301 S Broadway.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.facebook.com/CHEESESTEAKREBELLION/?view_public_for=105395817540710",
+        "phone": "(920) 391-5721",
+        "hours": [
+          "11:00am - 8:00pm",
+          "Closed",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 8:00pm"
+        ]
       }
     ],
     "distance": 1.9,
@@ -424,12 +616,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "China Kitchen",
         "image": "location/china-kitchen.jpg",
-        "alt": "#",
+        "alt": "China Kitchen storefront",
         "street": "2030 E Mason St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://www.facebook.com/profile.php?id=100062829858143",
+        "phone": "(920) 468-6688",
+        "hours": [
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 11:00pm",
+          "10:00am - 11:00pm",
+          "11:30am - 10:00pm"
+        ]
       }
     ],
     "distance": 5.7,
@@ -448,12 +652,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Chives",
         "image": "location/chives.jpg",
-        "alt": "#",
+        "alt": "Chives storefront",
         "street": "1749 Riverside Dr.",
         "city": "Suamico",
         "state": "WI",
-        "zip": "54173"
+        "zip": "54173",
+        "website": "https://chivesdining.com/",
+        "phone": "(920) 434-6441",
+        "hours": [
+          "Closed",
+          "11am - 2pm / 4pm - 9pm",
+          "11am - 2pm / 4pm - 9pm",
+          "11am - 2pm / 4pm - 9pm",
+          "11am - 2pm / 4pm - 10pm",
+          "11am - 2pm / 4pm - 10pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 11.4,
@@ -472,12 +688,24 @@
     "favorite": true,
     "address": [
       {
+        "name": "Coffee Wizardz",
         "image": "location/coffee-wizardz.jpg",
-        "alt": "#",
+        "alt": "Coffee Wizardz coffee bar and interior of coffee shop",
         "street": "536 Greene Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://www.coffeewizardz.com/",
+        "phone": null,
+        "hours": [
+          "closed",
+          "07:00am - 2:00pm",
+          "07:00am - 2:00pm",
+          "07:00am - 2:00pm",
+          "07:00am - 2:00pm",
+          "07:00am - 2:00pm",
+          "07:00am - 2:00pm"
+        ]
       }
     ],
     "distance": 5.5,
@@ -496,12 +724,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Copper State Brewing Co.",
         "image": "location/copper-state-brewing-co.jpg",
-        "alt": "#",
+        "alt": "Copper State Brewing Co storefront",
         "street": "313 Dousman St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://www.copperstate.beer/",
+        "phone": "(920) 489-8575",
+        "hours": [
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "11:00am - 10:00pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 3.3,
@@ -520,12 +760,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Daily Buzz Espresso Bar",
         "image": "location/daily-buzz.jpg",
-        "alt": "#",
+        "alt": "Daily Buzz coffee bar",
         "street": "124 E Walnut St #124",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "http://www.dailybuzzgb.com/",
+        "phone": "(920) 940-0130",
+        "hours": [
+          "6:00am - 7:00pm",
+          "6:00am - 7:00pm",
+          "6:00am - 7:00pm",
+          "6:00am - 7:00pm",
+          "6:00am - 7:00pm",
+          "7:00am - 7:00pm",
+          "7:00am - 7:00pm"
+        ]
       }
     ],
     "distance": 3.3,
@@ -544,12 +796,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Drift Inn",
         "image": "location/drift-inn.jpg",
-        "alt": "#",
+        "alt": "Drift Inn signage",
         "street": "1535 S Ashland Ave.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.driftinnchili.com/",
+        "phone": "(920) 336-5929",
+        "hours": [
+          "10:30am - 9:30pm",
+          "10:30am - 9:30pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "Closed",
+          "Closed"
+        ]
       }
     ],
     "distance": 4.1,
@@ -568,12 +832,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "El Maya",
         "image": "location/el-maya.jpg",
-        "alt": "#",
+        "alt": "A wooden statue of a guy wearing a yellow sombrero and Aaron Rodgers jersey.",
         "street": "1049 Main Ave.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "http://www.elmayarestaurant.com/",
+        "phone": "(920) 632-4348",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 5.7,
@@ -592,20 +868,44 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "El Sarape West",
+        "image": "location/el-sarape-west.jpg",
+        "alt": "El Sarape storefront",
         "street": "2615 S Oneida St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "elsarape-gb.com",
+        "phone": "(920) 857-3584",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:30pm",
+          "11:00am - 9:30pm",
+          "11:00am - 9:30pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 9:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "El Sarape - East",
+        "image": "location/el-sarape-east.jpg",
+        "alt": "El Sarape's bar",
         "street": "2030 East Mason Street Suite H-I",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "http://www.elmayarestaurant.com/",
+        "phone": "(920) 632-4348",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:30pm",
+          "11:00am - 9:30pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 2.4,
@@ -624,12 +924,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Four Way Bar",
         "image": "location/four-way-bar.jpg",
-        "alt": "#",
+        "alt": "Four Way Bar storefront",
         "street": "1801 Riverside Dr.",
         "city": "Suamico",
         "state": "WI",
-        "zip": "54173"
+        "zip": "54173",
+        "website": "https://fourwaybar.com/",
+        "phone": "(920) 434-3704",
+        "hours": [
+          "Closed",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "10:00am - 10:00pm",
+          "9:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 11.3,
@@ -648,12 +960,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Glass Nickel Pizza",
         "image": "location/glass-nickel-pizza.jpg",
-        "alt": "#",
+        "alt": "Glass Nicke Pizza storefront",
         "street": "416 Dousman St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://www.glassnickelpizza.com/",
+        "phone": "(920) 490-1000",
+        "hours": [
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 11:00pm",
+          "10:30am - 11:00pm",
+          "10:30am - 10:00pm"
+        ]
       }
     ],
     "distance": 3.2,
@@ -672,12 +996,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Graystone Ale House",
         "image": "location/graystone-ale-house.jpg",
-        "alt": "#",
+        "alt": "Graystone Ale House storefront",
         "street": "3711 Monroe Rd.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.graystonealehouse.com/",
+        "phone": "(920) 347-2727",
+        "hours": [
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "9:00am - 10:00pm"
+        ]
       }
     ],
     "distance": 9.0,
@@ -689,19 +1025,31 @@
     "mainImg": "eat/green-bay-distillery.jpg",
     "mainAlt": "Green Bay Distillery cheesecurd burger",
     "secondaryImg": "drink/green-bay-distillery.jpg",
-    "secondaryAlt": "#",
+    "secondaryAlt": "Green Bay Distillery storefront",
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
     "rating": 4.25,
     "favorite": false,
     "address": [
       {
+        "name": "Green Bay Distillery",
         "image": "location/green-bay-distillery.jpg",
-        "alt": "#",
+        "alt": "Green Bay Distillery storefront",
         "street": "835 Mike McCarthy Way",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.greenbaydistillery.com/",
+        "phone": "(920) 393-4403",
+        "hours": [
+          "Closed",
+          "4:00pm - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 8:00pm"
+        ]
       }
     ],
     "distance": 0.7,
@@ -720,12 +1068,44 @@
     "favorite": false,
     "address": [
       {
+        "name": "Green Tea Chinese - West",
         "image": "location/green-tea-chinese.jpg",
-        "alt": "#",
+        "alt": "Green Tea Chinese signage",
+        "street": "711 N Memorial Dr.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54303",
+        "website": "https://www.greenteagreenbay.com/",
+        "phone": "(920) 405-8880",
+        "hours": [
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:30pm",
+          "10:30am - 10:30pm",
+          "10:30am - 10:00pm"
+        ]
+      },
+      {
+        "name": "Green Tea Chinese - East",
+        "image": "location/green-tea-chinese.jpg",
+        "alt": "Green Tea Chinese signage",
         "street": "2276 E Mason St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://www.greenteagreenbay.com/",
+        "phone": "(920) 468-8000",
+        "hours": [
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:30pm",
+          "10:30am - 10:30pm",
+          "10:30am - 10:00pm"
+        ]
       }
     ],
     "distance": 5.0,
@@ -744,12 +1124,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Hagemeister Park",
         "image": "location/hagemeister-park.jpg",
-        "alt": "#",
+        "alt": "Hagemeister Park interior displaying a Packers mural",
         "street": "325 N Washington St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://hagemeisterpark.com/",
+        "phone": "(920) 884-9909",
+        "hours": [
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm",
+          "11:00am - 11:00pm"
+        ]
       }
     ],
     "distance": 3.6,
@@ -768,12 +1160,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Happy Joe's Pizza",
         "image": "location/happy-joes-pizza.jpg",
-        "alt": "#",
+        "alt": "Happy Joe's storefront",
         "street": "1675 E Mason St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://happyjoes.com/",
+        "phone": "(920) 465-0690",
+        "hours": [
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 8:00pm"
+        ]
       }
     ],
     "distance": 4.9,
@@ -792,12 +1196,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Hill Top Cafe",
         "image": "location/hill-top-cafe.jpg",
-        "alt": "#",
+        "alt": "Hill Top Cafe storefront",
         "street": "2278 Bay Settlement Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54311"
+        "zip": "54311",
+        "website": "https://www.facebook.com/profile.php?id=100063483222556&paipv=0&eav=AfZtuutPX2FvDdxwPbtRYnuQspmDdTjQoGcZ2ClC3rStWmasJmuKcQUf3Ou2x_h42T4",
+        "phone": "(920) 884-0858",
+        "hours": [
+          "10:30am - 8:00pm",
+          "10:30am - 8:00pm",
+          "10:30am - 8:00pm",
+          "10:30am - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 8:00pm",
+          "10:30am - 8:00pm"
+        ]
       }
     ],
     "distance": 14.3,
@@ -811,17 +1227,29 @@
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Eat"],
-    "tags": ["Lunch", "Dinner"],
+    "tags": ["Dinner"],
     "rating": 3.75,
     "favorite": false,
     "address": [
       {
+        "name": "Jake's Pizza",
         "image": "location/jakes-pizza.jpg",
-        "alt": "#",
+        "alt": "Jake's Pizza signage",
         "street": "112 S Broadway",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://jakespizzagb.com/",
+        "phone": "(920) 437-5542",
+        "hours": [
+          "Closed",
+          "Closed",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm"
+        ]
       }
     ],
     "distance": 3.0,
@@ -840,28 +1268,64 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Julie's Cafe - De Pere",
+        "image": "location/julies-cafe-de-pere.jpg",
+        "alt": "Julie's Cafe storefront",
         "street": "500 Grant St",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://juliescafecatering.com/",
+        "phone": "(920) 336-4747",
+        "hours": [
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm",
+          "6:00am - 2:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
-        "street": "112 S Broadway",
+        "name": "Julie's Cafe",
+        "image": "location/julies-cafe.jpg",
+        "alt": "Julie's Cafe signage",
+        "street": "2130 Velp Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://juliescafecatering.com/",
+        "phone": "(920) 494-4585",
+        "hours": [
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Julie's Cafe - East",
+        "image": "location/julies-cafe-east.jpg",
+        "alt": "Julie's Cafe interior signage",
         "street": "1685 Main St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://juliescafecatering.com/",
+        "phone": "(920) 469-3366",
+        "hours": [
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm",
+          "6:00am - 8:00pm"
+        ]
       }
     ],
     "distance": 5.3,
@@ -880,20 +1344,44 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Kroll's - West",
+        "image": "location/krolls-west.jpg",
+        "alt": "Kroll's West signage",
         "street": "1990 S Ridge Rd.",
         "city": "Ashwaubenon",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.krollswest.com/",
+        "phone": "(920) 497-1111",
+        "hours": [
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Krolls - East",
+        "image": "location/krolls-east.jpg",
+        "alt": "Kroll's East signage",
         "street": "1658 Main St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://www.krollseast.com/",
+        "phone": "(920) 468-4422",
+        "hours": [
+          "Closed",
+          "Closed",
+          "10:30am - 10:00pm",
+          "10:30am - 10:00pm",
+          "10:30am - 11:00pm",
+          "10:30am - 11:00pm",
+          "10:30am - 10:00pm"
+        ]
       }
     ],
     "distance": 0.1,
@@ -912,12 +1400,24 @@
     "favorite": true,
     "address": [
       {
+        "name": "Legend Larry's",
         "image": "location/legend-larrys.jpg",
-        "alt": "#",
+        "alt": "Legend Larry's signage",
         "street": "2035 University Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://legendlarrys.com/",
+        "phone": "(920) 435-7000",
+        "hours": [
+          "3:00pm - 12:00am",
+          "3:00pm - 12:00am",
+          "3:00pm - 12:00am",
+          "3:00pm - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 10:00pm"
+        ]
       }
     ],
     "distance": 6.0,
@@ -931,17 +1431,29 @@
     "secondaryImg": "drink/luigis-italian-bistro.jpg",
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "tags": ["Dinner", "Alcohol"],
     "rating": 4.4,
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Luigi's Italian Bistro",
+        "image": "location/luigis-italian-bistro.jpg",
+        "alt": "Luigi's Italian Bistro storefront",
         "street": "2733 Manitowoc Rd #5",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54311"
+        "zip": "54311",
+        "website": "https://www.luigisitalianbistromenu.com/",
+        "phone": "(920) 468-4900",
+        "hours": [
+          "Closed",
+          "3:00pm - 7:45pm",
+          "3:00pm - 7:45pm",
+          "3:00pm - 7:45pm",
+          "3:00pm - 8:45pm",
+          "3:00pm - 8:45pm",
+          "3:00pm - 7:30pm"
+        ]
       }
     ],
     "distance": 9.8,
@@ -960,20 +1472,44 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Luna Coffee Roasters - De Pere",
+        "image": "location/luna.jpg",
+        "alt": "Luna Coffee Roaster's logo on their front door",
         "street": "330 Main Ave.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://lunacafe.com/",
+        "phone": "(920) 632-7626",
+        "hours": [
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "8:00am - 2:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Luna Coffee Roasters - Bellevue",
+        "image": "location/luna-bellevue.jpg",
+        "alt": "Luna Coffee Roaster's Bellevue storefront",
         "street": "2665 Monroe Rd.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://lunacafe.com/",
+        "phone": "(920) 336-1557",
+        "hours": [
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "6:30am - 2:00pm",
+          "8:00am - 2:00pm"
+        ]
       }
     ],
     "distance": 5.8,
@@ -992,12 +1528,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/mac-and-cheese-shop",
-        "alt": "#",
+        "name": "MACS - Mac and Cheese Shop",
+        "image": "location/mac-and-cheese-shop.jpg",
+        "alt": "MACS storefront",
         "street": "2654 S Oneida St #101",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "http://macandcheeseshop.com/",
+        "phone": "(920) 499-9028",
+        "hours": [
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm",
+          "10:30am - 9:00pm"
+        ]
       }
     ],
     "distance": 2.0,
@@ -1016,12 +1564,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/mad-chicken",
-        "alt": "#",
+        "name": "Mad Chicken",
+        "image": "location/mad-chicken.jpg",
+        "alt": "Mad Chicken mural inside of their restaurant",
         "street": "229 N Washington St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://madchickenusa.com/",
+        "phone": "(920) 544-5247",
+        "hours": [
+          "11:00am - 3:00am",
+          "11:00am - 3:00am",
+          "11:00am - 3:00am",
+          "11:00am - 3:00am",
+          "11:00am - 3:00am",
+          "11:00am - 3:00am",
+          "11:00am - 3:00am"
+        ]
       }
     ],
     "distance": 3.4,
@@ -1040,12 +1600,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Narrow Bridge",
         "image": "location/narrow-bridge",
-        "alt": "#",
+        "alt": "Narrow Bridge storefront",
         "street": "2840 Shawano Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://narrowbridgeplateandpour.com/",
+        "phone": "(920) 360-0573",
+        "hours": [
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:30am",
+          "11:00am - 2:30am",
+          "Closed"
+        ]
       }
     ],
     "distance": 5.2,
@@ -1064,12 +1636,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Nicolet Cafe",
         "image": "location/nicolet-cafe",
-        "alt": "#",
+        "alt": "Nicolet Cafe interior, showing the empty counter",
         "street": "525 Reid St.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://nicoletrestaurant.com/",
+        "phone": "(920) 360-0573",
+        "hours": [
+          "6:30am - 4:00pm",
+          "6:30am - 4:00pm",
+          "6:30am - 4:00pm",
+          "6:30am - 4:00pm",
+          "6:00am - 7:00pm",
+          "6:30am - 4:00pm",
+          "7:00am - 4:00pm"
+        ]
       }
     ],
     "distance": 5.2,
@@ -1088,12 +1672,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Not By Bread Alone",
         "image": "location/not-by-bread-alone",
-        "alt": "#",
+        "alt": "Not By Bread Alone storefront showcasing their signage",
         "street": "940 Hansen Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.notbybread.com/",
+        "phone": "(920) 429-9422",
+        "hours": [
+          "6:30am - 6:00pm",
+          "6:30am - 6:00pm",
+          "6:30am - 3:00pm",
+          "6:30am - 6:00pm",
+          "6:30am - 6:00pm",
+          "7:00am - 12:00pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 2.3,
@@ -1112,12 +1708,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Old Mexico",
         "image": "location/old-mexico",
-        "alt": "#",
+        "alt": "Old Mexico interior of restaurant",
         "street": "11884 Velp Ave.",
         "city": "Suamico",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://www.oldmexicowi.com/",
+        "phone": "(920) 634-2260",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 7.8,
@@ -1136,12 +1744,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "R & D's House Divided",
         "image": "location/r-&-ds-house-divided",
-        "alt": "#",
+        "alt": "R & D's House Divided signage",
         "street": "2148 University Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://www.rdhousedividedgb.com/",
+        "phone": "(920) 634-2260",
+        "hours": [
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 12:00am",
+          "11:00am - 2:30am",
+          "11:00am - 2:30am",
+          "10:00am - 12:00am"
+        ]
       }
     ],
     "distance": 6.1,
@@ -1160,12 +1780,24 @@
     "favorite": true,
     "address": [
       {
+        "name": "Rustique Pizzeria",
         "image": "location/rustique-pizzeria",
-        "alt": "#",
+        "alt": "Rustique Pizzeria storefront",
         "street": "13201 Velp Ave.",
         "city": "Suamico",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://rustiquegb.com/",
+        "phone": "(920) 544-9379",
+        "hours": [
+          "Closed",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 10:00pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 11.2,
@@ -1185,11 +1817,22 @@
     "address": [
       {
         "image": "location/sammys-pizza",
-        "alt": "#",
+        "alt": "Sammy's Pizza storefront and signage",
         "street": "2161 S Oneida St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.sammyspizzagreenbay.com/",
+        "phone": "(920) 499-6644",
+        "hours": [
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 8:00pm"
+        ]
       }
     ],
     "distance": 0.9,
@@ -1208,12 +1851,24 @@
     "favorite": true,
     "address": [
       {
+        "name": "Sara's Artisan Gelato",
         "image": "location/saras-artisan-gelato",
-        "alt": "#",
+        "alt": "Sara's Artisan Gelato's interior decor.",
         "street": "933 Anderson Dr. Ste F",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://sarasartisangelato.com/",
+        "phone": "(920) 328-7140",
+        "hours": [
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "Closed"
+        ]
       }
     ],
     "distance": 1.6,
@@ -1221,8 +1876,8 @@
   },
   {
     "id": 1050,
-    "title": "Sgambati's",
-    "mainImg": "eat/sgambatis.jpg",
+    "title": "Sgambati's New York Pizza",
+    "mainImg": "eat/sgambatis-new-york-pizza.jpg",
     "mainAlt": "A fresh brownie with a scoop of Sara's Artisan Gelato on top, with caramel drizzle.",
     "secondaryImg": "drink/sgambatis.jpg",
     "secondaryAlt": null,
@@ -1232,12 +1887,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Sgambati's New York Pizza",
         "image": "location/sgambatis",
-        "alt": "#",
+        "alt": "Sgambati's storefront and signage",
         "street": "1700 Sand Acres Dr.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.facebook.com/profile.php?id=100064205046539",
+        "phone": "(920) 983-7492",
+        "hours": [
+          "Closed",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 8.0,
@@ -1256,20 +1923,44 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Smart Cow - West",
+        "image": "location/smart-cow.jpg",
+        "alt": "Smart Cow storefront and signage",
         "street": "2321 S Oneida St.",
         "city": "Ashwaubenon",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://smartcowyogurt.com/",
+        "phone": "(920) 857-9261",
+        "hours": [
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Smart Cow - West",
+        "image": "location/smart-cow.jpg",
+        "alt": "Smart Cow storefront and signage",
         "street": "2450 E Mason St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://smartcowyogurt.com/",
+        "phone": "(920) 857-9138",
+        "hours": [
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm",
+          "12:00pm - 9:00pm"
+        ]
       }
     ],
     "distance": 1.3,
@@ -1288,12 +1979,24 @@
     "favorite": false,
     "address": [
       {
+        "name": "Stadium View",
         "image": "location/stadium-view",
-        "alt": "#",
+        "alt": "A Stadium View party, showing a crowd of Packers fans",
         "street": "1963 Holmgren Way",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.thestadiumview.com/",
+        "phone": "(920) 498-1989",
+        "hours": [
+          "10:00am - 2:00am",
+          "10:00am - 2:00am",
+          "10:00am - 2:00am",
+          "10:00am - 2:00am",
+          "10:00am - 2:30am",
+          "10:00am - 2:30am",
+          "10:00am - 2:00am"
+        ]
       }
     ],
     "distance": 0.7,
@@ -1312,12 +2015,23 @@
     "favorite": false,
     "address": [
       {
+        "name": "Stir-Ups Bar",
         "image": "location/stir-ups-bar.jpg",
-        "alt": "#",
+        "alt": "Stir-Ups Bar logo",
         "street": "123 S Washington St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://www.facebook.com/StirUps/",
+        "hours": [
+          "Closed",
+          "Closed",
+          "Closed",
+          "8:00pm - 2:00am",
+          "8:00pm - 2:30am",
+          "8:00pm - 2:30am",
+          "Closed"
+        ]
       }
     ],
     "distance": 3.3,
@@ -1336,12 +2050,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/the-abbey",
-        "alt": "#",
+        "name": "The Abbey",
+        "image": "location/the-abbey.jpg",
+        "alt": "The Abbey's interior showing their bar.",
         "street": "303 Reid St.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.abbeybar.com/",
+        "phone": "(920) 336-7242",
+        "hours": [
+          "11:00am - 12:00am",
+          "4:00pm - 11:30pm",
+          "11:00am - 12:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 12:00am",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 5.5,
@@ -1360,20 +2086,44 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Green Bay - Holmgren Way",
+        "image": "location/the-bar.jpg",
+        "alt": "The interior signage of The Bar on Holmgren Way",
         "street": "2001 Holmgren Way",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.meetatthebar.com/green_bay_holmgren_way.html",
+        "phone": "(920) 499-9989",
+        "hours": [
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Green Bay - Lime Kiln",
+        "image": "the-bar-lime-kiln.jpg",
+        "alt": "A Packers helmet on the The Bar's bar with a beer next to it.",
         "street": "606 Lime Kiln Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://www.meetatthebar.com/green_bay_lime_kiln.html",
+        "phone": "(920) 468-3566",
+        "hours": [
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:00am",
+          "11:00am - 2:30am",
+          "10:00am - 2:30am",
+          "10:00am - 2:00am"
+        ]
       }
     ],
     "distance": 0.8,
@@ -1392,12 +2142,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/the-exchange",
-        "alt": "#",
+        "name": "The Exchange",
+        "image": "location/the-exchange.jpg",
+        "alt": "The Exchange storefront with signage",
         "street": "317 Main Ave.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://theexchangecoffee.com/",
+        "phone": null,
+        "hours": [
+          "7:00am - 2:00pm",
+          "7:00am - 2:00pm",
+          "7:00am - 2:00pm",
+          "7:00am - 2:00pm",
+          "7:00am - 2:00pm",
+          "7:00am - 2:00pm",
+          "Sunday"
+        ]
       }
     ],
     "distance": 2.2,
@@ -1416,12 +2178,24 @@
     "favorite": true,
     "address": [
       {
-        "image": "location/the-pancake-place",
-        "alt": "#",
+        "name": "The Pancake Place",
+        "image": "location/the-pancake-place.jpg",
+        "alt": "The Pancake Place signage stating 12x winner of best breakfast in Green Bay",
         "street": "143 Military Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54303"
+        "zip": "54303",
+        "website": "https://eatpancakeplace.com/",
+        "phone": "(920) 499-2221",
+        "hours": [
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm",
+          "5:00am - 2:00pm"
+        ]
       }
     ],
     "distance": 2.2,
@@ -1440,28 +2214,64 @@
     "favorite": false,
     "address": [
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Zesty's - Howard",
+        "image": "location/zestys-howard.jpg",
+        "alt": "Zesty's storefront with signage",
         "street": "2639 Lineville Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54313"
+        "zip": "54313",
+        "website": "https://www.zestyscustard.com/",
+        "phone": "(920) 857-9067",
+        "hours": [
+          "Closed",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Zesty's - Allouez",
+        "image": "location/zestys-allouez.jpg",
+        "alt": "Zesty's storefront with signage",
         "street": "508 Greene Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://www.zestyscustard.com/",
+        "phone": "(920) 884-0505",
+        "hours": [
+          "Closed",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm"
+        ]
       },
       {
-        "image": "#",
-        "alt": "#",
+        "name": "Zesty's - De Pere",
+        "image": "location/zestys-de-pere.jpg",
+        "alt": "Zesty's De Pere stand",
         "street": "3718 Riverside Dr.",
         "city": "De Pere",
         "state": "WI",
-        "zip": "54115"
+        "zip": "54115",
+        "website": "https://www.zestyscustard.com/",
+        "phone": "(920) 336-2601",
+        "hours": [
+          "Closed",
+          "5:00pm - 9:00pm",
+          "5:00pm - 9:00pm",
+          "5:00pm - 9:00pm",
+          "5:00pm - 9:00pm",
+          "5:00pm - 9:00pm",
+          "3:00pm - 9:00pm"
+        ]
       }
     ],
     "distance": 5.4,
@@ -1480,12 +2290,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/lambeau-field",
-        "alt": "#",
+        "name": "Lambeau Field",
+        "image": "location/lambeau-field.jpg",
+        "alt": "Lambeau Field during a nighttime Packers game",
         "street": "1265 Lombardi Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.packers.com/lambeau-field/",
+        "phone": "(920) 569-7500",
+        "hours": [
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 8:00pm",
+          "8:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "10:00am - 7:00pm"
+        ]
       }
     ],
     "distance": 0,
@@ -1519,12 +2341,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/lambeau-field",
-        "alt": "#",
+        "name": "Titletown District",
+        "image": "location/titletown-district.jpg",
+        "alt": "Titletown District entrance with signage showing Titletown.",
         "street": "1065 Lombardi Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54304"
+        "zip": "54304",
+        "website": "https://www.titletown.com/",
+        "phone": "(920) 569-7505",
+        "hours": [
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm",
+          "7:00am - 10:00pm"
+        ]
       }
     ],
     "distance": 0.1,
@@ -1543,12 +2377,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/lambeau-field",
-        "alt": "#",
+        "name": "Bay Beach",
+        "image": "location/bay-beach.jpg",
+        "alt": "A rollercoaster located in Bay Beach",
         "street": "1313 Bay Beach Rd.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54302"
+        "zip": "54302",
+        "website": "https://greenbaywi.gov/445/Bay-Beach",
+        "phone": "(920) 448-3000",
+        "hours": [
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal"
+        ]
       }
     ],
     "distance": 6.1,
@@ -1567,12 +2413,24 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/lambeau-field",
-        "alt": "#",
+        "name": "CityDeck",
+        "image": "location/citydeck.jpg",
+        "alt": "Benches that line the CityDeck walkway.",
         "street": "301 N Washington St.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
+        "zip": "54301",
+        "website": "https://downtowngreenbay.com/go/citydeck",
+        "phone": "(920) 448-3365",
+        "hours": [
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm"
+        ]
       }
     ],
     "distance": 3.4,
