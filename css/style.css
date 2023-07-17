@@ -142,6 +142,10 @@ button {
   padding: 1.25rem 0 1.25rem;
 }
 
+.section:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
 .dark-section {
   background-color: var(--black);
 }
@@ -175,10 +179,6 @@ button {
 .heading-margin-bottom h5,
 .heading-margin-bottom h6 {
   margin-bottom: 2.5rem;
-}
-
-.heading-margin {
-  margin: 2.5rem auto;
 }
 
 /* Mobile */
@@ -609,6 +609,14 @@ main {
 
 .locals-guide-content-container h1 {
   margin: 1.25rem 0;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.locals-guide-content-container h2,
+.locals-guide-content-container h3,
+.locals-guide-content-container h4 {
+  margin: 3.75rem 0 1.25rem;
 }
 
 .locals-guide-content-container p {
@@ -830,6 +838,34 @@ main {
   .about-me-information {
     width: 60%;
   }
+
+  /* Locals Guide */
+  .locals-guide-section {
+    padding-top: 85px;
+  }
+
+  #main-img {
+    width: 60%;
+  }
+
+  .locals-guide-content-container h1 {
+    margin: 2.5rem 0 1.25rem;
+  }
+
+  .rating {
+    width: 30%;
+  }
+
+  .location-details {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .location-details figure {
+    width: 50%;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -939,7 +975,7 @@ main {
   }
 
   .locals-guide-grade {
-    padding: 0.125rem;
+    padding: 0.25rem;
   }
 
   .locals-guide-details,
@@ -1035,6 +1071,69 @@ main {
   .locals-guide-misc:hover,
   .locals-guide-misc:focus {
     background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
+  }
+
+  .locals-guide-section {
+    padding-top: 85px;
+  }
+
+  #main-img {
+    width: 40%;
+  }
+
+  .locals-guide-content-container h1 {
+    margin: 2.5rem 0 1.25rem;
+    font-size: 4rem;
+  }
+
+  .locals-guide-content-container h2,
+  .locals-guide-content-container h3,
+  .locals-guide-content-container h4 {
+  }
+
+  .rating {
+    width: 25%;
+  }
+
+  .location-details {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .location-details figure {
+    width: 50%;
+    margin: auto;
+  }
+
+  .location-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2.5rem auto;
+  }
+
+  .location-details figure {
+    width: 30%;
+    margin: 0;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .prev-btn {
+    left: 15%;
+  }
+
+  .next-btn {
+    right: 15%;
   }
 }
 
