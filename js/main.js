@@ -137,31 +137,31 @@ function buildFooter() {
   const icons = [
     {
       name: "Facebook",
-      img: "./assets/icons/facebook.png",
+      img: "/assets/icons/facebook.png",
       alt: "Facebook icon",
       id: 101,
     },
     {
       name: "Instagram",
-      img: "./assets/icons/instagram.png",
+      img: "/assets/icons/instagram.png",
       alt: "Instagram icon",
       id: 102,
     },
     {
       name: "Twitter",
-      img: "./assets/icons/twitter.png",
+      img: "/assets/icons/twitter.png",
       alt: "Twitter icon",
       id: 103,
     },
     {
       name: "YouTube",
-      img: "./assets/icons/youtube.png",
+      img: "/assets/icons/youtube.png",
       alt: "YouTube icon",
       id: 104,
     },
     {
       name: "Snapchat",
-      img: "./assets/icons/snapchat.png",
+      img: "/assets/icons/snapchat.png",
       alt: "Snapchat icon",
       id: 105,
     },
