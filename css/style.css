@@ -139,12 +139,14 @@ button {
 
 .section,
 .dark-section {
-  padding: 1.25rem 0 2.5rem;
+  padding: 1.25rem 0 1.25rem;
 }
 
-.section h2,
-.dark-section h2 {
-  width: 80%;
+.section:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+.heading-margin {
   margin: 0 auto 2.5rem;
 }
 
@@ -158,8 +160,33 @@ button {
 }
 
 .section-no-body h2,
-.section-no-body h3 {
+.section-no-body h3,
+.section-no-body h4,
+.section-no-body h5,
+.section-no-body h6 {
   text-align: center;
+  width: 80%;
+  margin: auto auto;
+}
+
+.heading-margin-top h2,
+.heading-margin-top h3,
+.heading-margin-top h4,
+.heading-margin-top h5,
+.heading-margin-top h6 {
+  margin-top: 2.5rem;
+}
+
+.heading-margin-bottom h2,
+.heading-margin-bottom h3,
+.heading-margin-bottom h4,
+.heading-margin-bottom h5,
+.heading-margin-bottom h6 {
+  margin-bottom: 2.5rem;
+}
+
+.heading-margin {
+  margin: 2.5rem auto;
 }
 
 /* Mobile */
@@ -432,6 +459,9 @@ main {
 
 .locals-guide-details h3 {
   font-size: 2rem;
+  text-align: left;
+  margin: 0;
+  width: 100%;
 }
 
 .locals-guide-tag p {
@@ -664,8 +694,12 @@ main {
     font-size: 1.5rem;
   }
 
-  .section h2,
-  .dark-section h2 {
+  .section-no-body h2,
+  .section-no-body h3,
+  .section-no-body h4,
+  .section-no-body h5,
+  .section-no-body h6 {
+    text-align: center;
     width: 70%;
   }
 
@@ -694,6 +728,13 @@ main {
     padding: 10rem 0;
   }
 
+  .locals-guide-details h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
   .locals-guide-item {
     width: 80%;
   }
@@ -709,13 +750,17 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-list {
-    padding: 2.5rem 5rem;
+  .section-no-body h2,
+  .section-no-body h3,
+  .section-no-body h4,
+  .section-no-body h5,
+  .section-no-body h6 {
+    text-align: center;
+    width: 60%;
   }
 
-  .section h2,
-  .dark-section h2 {
-    width: 60%;
+  .nav-list {
+    padding: 2.5rem 5rem;
   }
 
   .container,
@@ -729,6 +774,13 @@ main {
 
   .hero-container {
     padding: 12.5rem 0;
+  }
+
+  .locals-guide-details h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    width: 100%;
   }
 
   .locals-guide-container {
@@ -754,8 +806,12 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  .section h2,
-  .dark-section h2 {
+  .section-no-body h2,
+  .section-no-body h3,
+  .section-no-body h4,
+  .section-no-body h5,
+  .section-no-body h6 {
+    text-align: center;
     width: 40%;
   }
 
@@ -866,6 +922,13 @@ main {
 
   .locals-guide-details {
     padding: 0;
+  }
+
+  .locals-guide-details h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    width: 100%;
   }
 
   .locals-guide-tag {
