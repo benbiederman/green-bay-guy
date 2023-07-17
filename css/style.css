@@ -142,14 +142,6 @@ button {
   padding: 1.25rem 0 1.25rem;
 }
 
-.section:last-of-type {
-  margin-bottom: 2.5rem;
-}
-
-.heading-margin {
-  margin: 0 auto 2.5rem;
-}
-
 .dark-section {
   background-color: var(--black);
 }
@@ -410,6 +402,10 @@ main {
   cursor: pointer;
 }
 
+.locals-guide-item h3 {
+  text-align: left;
+}
+
 .locals-guide-item:hover .locals-guide-details h3,
 .locals-guide-item:focus-visible .locals-guide-details h3 {
   color: var(--darkGreen);
@@ -564,11 +560,20 @@ main {
   position: relative;
 }
 
+.location-hidden {
+  display: none;
+}
+
+.location-active {
+  display: block;
+}
+
 .prev-btn,
 .next-btn {
   position: absolute;
   top: 50%;
   margin: 0;
+  padding: 0.5rem;
 }
 
 .prev-btn {
@@ -645,6 +650,10 @@ main {
   margin: 1.25rem auto;
 }
 
+.donation-container button {
+  margin-top: 2.5rem;
+}
+
 .donation-callout h3,
 .donation-callout p {
   color: var(--white);
@@ -660,6 +669,10 @@ main {
   text-align: center;
 }
 
+.locals-guide-details h2 {
+  margin: 0;
+}
+
 .location-details ul {
   list-style-type: none;
   margin: 1.25rem 0;
@@ -671,6 +684,20 @@ main {
 
 .day-of-week {
   font-weight: 500;
+}
+
+.multi-inactive .next-btn,
+.multi-inactive .prev-btn {
+  display: none;
+}
+
+.multi-active .next-btn,
+.multi-active .prev-btn {
+  display: block;
+}
+
+.multi-active .location-details {
+  display: none;
 }
 
 @media screen and (min-width: 300px) {
