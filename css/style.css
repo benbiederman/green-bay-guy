@@ -607,6 +607,16 @@ main {
   margin: 1.25rem 0;
 }
 
+.locals-guide-content-container a {
+  font-weight: 500;
+}
+
+.locals-guide-content-container a:hover,
+.locals-guide-content-container a:focus {
+  text-decoration: underline;
+  color: var(--darkGreen);
+}
+
 .locals-guide-content-container h1 {
   margin: 1.25rem 0;
   text-align: center;
