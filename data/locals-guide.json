@@ -287,7 +287,7 @@
     "secondaryImg": "drink/angelina.jpg",
     "secondaryAlt": "#",
     "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "tags": ["Dinner", "Alcohol"],
     "rating": 4.75,
     "favorite": true,
     "address": [
@@ -1745,7 +1745,7 @@
     "address": [
       {
         "name": "R & D's House Divided",
-        "image": "location/r-&-ds-house-divided",
+        "image": "location/r-&-ds-house-divided.jpg",
         "alt": "R & D's House Divided signage",
         "street": "2148 University Ave.",
         "city": "Green Bay",
