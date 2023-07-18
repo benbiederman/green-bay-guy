@@ -1852,7 +1852,7 @@
     "address": [
       {
         "name": "Sara's Artisan Gelato",
-        "image": "location/saras-artisan-gelato",
+        "image": "location/saras-artisan-gelato.jpg",
         "alt": "Sara's Artisan Gelato's interior decor.",
         "street": "933 Anderson Dr. Ste F",
         "city": "Green Bay",
@@ -1974,7 +1974,7 @@
     "secondaryImg": "drink/stadium-view.jpg",
     "secondaryAlt": null,
     "category": ["Eat"],
-    "tags": ["Dessert"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
     "rating": 4.25,
     "favorite": false,
     "address": [
