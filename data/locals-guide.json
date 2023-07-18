@@ -12,7 +12,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "green-bay-packers-ticket-guide.html"
+    "url": "green-bay-packers-ticket-guide"
   },
   {
     "id": 1002,
@@ -27,7 +27,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "green-bay-hotel-guide.html"
+    "url": "green-bay-hotel-guide"
   },
   {
     "id": 1003,
@@ -42,7 +42,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "lambeau-field-parking-guide.html"
+    "url": "lambeau-field-parking-guide"
   },
   {
     "id": 1004,
@@ -57,7 +57,7 @@
     "favorite": false,
     "address": null,
     "distance": null,
-    "url": "lambeau-field-tailgating-guide.html"
+    "url": "lambeau-field-tailgating-guide"
   },
   {
     "id": 1005,
@@ -750,7 +750,7 @@
   {
     "id": 1022,
     "title": "Daily Buzz Espresso Bar",
-    "mainImg": "eat/daily-buzz.jpg",
+    "mainImg": "drink/daily-buzz.jpg",
     "mainAlt": "Daily Buzz latte",
     "secondaryImg": null,
     "secondaryAlt": null,
@@ -2107,7 +2107,7 @@
       },
       {
         "name": "Green Bay - Lime Kiln",
-        "image": "the-bar-lime-kiln.jpg",
+        "image": "location/the-bar-lime-kiln.jpg",
         "alt": "A Packers helmet on the The Bar's bar with a beer next to it.",
         "street": "606 Lime Kiln Rd.",
         "city": "Green Bay",
