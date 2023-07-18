@@ -880,6 +880,11 @@ main {
     margin: 2.5rem 0 1.25rem;
   }
 
+  .locals-guide-content-container figure {
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+
   .rating {
     width: 30%;
   }
