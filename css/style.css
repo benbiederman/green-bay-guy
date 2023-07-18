@@ -142,10 +142,6 @@ button {
   padding: 1.25rem 0 1.25rem;
 }
 
-.section:last-of-type {
-  margin-bottom: 2.5rem;
-}
-
 .dark-section {
   background-color: var(--black);
 }
@@ -391,6 +387,10 @@ main {
 .section .locals-guide-item:hover,
 .section .locals-guide-item:focus-visible {
   box-shadow: 0px 0px 10px var(--darkGray);
+}
+
+.go-to-container {
+  margin-bottom: 2.5rem;
 }
 
 .locals-guide-item {
@@ -675,6 +675,8 @@ main {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .locals-guide-details h2 {
@@ -763,6 +765,10 @@ main {
     padding: 10rem 0;
   }
 
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
   .locals-guide-details h3 {
     font-size: 2rem;
     text-align: left;
@@ -772,6 +778,10 @@ main {
 
   .locals-guide-item {
     width: 80%;
+  }
+
+  .locals-guide-item figure {
+    margin: 0;
   }
 
   .locals-guide-item h2 {
@@ -824,6 +834,14 @@ main {
     display: grid;
     column-gap: 5%;
     grid-template-columns: 47.5% auto;
+  }
+
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .suggestion-section .locals-guide-container {
+    margin: 2.5rem auto 0;
   }
 
   .locals-guide-item {
@@ -1003,6 +1021,10 @@ main {
     font-size: 0.7rem;
   }
 
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
   .about-me {
     flex-direction: row;
     align-items: center;
@@ -1086,11 +1108,6 @@ main {
     font-size: 4rem;
   }
 
-  .locals-guide-content-container h2,
-  .locals-guide-content-container h3,
-  .locals-guide-content-container h4 {
-  }
-
   .rating {
     width: 25%;
   }
@@ -1170,5 +1187,9 @@ main {
     width: 24.5%;
     font-size: 4rem;
     margin-top: 0.5rem;
+  }
+
+  .rating {
+    width: 15%;
   }
 }
