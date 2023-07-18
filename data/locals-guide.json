@@ -2086,7 +2086,7 @@
     "favorite": false,
     "address": [
       {
-        "name": "Green Bay - Holmgren Way",
+        "name": "The Bar - Holmgren Way",
         "image": "location/the-bar.jpg",
         "alt": "The interior signage of The Bar on Holmgren Way",
         "street": "2001 Holmgren Way",
@@ -2106,7 +2106,7 @@
         ]
       },
       {
-        "name": "Green Bay - Lime Kiln",
+        "name": "The Bar - Lime Kiln",
         "image": "location/the-bar-lime-kiln.jpg",
         "alt": "A Packers helmet on the The Bar's bar with a beer next to it.",
         "street": "606 Lime Kiln Rd.",
