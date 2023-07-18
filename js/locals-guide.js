@@ -1,11 +1,23 @@
-fetch("./data/locals-guide.json")
-  .then((response) => response.json())
-  .then((data) => sortGuides(data))
-  .catch((error) => console.log(error));
-
-function sortGuides(items) {
+// Fetch proper data
+function localsGuideContent() {
   let path = window.location.pathname;
+  let guideData;
 
+  if (path.includes("/podcasts")) {
+    guideData = "podcasts.json";
+  } else {
+    guideData = "locals-guide.json";
+  }
+
+  if (guideData) {
+    fetch(`/data/${guideData}`)
+      .then((response) => response.json())
+      .then((data) => sortGuides(path, data))
+      .catch((error) => console.log(error));
+  }
+}
+
+function sortGuides(path, items) {
   if (path === "/" || path === "/index.html") {
     const miscContainer = document.querySelector(".misc-container");
     const goToContainer = document.querySelector(".go-to-container");
@@ -30,6 +42,49 @@ function sortGuides(items) {
 
     goToGuides.forEach((guide) => {
       buildGuide(goToContainer, guide);
+    });
+  } else if (
+    path.includes("/eat") ||
+    path.includes("/drink") ||
+    path.includes("/do") ||
+    path.includes("/see")
+  ) {
+    // LG Landing pages
+  } else if (path.includes("/locals-guide/")) {
+    // LG individual pages
+    const container = document.querySelector(".locals-guide-container");
+    let allData = [...items];
+    let filteredData = [];
+    let recommendedData = [];
+    let currentPage;
+
+    // Identify current page
+    items.forEach((item) => {
+      if (path.includes(item.url)) {
+        currentPage = item;
+      }
+    });
+
+    // Find tags that match current page tags
+    currentPage.tags.forEach((tag) => {
+      allData.forEach((item) => {
+        if (item.tags.includes(tag) && item.title !== currentPage.title) {
+          if (item.rating > 4) {
+            filteredData.push(item);
+          }
+        }
+      });
+    });
+
+    // Grab four items from filteredData for recommendation
+    for (let i = 0; i < 4; i++) {
+      let randomNumber = Math.floor(Math.random() * filteredData.length);
+      recommendedData.push(filteredData.splice(randomNumber, 1)[0]);
+    }
+
+    // Build Local Guide items from recommended data
+    recommendedData.forEach((recommendation) => {
+      buildGuide(container, recommendation);
     });
   }
 }
@@ -98,16 +153,17 @@ function buildGuide(container, item) {
   lgDetails.appendChild(moreInfo);
 
   lgItem.addEventListener("click", () => {
-    window.location.href = `locals-guide/${item.url}.html`;
+    window.location.href = `/locals-guide/${item.url}.html`;
   });
 
   lgItem.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      window.location.href = `locals-guide/${item.url}.html`;
+      window.location.href = `/locals-guide/${item.url}.html`;
     }
   });
 }
 
+// Set colors of each tag
 function generateTagColor(tag) {
   switch (tag) {
     case "$$$":
@@ -133,6 +189,7 @@ function generateTagColor(tag) {
   }
 }
 
+// Local's Guide filter logic
 function filterData(filter, data) {
   switch (filter) {
     case "rating-descending":
@@ -143,3 +200,5 @@ function filterData(filter, data) {
       null;
   }
 }
+
+localsGuideContent();

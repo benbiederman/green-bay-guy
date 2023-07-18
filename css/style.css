@@ -142,14 +142,6 @@ button {
   padding: 1.25rem 0 1.25rem;
 }
 
-.section:last-of-type {
-  margin-bottom: 2.5rem;
-}
-
-.heading-margin {
-  margin: 0 auto 2.5rem;
-}
-
 .dark-section {
   background-color: var(--black);
 }
@@ -183,10 +175,6 @@ button {
 .heading-margin-bottom h5,
 .heading-margin-bottom h6 {
   margin-bottom: 2.5rem;
-}
-
-.heading-margin {
-  margin: 2.5rem auto;
 }
 
 /* Mobile */
@@ -401,6 +389,10 @@ main {
   box-shadow: 0px 0px 10px var(--darkGray);
 }
 
+.go-to-container {
+  margin-bottom: 2.5rem;
+}
+
 .locals-guide-item {
   width: 80%;
   margin: 1.25rem auto;
@@ -408,6 +400,10 @@ main {
   border-radius: 5px;
   position: relative;
   cursor: pointer;
+}
+
+.locals-guide-item h3 {
+  text-align: left;
 }
 
 .locals-guide-item:hover .locals-guide-details h3,
@@ -564,11 +560,20 @@ main {
   position: relative;
 }
 
+.location-hidden {
+  display: none;
+}
+
+.location-active {
+  display: block;
+}
+
 .prev-btn,
 .next-btn {
   position: absolute;
   top: 50%;
   margin: 0;
+  padding: 0.5rem;
 }
 
 .prev-btn {
@@ -602,8 +607,26 @@ main {
   margin: 1.25rem 0;
 }
 
+.locals-guide-content-container a {
+  font-weight: 500;
+}
+
+.locals-guide-content-container a:hover,
+.locals-guide-content-container a:focus {
+  text-decoration: underline;
+  color: var(--darkGreen);
+}
+
 .locals-guide-content-container h1 {
   margin: 1.25rem 0;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.locals-guide-content-container h2,
+.locals-guide-content-container h3,
+.locals-guide-content-container h4 {
+  margin: 3.75rem 0 1.25rem;
 }
 
 .locals-guide-content-container p {
@@ -645,6 +668,10 @@ main {
   margin: 1.25rem auto;
 }
 
+.donation-container button {
+  margin-top: 2.5rem;
+}
+
 .donation-callout h3,
 .donation-callout p {
   color: var(--white);
@@ -658,6 +685,12 @@ main {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.locals-guide-details h2 {
+  margin: 0;
 }
 
 .location-details ul {
@@ -671,6 +704,20 @@ main {
 
 .day-of-week {
   font-weight: 500;
+}
+
+.multi-inactive .next-btn,
+.multi-inactive .prev-btn {
+  display: none;
+}
+
+.multi-active .next-btn,
+.multi-active .prev-btn {
+  display: block;
+}
+
+.multi-active .location-details {
+  display: none;
 }
 
 @media screen and (min-width: 300px) {
@@ -728,6 +775,10 @@ main {
     padding: 10rem 0;
   }
 
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
   .locals-guide-details h3 {
     font-size: 2rem;
     text-align: left;
@@ -737,6 +788,10 @@ main {
 
   .locals-guide-item {
     width: 80%;
+  }
+
+  .locals-guide-item figure {
+    margin: 0;
   }
 
   .locals-guide-item h2 {
@@ -791,6 +846,14 @@ main {
     grid-template-columns: 47.5% auto;
   }
 
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .suggestion-section .locals-guide-container {
+    margin: 2.5rem auto 0;
+  }
+
   .locals-guide-item {
     width: 100%;
     margin: 0.75rem 0;
@@ -802,6 +865,34 @@ main {
 
   .about-me-information {
     width: 60%;
+  }
+
+  /* Locals Guide */
+  .locals-guide-section {
+    padding-top: 85px;
+  }
+
+  #main-img {
+    width: 60%;
+  }
+
+  .locals-guide-content-container h1 {
+    margin: 2.5rem 0 1.25rem;
+  }
+
+  .rating {
+    width: 30%;
+  }
+
+  .location-details {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .location-details figure {
+    width: 50%;
+    margin: auto;
   }
 }
 
@@ -912,7 +1003,7 @@ main {
   }
 
   .locals-guide-grade {
-    padding: 0.125rem;
+    padding: 0.25rem;
   }
 
   .locals-guide-details,
@@ -938,6 +1029,10 @@ main {
 
   .locals-guide-tag p {
     font-size: 0.7rem;
+  }
+
+  .go-to-container {
+    margin-bottom: 2.5rem;
   }
 
   .about-me {
@@ -1009,6 +1104,64 @@ main {
   .locals-guide-misc:focus {
     background-image: url("/assets/locals-guide/backgrounds/misc.jpg");
   }
+
+  .locals-guide-section {
+    padding-top: 85px;
+  }
+
+  #main-img {
+    width: 40%;
+  }
+
+  .locals-guide-content-container h1 {
+    margin: 2.5rem 0 1.25rem;
+    font-size: 4rem;
+  }
+
+  .rating {
+    width: 25%;
+  }
+
+  .location-details {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .location-details figure {
+    width: 50%;
+    margin: auto;
+  }
+
+  .location-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2.5rem auto;
+  }
+
+  .location-details figure {
+    width: 30%;
+    margin: 0;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .prev-btn {
+    left: 15%;
+  }
+
+  .next-btn {
+    right: 15%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1044,5 +1197,9 @@ main {
     width: 24.5%;
     font-size: 4rem;
     margin-top: 0.5rem;
+  }
+
+  .rating {
+    width: 15%;
   }
 }
