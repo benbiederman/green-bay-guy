@@ -1852,7 +1852,8 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/sammys-pizza",
+        "name": "Sammy's Pizza",
+        "image": "location/sammys-pizza.jpg",
         "alt": "Sammy's Pizza storefront and signage",
         "street": "2161 S Oneida St.",
         "city": "Green Bay",
