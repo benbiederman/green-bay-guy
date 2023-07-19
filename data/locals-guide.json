@@ -1460,6 +1460,42 @@
     "url": "luigis-italian-bistro"
   },
   {
+    "id": 1065,
+    "title": "Luigi's Pizza Palace II",
+    "mainImg": "eat/luigis-pizza-palace-ii.jpg",
+    "mainAlt": "Luigi's pepperoni pizza",
+    "secondaryImg": "drink/luigis-pizza-palace-ii.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Dinner", "Alcohol"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Luigi's Pizza Palace II",
+        "image": "location/luigis-pizza-palace-ii.jpg",
+        "alt": "Luigi's Pizza Palace II's bucket of beer nuggets",
+        "street": "1326 W Frontier Rd.",
+        "city": "Little Suamico",
+        "state": "WI",
+        "zip": "54141",
+        "website": "https://www.luigispizzapalaceii.com/",
+        "phone": "(920) 826-5955",
+        "hours": [
+          "4:00pm - 8:00pm",
+          "3:00pm - 8:00pm",
+          "3:00pm - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 7:00pm"
+        ]
+      }
+    ],
+    "distance": 9.8,
+    "url": "luigis-pizza-palace"
+  },
+  {
     "id": 1039,
     "title": "Luna Coffee Roasters",
     "mainImg": "drink/luna-coffee-roasters.jpg",
