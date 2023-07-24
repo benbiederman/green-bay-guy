@@ -1333,10 +1333,10 @@
   },
   {
     "id": 1036,
-    "title": "Krolls",
-    "mainImg": "eat/krolls.jpg",
+    "title": "Krolls West",
+    "mainImg": "eat/krolls-west.jpg",
     "mainAlt": "Kroll's deep fried cheese curds",
-    "secondaryImg": "drink/krolls.jpg",
+    "secondaryImg": "drink/krolls-west.jpg",
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
@@ -1344,7 +1344,7 @@
     "favorite": false,
     "address": [
       {
-        "name": "Kroll's - West",
+        "name": "Kroll's West",
         "image": "location/krolls-west.jpg",
         "alt": "Kroll's West signage",
         "street": "1990 S Ridge Rd.",
@@ -1362,30 +1362,10 @@
           "10:30am - 10:00pm",
           "10:30am - 10:00pm"
         ]
-      },
-      {
-        "name": "Krolls - East",
-        "image": "location/krolls-east.jpg",
-        "alt": "Kroll's East signage",
-        "street": "1658 Main St.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54302",
-        "website": "https://www.krollseast.com/",
-        "phone": "(920) 468-4422",
-        "hours": [
-          "Closed",
-          "Closed",
-          "10:30am - 10:00pm",
-          "10:30am - 10:00pm",
-          "10:30am - 11:00pm",
-          "10:30am - 11:00pm",
-          "10:30am - 10:00pm"
-        ]
       }
     ],
     "distance": 0.1,
-    "url": "krolls"
+    "url": "krolls-west"
   },
   {
     "id": 1037,
