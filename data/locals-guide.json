@@ -1648,12 +1648,12 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Breakfast", "Lunch"],
-    "rating": 3.75,
+    "rating": 4,
     "favorite": false,
     "address": [
       {
         "name": "Nicolet Cafe",
-        "image": "location/nicolet-cafe",
+        "image": "location/nicolet-cafe.jpg",
         "alt": "Nicolet Cafe interior, showing the empty counter",
         "street": "525 Reid St.",
         "city": "De Pere",
