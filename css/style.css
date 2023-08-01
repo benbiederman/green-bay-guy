@@ -633,6 +633,10 @@ main {
   margin-bottom: 1.25rem;
 }
 
+.no-rating {
+  margin-bottom: 2.5rem;
+}
+
 .rating {
   background-color: var(--black);
   width: auto;
@@ -880,6 +884,11 @@ main {
     margin: 2.5rem 0 1.25rem;
   }
 
+  .locals-guide-content-container figure {
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+
   .rating {
     width: 30%;
   }
@@ -888,6 +897,10 @@ main {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .location-details button:first-of-type {
+    margin-right: 1.25rem;
   }
 
   .location-details figure {
@@ -1145,6 +1158,10 @@ main {
   .location-details figure {
     width: 30%;
     margin: 0;
+  }
+
+  .location-details button:first-of-type {
+    margin-right: 0;
   }
 
   .details-container {

@@ -69,7 +69,7 @@ function sortGuides(path, items) {
     currentPage.tags.forEach((tag) => {
       allData.forEach((item) => {
         if (item.tags.includes(tag) && item.title !== currentPage.title) {
-          if (item.rating > 4) {
+          if (item.rating > 3.9) {
             filteredData.push(item);
           }
         }

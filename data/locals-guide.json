@@ -287,7 +287,7 @@
     "secondaryImg": "drink/angelina.jpg",
     "secondaryAlt": "#",
     "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "tags": ["Dinner", "Alcohol"],
     "rating": 4.75,
     "favorite": true,
     "address": [
@@ -493,7 +493,7 @@
       }
     ],
     "distance": 15.1,
-    "url": "black-sheep-pub"
+    "url": "black-sheep-pub-and-grill"
   },
   {
     "id": 1015,
@@ -534,8 +534,8 @@
   {
     "id": 1016,
     "title": "Cheese Cake Heaven",
-    "mainImg": "eat/cheese-cake-heaven.jpg",
-    "mainAlt": "Cheese Cake Heaven's deli sandwich",
+    "mainImg": "eat/cheese-cake-heaven-cheesecake.jpg",
+    "mainAlt": "Cheese Cake Heaven's Oreo cheesecake",
     "secondaryImg": "#",
     "secondaryAlt": "#",
     "category": ["Eat"],
@@ -868,7 +868,7 @@
     "favorite": false,
     "address": [
       {
-        "name": "El Sarape West",
+        "name": "El Sarape - West",
         "image": "location/el-sarape-west.jpg",
         "alt": "El Sarape storefront",
         "street": "2615 S Oneida St.",
@@ -1333,10 +1333,10 @@
   },
   {
     "id": 1036,
-    "title": "Krolls",
-    "mainImg": "eat/krolls.jpg",
+    "title": "Krolls West",
+    "mainImg": "eat/krolls-west.jpg",
     "mainAlt": "Kroll's deep fried cheese curds",
-    "secondaryImg": "drink/krolls.jpg",
+    "secondaryImg": "drink/krolls-west.jpg",
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
@@ -1344,7 +1344,7 @@
     "favorite": false,
     "address": [
       {
-        "name": "Kroll's - West",
+        "name": "Kroll's West",
         "image": "location/krolls-west.jpg",
         "alt": "Kroll's West signage",
         "street": "1990 S Ridge Rd.",
@@ -1362,30 +1362,10 @@
           "10:30am - 10:00pm",
           "10:30am - 10:00pm"
         ]
-      },
-      {
-        "name": "Krolls - East",
-        "image": "location/krolls-east.jpg",
-        "alt": "Kroll's East signage",
-        "street": "1658 Main St.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54302",
-        "website": "https://www.krollseast.com/",
-        "phone": "(920) 468-4422",
-        "hours": [
-          "Closed",
-          "Closed",
-          "10:30am - 10:00pm",
-          "10:30am - 10:00pm",
-          "10:30am - 11:00pm",
-          "10:30am - 11:00pm",
-          "10:30am - 10:00pm"
-        ]
       }
     ],
     "distance": 0.1,
-    "url": "krolls"
+    "url": "krolls-west"
   },
   {
     "id": 1037,
@@ -1458,6 +1438,42 @@
     ],
     "distance": 9.8,
     "url": "luigis-italian-bistro"
+  },
+  {
+    "id": 1065,
+    "title": "Luigi's Pizza Palace II",
+    "mainImg": "eat/luigis-pizza-palace-ii.jpg",
+    "mainAlt": "Luigi's pepperoni pizza",
+    "secondaryImg": "drink/luigis-pizza-palace-ii.jpg",
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Dinner", "Alcohol"],
+    "rating": 4.4,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Luigi's Pizza Palace II",
+        "image": "location/luigis-pizza-palace-ii.jpg",
+        "alt": "Luigi's Pizza Palace II's bucket of beer nuggets",
+        "street": "1326 W Frontier Rd.",
+        "city": "Little Suamico",
+        "state": "WI",
+        "zip": "54141",
+        "website": "https://www.luigispizzapalaceii.com/",
+        "phone": "(920) 826-5955",
+        "hours": [
+          "4:00pm - 8:00pm",
+          "3:00pm - 8:00pm",
+          "3:00pm - 8:00pm",
+          "11:00am - 8:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 7:00pm"
+        ]
+      }
+    ],
+    "distance": 9.8,
+    "url": "luigis-pizza-palace"
   },
   {
     "id": 1039,
@@ -1601,7 +1617,7 @@
     "address": [
       {
         "name": "Narrow Bridge",
-        "image": "location/narrow-bridge",
+        "image": "location/narrow-bridge-brewhouse.jpg",
         "alt": "Narrow Bridge storefront",
         "street": "2840 Shawano Ave.",
         "city": "Green Bay",
@@ -1632,12 +1648,12 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Breakfast", "Lunch"],
-    "rating": 3.75,
+    "rating": 4,
     "favorite": false,
     "address": [
       {
         "name": "Nicolet Cafe",
-        "image": "location/nicolet-cafe",
+        "image": "location/nicolet-cafe.jpg",
         "alt": "Nicolet Cafe interior, showing the empty counter",
         "street": "525 Reid St.",
         "city": "De Pere",
@@ -1673,7 +1689,7 @@
     "address": [
       {
         "name": "Not By Bread Alone",
-        "image": "location/not-by-bread-alone",
+        "image": "location/not-by-bread-alone.jpg",
         "alt": "Not By Bread Alone storefront showcasing their signage",
         "street": "940 Hansen Rd.",
         "city": "Green Bay",
@@ -1709,7 +1725,7 @@
     "address": [
       {
         "name": "Old Mexico",
-        "image": "location/old-mexico",
+        "image": "location/old-mexico.jpg",
         "alt": "Old Mexico interior of restaurant",
         "street": "11884 Velp Ave.",
         "city": "Suamico",
@@ -1745,7 +1761,7 @@
     "address": [
       {
         "name": "R & D's House Divided",
-        "image": "location/r-&-ds-house-divided",
+        "image": "location/r-&-ds-house-divided.jpg",
         "alt": "R & D's House Divided signage",
         "street": "2148 University Ave.",
         "city": "Green Bay",
@@ -1781,7 +1797,7 @@
     "address": [
       {
         "name": "Rustique Pizzeria",
-        "image": "location/rustique-pizzeria",
+        "image": "location/rustique-pizzeria.jpg",
         "alt": "Rustique Pizzeria storefront",
         "street": "13201 Velp Ave.",
         "city": "Suamico",
@@ -1816,7 +1832,8 @@
     "favorite": false,
     "address": [
       {
-        "image": "location/sammys-pizza",
+        "name": "Sammy's Pizza",
+        "image": "location/sammys-pizza.jpg",
         "alt": "Sammy's Pizza storefront and signage",
         "street": "2161 S Oneida St.",
         "city": "Green Bay",
@@ -1852,7 +1869,7 @@
     "address": [
       {
         "name": "Sara's Artisan Gelato",
-        "image": "location/saras-artisan-gelato",
+        "image": "location/saras-artisan-gelato.jpg",
         "alt": "Sara's Artisan Gelato's interior decor.",
         "street": "933 Anderson Dr. Ste F",
         "city": "Green Bay",
@@ -1888,7 +1905,7 @@
     "address": [
       {
         "name": "Sgambati's New York Pizza",
-        "image": "location/sgambatis",
+        "image": "location/sgambatis-new-york-pizza.jpg",
         "alt": "Sgambati's storefront and signage",
         "street": "1700 Sand Acres Dr.",
         "city": "De Pere",
@@ -1974,13 +1991,13 @@
     "secondaryImg": "drink/stadium-view.jpg",
     "secondaryAlt": null,
     "category": ["Eat"],
-    "tags": ["Dessert"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
     "rating": 4.25,
     "favorite": false,
     "address": [
       {
         "name": "Stadium View",
-        "image": "location/stadium-view",
+        "image": "location/stadium-view.jpg",
         "alt": "A Stadium View party, showing a crowd of Packers fans",
         "street": "1963 Holmgren Way",
         "city": "Green Bay",
