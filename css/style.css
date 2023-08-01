@@ -633,6 +633,10 @@ main {
   margin-bottom: 1.25rem;
 }
 
+.no-rating {
+  margin-bottom: 2.5rem;
+}
+
 .rating {
   background-color: var(--black);
   width: auto;
