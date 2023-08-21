@@ -1,20 +1,5 @@
 [
   {
-    "id": 1001,
-    "title": "Packers Ticket Guide",
-    "mainImg": "misc/packers-tickets.jpg",
-    "mainAlt": "Stack of Green Bay Packers tickets",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Misc"],
-    "tags": ["Guide"],
-    "rating": null,
-    "favorite": false,
-    "address": null,
-    "distance": null,
-    "url": "green-bay-packers-ticket-guide"
-  },
-  {
     "id": 1002,
     "title": "Green Bay Hotel Guide",
     "mainImg": "misc/green-bay-hotel.jpg",
@@ -58,6 +43,21 @@
     "address": null,
     "distance": null,
     "url": "lambeau-field-tailgating-guide"
+  },
+  {
+    "id": 1001,
+    "title": "Packers Ticket Guide",
+    "mainImg": "misc/packers-tickets.jpg",
+    "mainAlt": "Stack of Green Bay Packers tickets",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Misc"],
+    "tags": ["Guide"],
+    "rating": null,
+    "favorite": false,
+    "address": null,
+    "distance": null,
+    "url": "green-bay-packers-ticket-guide"
   },
   {
     "id": 1005,
@@ -2295,6 +2295,78 @@
     "url": "zestys"
   },
   {
+    "id": 1062,
+    "title": "Bay Beach",
+    "mainImg": "do/bay-beach.jpg",
+    "mainAlt": "The entrance of the Zippin' Pippin'.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["$$$"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Bay Beach",
+        "image": "location/bay-beach.jpg",
+        "alt": "A rollercoaster located in Bay Beach",
+        "street": "1313 Bay Beach Rd.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302",
+        "website": "https://greenbaywi.gov/445/Bay-Beach",
+        "phone": "(920) 448-3000",
+        "hours": [
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal",
+          "Seasonal"
+        ]
+      }
+    ],
+    "distance": 6.1,
+    "url": "bay-beach"
+  },
+  {
+    "id": 1063,
+    "title": "CityDeck",
+    "mainImg": "do/citydeck.jpg",
+    "mainAlt": "A view of the CityDeck with a large boat sailing past on the river.",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Do"],
+    "tags": ["Free"],
+    "rating": null,
+    "favorite": false,
+    "address": [
+      {
+        "name": "CityDeck",
+        "image": "location/citydeck.jpg",
+        "alt": "Benches that line the CityDeck walkway.",
+        "street": "301 N Washington St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://downtowngreenbay.com/go/citydeck",
+        "phone": "(920) 448-3365",
+        "hours": [
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm",
+          "6:30am - 10:00pm"
+        ]
+      }
+    ],
+    "distance": 3.4,
+    "url": "citydeck"
+  },
+  {
     "id": 1059,
     "title": "Lambeau Field",
     "mainImg": "do/lambeau-field.jpg",
@@ -2380,77 +2452,5 @@
     ],
     "distance": 0.1,
     "url": "titletown-district"
-  },
-  {
-    "id": 1062,
-    "title": "Bay Beach",
-    "mainImg": "do/bay-beach.jpg",
-    "mainAlt": "The entrance of the Zippin' Pippin'.",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Do"],
-    "tags": ["$$$"],
-    "rating": null,
-    "favorite": false,
-    "address": [
-      {
-        "name": "Bay Beach",
-        "image": "location/bay-beach.jpg",
-        "alt": "A rollercoaster located in Bay Beach",
-        "street": "1313 Bay Beach Rd.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54302",
-        "website": "https://greenbaywi.gov/445/Bay-Beach",
-        "phone": "(920) 448-3000",
-        "hours": [
-          "Seasonal",
-          "Seasonal",
-          "Seasonal",
-          "Seasonal",
-          "Seasonal",
-          "Seasonal",
-          "Seasonal"
-        ]
-      }
-    ],
-    "distance": 6.1,
-    "url": "bay-beach"
-  },
-  {
-    "id": 1063,
-    "title": "CityDeck",
-    "mainImg": "do/citydeck.jpg",
-    "mainAlt": "A view of the CityDeck with a large boat sailing past on the river.",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Do"],
-    "tags": ["Free"],
-    "rating": null,
-    "favorite": false,
-    "address": [
-      {
-        "name": "CityDeck",
-        "image": "location/citydeck.jpg",
-        "alt": "Benches that line the CityDeck walkway.",
-        "street": "301 N Washington St.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54301",
-        "website": "https://downtowngreenbay.com/go/citydeck",
-        "phone": "(920) 448-3365",
-        "hours": [
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm",
-          "6:30am - 10:00pm"
-        ]
-      }
-    ],
-    "distance": 3.4,
-    "url": "citydeck"
   }
 ]
