@@ -47,9 +47,10 @@ function sortGuides(path, items) {
     path.includes("/eat") ||
     path.includes("/drink") ||
     path.includes("/do") ||
-    path.includes("/see")
+    path.includes("/misc")
   ) {
     // LG Landing pages
+    localsGuidePageContent(path, items);
   } else if (path.includes("/locals-guide/")) {
     // LG individual pages
     const container = document.querySelector(".locals-guide-container");
@@ -89,32 +90,80 @@ function sortGuides(path, items) {
   }
 }
 
+function localsGuidePageContent(path, items) {
+  const lgContainer = document.querySelector(".locals-guide-container");
+  let category;
+  let lgData = [];
+
+  switch (path) {
+    case "/locals-guide/eat.html":
+      category = "Eat";
+      break;
+    case "/locals-guide/drink.html":
+      category = "Drink";
+      break;
+    case "/locals-guide/do.html":
+      category = "Do";
+      break;
+    case "/locals-guide/misc.html":
+      category = "Misc";
+      break;
+  }
+
+  items.forEach((item) => {
+    item.category.forEach((cat) => {
+      if (cat === category) {
+        lgData.push(item);
+      }
+    });
+  });
+
+  if (category !== "Misc" && category !== "Drink") {
+    filterData("rating-descending", lgData);
+  }
+
+  lgData.forEach((data) => {
+    buildGuide(lgContainer, data);
+  });
+}
+
 function buildGuide(container, item) {
+  let path = window.location.pathname;
+
   //Lg Container
   const lgItem = document.createElement("article");
   lgItem.classList.add("locals-guide-item");
   lgItem.tabIndex = 0;
   container.appendChild(lgItem);
 
-  //Lg Rating
+  //Lg Rating, no rating if drink category (except coffee)
   if (item.rating) {
-    const lgRatingContainer = document.createElement("div");
-    lgRatingContainer.classList.add("locals-guide-grade");
-    lgItem.appendChild(lgRatingContainer);
+    if (!path.includes("drink") || item.tags.includes("Coffee")) {
+      const lgRatingContainer = document.createElement("div");
+      lgRatingContainer.classList.add("locals-guide-grade");
+      lgItem.appendChild(lgRatingContainer);
 
-    const lgRating = document.createElement("p");
-    lgRating.textContent = item.rating;
-    lgRatingContainer.appendChild(lgRating);
+      const lgRating = document.createElement("p");
+      lgRating.textContent = item.rating;
+      lgRatingContainer.appendChild(lgRating);
+    }
   }
 
   //Lg Image
   const lgFigure = document.createElement("figure");
   lgItem.appendChild(lgFigure);
 
-  const lgImg = document.createElement("img");
-  lgImg.src = `../assets/locals-guide/${item.mainImg}`;
-  lgImg.alt = item.alt;
-  lgFigure.appendChild(lgImg);
+  if (path.includes("drink") && item.secondaryImg) {
+    const lgImg = document.createElement("img");
+    lgImg.src = `../assets/locals-guide/${item.secondaryImg}`;
+    lgImg.alt = item.secondaryAlt;
+    lgFigure.appendChild(lgImg);
+  } else {
+    const lgImg = document.createElement("img");
+    lgImg.src = `../assets/locals-guide/${item.mainImg}`;
+    lgImg.alt = item.alt;
+    lgFigure.appendChild(lgImg);
+  }
 
   //Lg Tags
   const lgTags = document.createElement("div");
