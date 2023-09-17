@@ -7,10 +7,10 @@ function buildPage(data) {
   const mainImg = document.querySelector("#main-img");
   const donationContainer = document.querySelector(".donation-container");
 
-  let path = window.location.pathname;
+  let path = window.location.pathname.split("/")[2].split(".")[0];
   let pageData;
   data.forEach((item) => {
-    if (path.includes(item.url)) {
+    if (path === item.url) {
       pageData = item;
     }
   });
