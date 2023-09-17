@@ -633,6 +633,22 @@ main {
   margin-bottom: 1.25rem;
 }
 
+.locals-guide-content-container ul {
+  width: calc(100% - 25px);
+  padding-left: 25px;
+  margin: 1.25rem 0;
+}
+
+.locals-guide-content-container ol li {
+  margin: 1.25rem 0;
+  list-style: none;
+}
+
+.locals-guide-content-container ul li {
+  list-style-type: "- ";
+  margin: 0.5rem 0;
+}
+
 .no-rating {
   margin-bottom: 2.5rem;
 }
