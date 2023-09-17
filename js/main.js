@@ -5,8 +5,8 @@ const footer = document.querySelector(".footer");
 function buildNavigation() {
   const links = [
     { name: "Home", url: "/", id: 1 },
-    { name: "Local's Guide", url: "/locals-guide.html", id: 2 },
-    { name: "Podcast", url: "/podcast.html", id: 3 },
+    { name: "Local's Guide", url: "/locals-guide/", id: 2 },
+    { name: "Podcast", url: "/podcast/", id: 3 },
   ];
 
   const skipToContentBtn = document.createElement("button");
