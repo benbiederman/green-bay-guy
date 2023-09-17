@@ -2413,7 +2413,28 @@
     "tags": ["Free", "$$$"],
     "rating": null,
     "favorite": false,
-    "address": null,
+    "address": [
+      {
+        "name": "Packers Heritage Trail",
+        "image": "location/packers-heritage-trail.jpg",
+        "alt": "Plaque at one of the stops for the Heritage Trail",
+        "street": "200 N. Adams St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://www.packershofandtours.com/explore/heritage-trail",
+        "phone": null,
+        "hours": [
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm",
+          "9:00am - 9:00pm"
+        ]
+      }
+    ],
     "distance": null,
     "url": "packers-heritage-trail"
   },
