@@ -36,9 +36,7 @@ function buildPage(data) {
   donationContainer.appendChild(donationHeader);
 
   const donationBody = document.createElement("p");
-  donationBody.textContent = `Contrary to popular belief, Lorem Ipsum is not simply random text.
-  It has roots in a piece of classical Latin literature from 45 BC,
-  making it over 2000 years old.`;
+  donationBody.textContent = `Gratitude goes a long way, and if you've found our content helpful and insightful, here's a simple way to show your appreciation. Your support allows me to keep creating valuable content. So, if you want to say thanks for the helpful content, consider buying me a coffee.`;
   donationContainer.appendChild(donationBody);
 
   const donationCTA = document.createElement("button");
