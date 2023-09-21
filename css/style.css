@@ -15,6 +15,10 @@
   --font-default: "Roboto", sans-serif;
 }
 
+::selection {
+  background-color: var(--green);
+}
+
 h1,
 h2,
 h3,
