@@ -17,81 +17,67 @@ function localsGuideContent() {
   }
 }
 
-function sortGuides(path, items) {
-  if (path === "/" || path === "/index.html") {
+function sortGuides(path, allItems) {
+  // Homepage
+  if (path === "/" || path.includes("/index")) {
     const miscContainer = document.querySelector(".misc-container");
     const goToContainer = document.querySelector(".go-to-container");
+
     let miscGuides = [];
     let goToGuides = [];
-    items.forEach((item) => {
-      item.tags.forEach((tag) => {
-        if (tag === "Guide") {
-          miscGuides.push(item);
-        }
-      });
-      if (item.favorite) {
-        goToGuides.push(item);
-      }
+
+    allItems.forEach((item) => {
+      item.category.includes("Misc") &&
+        item.spotlightGuide &&
+        miscGuides.push(item);
+      item.favorite && goToGuides.push(item);
     });
 
-    miscGuides.forEach((guide) => {
-      buildGuide(miscContainer, guide);
-    });
-
+    // Filter go-to guides
     goToGuides = filterData("rating-descending", goToGuides);
 
-    goToGuides.forEach((guide) => {
-      buildGuide(goToContainer, guide);
+    // Build LG article for Misc
+    miscGuides.forEach((item) => {
+      buildGuide(miscContainer, item);
     });
-  } else if (
+
+    // Build LG article for Go-to
+    goToGuides.forEach((item) => {
+      buildGuide(goToContainer, item);
+    });
+  }
+
+  if (
     path.includes("/eat") ||
     path.includes("/drink") ||
     path.includes("/do") ||
     path.includes("/misc")
   ) {
-    // LG Landing pages
-    localsGuidePageContent(path, items);
+    // Local's Guide Category Pages
+    lgCategoryPageContent(path, allItems);
   } else if (path.includes("/locals-guide/")) {
-    // LG individual pages
+    //Individual Page
     const container = document.querySelector(".locals-guide-container");
-    let allData = [...items];
-    let filteredData = [];
-    let recommendedData = [];
+    let currentSlug = window.location.pathname.split("/")[2].split(".")[0];
     let currentPage;
 
-    // Identify current page
-    items.forEach((item) => {
-      if (path.includes(item.url)) {
-        currentPage = item;
-      }
+    // Identify Current Page
+    allItems.forEach((item) => {
+      currentSlug === item.url && (currentPage = item);
     });
 
-    // Find tags that match current page tags
-    currentPage.tags.forEach((tag) => {
-      allData.forEach((item) => {
-        if (item.tags.includes(tag) && item.title !== currentPage.title) {
-          if (item.rating > 3.9) {
-            filteredData.push(item);
-          }
-        }
+    let recommendedList = buildRecommendationList(allItems, currentPage);
+
+    recommendedList &&
+      recommendedList.forEach((item) => {
+        buildGuide(container, item);
       });
-    });
-
-    // Grab four items from filteredData for recommendation
-    for (let i = 0; i < 4; i++) {
-      let randomNumber = Math.floor(Math.random() * filteredData.length);
-      recommendedData.push(filteredData.splice(randomNumber, 1)[0]);
-    }
-
-    // Build Local Guide items from recommended data
-    recommendedData.forEach((recommendation) => {
-      buildGuide(container, recommendation);
-    });
   }
 }
 
-function localsGuidePageContent(path, items) {
+function lgCategoryPageContent(path, data) {
   const lgContainer = document.querySelector(".locals-guide-container");
+  let allItems = data;
   let category;
   let lgData = [];
 
@@ -110,23 +96,69 @@ function localsGuidePageContent(path, items) {
       break;
   }
 
-  items.forEach((item) => {
-    item.category.forEach((cat) => {
-      if (cat === category) {
-        lgData.push(item);
-      }
-    });
+  allItems.forEach((item) => {
+    item.category.includes(category) && lgData.push(item);
   });
 
+  // No Ratings for Misc and Drink guides, filter other guides
   if (category !== "Misc" && category !== "Drink") {
     filterData("rating-descending", lgData);
   }
 
+  // Build items
   lgData.forEach((data) => {
     buildGuide(lgContainer, data);
   });
 }
 
+function buildRecommendationList(allItems, currentPage) {
+  let currentPageTags = [];
+  let currentPageCategories = [];
+  let filteredGuides = [];
+  let recommendedGuides = [];
+
+  currentPage.category.forEach((category) => {
+    currentPageCategories.push(category);
+  });
+
+  currentPage.tags.forEach((tag) => {
+    currentPageTags.push(tag);
+  });
+
+  // Match by current page tags
+  allItems.forEach((guide) => {
+    guide.tags.forEach((tag) => {
+      if (currentPageTags.includes(tag) && guide.title !== currentPage.title) {
+        filteredGuides.push(guide);
+      }
+    });
+  });
+
+  // Check if filteredGuides is less than four items, if so, match by category
+  if (filteredGuides.length < 4) {
+    allItems.forEach((guide) => {
+      guide.category.forEach((cat) => {
+        if (
+          currentPageCategories.includes(cat) &&
+          guide.title !== currentPage.title
+        ) {
+          if (!filteredGuides.includes(guide)) {
+            filteredGuides.push(guide);
+          }
+        }
+      });
+    });
+  }
+
+  for (let i = recommendedGuides.length; i < 4; i++) {
+    let randomNumber = Math.floor(Math.random() * filteredGuides.length);
+    recommendedGuides.push(filteredGuides.splice(randomNumber, 1)[0]);
+  }
+
+  return recommendedGuides;
+}
+
+// Create Local's Guide card
 function buildGuide(container, item) {
   let path = window.location.pathname;
 
@@ -233,8 +265,10 @@ function generateTagColor(tag) {
       return "#5e5e5e";
     case "Lunch":
       return "#ea661f";
+    case "Shopping":
+      return "#2e4426";
     default:
-      return "black";
+      return "#000";
   }
 }
 
