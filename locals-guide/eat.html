@@ -29,8 +29,86 @@
   <body>
     <header class="main-header" id="header"></header>
     <main id="main">
-      <section class="search"></section>
-      <section class="section locals-guide-section">
+      <section class="search">
+        <div class="search-field">
+          <form class="search-form">
+            <input
+              class="search-input"
+              aria-label="search"
+              placeholder="Search..."
+            />
+            <button class="reset-btn" type="reset">
+              <img src="../assets/icons/x-icon.svg" alt="" />
+            </button>
+            <button class="search-btn" type="submit">
+              <img src="../assets/icons/magnifying-glass.svg" alt="" />
+            </button>
+            <button class="more-filters-btn" type="button">
+              <img src="../assets/icons/filter.svg" alt="" />
+            </button>
+          </form>
+          <div class="more-filters">
+            <form class="more-filters-form">
+              <div class="category-filter filters-item">
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                  <option value="eat" selected>Eat</option>
+                  <option value="drink">Drink</option>
+                  <option value="do">Do</option>
+                  <option value="misc">Misc.</option>
+                </select>
+              </div>
+              <div class="type-filters filters-item">
+                <fieldset>
+                  <legend>Meal type:</legend>
+                  <div class="check-item">
+                    <input
+                      type="checkbox"
+                      id="breakfast"
+                      value="breakfast"
+                      checked
+                    />
+                    <label for="breakfast">Breakfast</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="lunch" value="lunch" checked />
+                    <label for="lunch">Lunch</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="dinner" value="dinner" checked />
+                    <label for="dinner">Dinner</label>
+                  </div>
+                  <div class="check-item">
+                    <input
+                      type="checkbox"
+                      id="dessert"
+                      value="dessert"
+                      checked
+                    />
+                    <label for="dessert">Dessert</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="radius-filters filters-item">
+                <label for="radius">Miles from Lambeau Field:</label>
+                <select id="radius" name="radius">
+                  <option value="any">Any</option>
+                  <option value="1">1 or less</option>
+                  <option value="2">2 or less</option>
+                  <option value="5">5 or less</option>
+                  <option value="10">10 or less</option>
+                </select>
+              </div>
+              <button type="submit" class="more-filters-btn">
+                Show filtered results
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="results"></div>
+      </section>
+      <section class="section locals-guide-page-section">
         <div class="locals-guide-container eat-container"></div>
       </section>
     </main>
