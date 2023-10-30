@@ -65,13 +65,13 @@
                     <input
                       type="checkbox"
                       id="alcohol"
-                      value="alcohol"
+                      value="Alcohol"
                       checked
                     />
                     <label for="alcohol">Alcohol</label>
                   </div>
                   <div class="check-item">
-                    <input type="checkbox" id="coffee" value="coffee" checked />
+                    <input type="checkbox" id="coffee" value="Coffee" checked />
                     <label for="coffee">Coffee</label>
                   </div>
                 </fieldset>
@@ -80,20 +80,23 @@
               <div class="radius-filters filters-item">
                 <label for="radius">Miles from Lambeau Field:</label>
                 <select id="radius" name="radius">
-                  <option value="any">Any</option>
+                  <option value="10000">Any</option>
                   <option value="1">1 mile or less</option>
                   <option value="2">2 miles or less</option>
                   <option value="5">5 miles or less</option>
                   <option value="10">10 miles or less</option>
                 </select>
               </div>
-              <button type="submit" class="more-filters-btn">
+              <button type="submit" class="show-filters-btn">
                 Show filtered results
               </button>
             </form>
           </div>
         </div>
-        <div class="results"></div>
+        <div class="results">
+          <div class="results-counter"></div>
+          <div class="clear-results"><button>Clear search</button></div>
+        </div>
       </section>
       <section class="section locals-guide-page-section">
         <div class="locals-guide-container drink-container"></div>

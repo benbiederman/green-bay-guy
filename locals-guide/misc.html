@@ -62,14 +62,14 @@
                 <fieldset>
                   <legend>Misc type:</legend>
                   <div class="check-item">
-                    <input type="checkbox" id="guide" value="guide" checked />
+                    <input type="checkbox" id="guide" value="Guide" checked />
                     <label for="guide">Guide</label>
                   </div>
                   <div class="check-item">
                     <input
                       type="checkbox"
                       id="shopping"
-                      value="shopping"
+                      value="Shopping"
                       checked
                     />
                     <label for="shopping">Shopping</label>
@@ -87,13 +87,16 @@
                   <option value="10">10 miles or less</option>
                 </select>
               </div>
-              <button type="submit" class="more-filters-btn">
+              <button type="submit" class="show-filters-btn">
                 Show filtered results
               </button>
             </form>
           </div>
         </div>
-        <div class="results"></div>
+        <div class="results">
+          <div class="results-counter"></div>
+          <div class="clear-results"><button>Clear search</button></div>
+        </div>
       </section>
       <section class="section locals-guide-page-section">
         <div class="locals-guide-container misc-container"></div>
