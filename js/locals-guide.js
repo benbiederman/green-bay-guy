@@ -485,6 +485,8 @@ function buildRecommendationList(allItems, currentPage) {
     });
   }
 
+  filteredGuides = removeDuplicateResults(filteredGuides);
+
   for (let i = recommendedGuides.length; i < 4; i++) {
     let randomNumber = Math.floor(Math.random() * filteredGuides.length);
     recommendedGuides.push(filteredGuides.splice(randomNumber, 1)[0]);
