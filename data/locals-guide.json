@@ -64,7 +64,7 @@
     "url": "green-bay-packers-ticket-guide"
   },
   {
-    "id": 1066,
+    "id": 4444,
     "title": "Green Bay Shopping Guide",
     "mainImg": "misc/green-bay-shopping.jpg",
     "mainAlt": "Packers Pro Shop",
@@ -1778,6 +1778,42 @@
     "searchTerms": ["Mexican"]
   },
   {
+    "id": 1066,
+    "title": "Pepperboy Pizza",
+    "mainImg": "eat/pepperboy-pizza.jpg",
+    "mainAlt": "Pepperboy Pizza's woodfire pepperoni pizza",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat"],
+    "tags": ["Dinner"],
+    "rating": 4.6,
+    "favorite": false,
+    "address": [
+      {
+        "name": "Pepperboy Pizza",
+        "image": "location/pepperboy-pizza.jpg",
+        "alt": "Pepperboy Pizza's building, showing two exhaust stacks",
+        "street": "815 Chicago St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54301",
+        "website": "https://pepperboy.com/",
+        "phone": null,
+        "hours": [
+          "Closed",
+          "Closed",
+          "4:00pm - 8:00pm",
+          "4:00pm - 8:00pm",
+          "4:00pm - 9:00pm",
+          "4:00pm - 9:00pm",
+          "3:30pm - 8:00pm"
+        ]
+      }
+    ],
+    "distance": 3.8,
+    "url": "pepperboy-pizza"
+  },
+  {
     "id": 1046,
     "title": "R & D's House Divided",
     "mainImg": "eat/r-&-ds-house-divided.jpg",
@@ -1859,7 +1895,7 @@
     "secondaryAlt": null,
     "category": ["Eat", "Drink"],
     "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 4.6,
+    "rating": 4.7,
     "favorite": false,
     "address": [
       {
