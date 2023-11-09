@@ -4,7 +4,7 @@ function pageContent() {
   let guideData;
 
   if (path.includes("podcast")) {
-    guideData = "podcast.json";
+    guideData = "podcasts.json";
   } else {
     guideData = "locals-guide.json";
   }
