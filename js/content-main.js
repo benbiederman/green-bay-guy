@@ -181,36 +181,42 @@ function filterFunctionality(itemData) {
 function moreFiltersFunctionality(itemData) {
   let unfilteredData = itemData;
   const moreFilters = document.querySelector(".more-filters");
-  const categoryFilter = document.querySelector(".category-filter");
-  const radiusFilter = document.querySelector(".radius-filters");
+  const categoryFilter = document.querySelector(".category-filter") || null;
+  const typeFilter = document.querySelectorAll(".check-item input") || null;
+  const radiusFilter = document.querySelector(".radius-filters") || null;
   const showFiltersBtn = document.querySelector(".show-filters-btn");
-  const typeFilter = document.querySelectorAll(".check-item input");
 
   // Redirects to different page depending on category change
-  categoryFilter.addEventListener("change", (e) => {
-    window.location.href = `/locals-guide/${e.target.value}.html`;
-  });
+  if (categoryFilter) {
+    categoryFilter.addEventListener("change", (e) => {
+      window.location.href = `/locals-guide/${e.target.value}.html`;
+    });
+  }
 
   // Checks value change for radius
-  radiusFilter.addEventListener("change", (e) => {
-    milesFromLambeau = +e.target.value;
-  });
+  if (radiusFilter) {
+    radiusFilter.addEventListener("change", (e) => {
+      milesFromLambeau = +e.target.value;
+    });
+  }
 
   // Checks value change for type checkboxes
-  typeFilter.forEach((type) => {
-    type.addEventListener("click", (e) => {
-      if (type.checked) {
-        type.setAttribute("checked", true);
-      } else {
-        type.removeAttribute("checked");
-      }
+  if (typeFilter) {
+    typeFilter.forEach((type) => {
+      type.addEventListener("click", (e) => {
+        if (type.checked) {
+          type.setAttribute("checked", true);
+        } else {
+          type.removeAttribute("checked");
+        }
+      });
     });
-  });
+  }
 
   // Show filtered results button functionality
   showFiltersBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    let radius = milesFromLambeau || 10000;
+
     let tags = [];
     let filteredResults = [];
 
@@ -221,19 +227,37 @@ function moreFiltersFunctionality(itemData) {
       }
     });
 
-    // Check filters applied and sorts data accordingly
-    if (tags.length === typeFilter.length && radius === 10000) {
-      filteredResults = unfilteredData;
+    if (radiusFilter) {
+      let radius = milesFromLambeau || 10000;
+
+      // Check filters applied and sorts data accordingly
+      if (tags.length === typeFilter.length && radius === 10000) {
+        filteredResults = unfilteredData;
+      } else {
+        unfilteredData.forEach((item) => {
+          if (item.tags) {
+            tags.forEach((tag) => {
+              if (item.tags.includes(tag) && item.distance < radius) {
+                filteredResults.push(item);
+              }
+            });
+          }
+        });
+      }
     } else {
-      unfilteredData.forEach((item) => {
-        if (item.tags) {
-          tags.forEach((tag) => {
-            if (item.tags.includes(tag) && item.distance < radius) {
-              filteredResults.push(item);
-            }
-          });
-        }
-      });
+      if (tags.length === typeFilter.length) {
+        filteredResults = unfilteredData;
+      } else {
+        unfilteredData.forEach((item) => {
+          if (item.tags) {
+            tags.forEach((tag) => {
+              if (item.tags.includes(tag)) {
+                filteredResults.push(item);
+              }
+            });
+          }
+        });
+      }
     }
 
     moreFilters.classList.remove("more-filters-active");
@@ -344,6 +368,10 @@ function generateTagColor(tag) {
       return "#ea661f";
     case "Shopping":
       return "#2e4426";
+    case "Fan":
+      return "#2e4426";
+    case "Player":
+      return "#060303";
     default:
       return "#000";
   }
