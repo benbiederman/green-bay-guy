@@ -64,20 +64,81 @@
     "url": "green-bay-packers-ticket-guide"
   },
   {
-    "id": 4444,
-    "title": "Green Bay Shopping Guide",
-    "mainImg": "misc/green-bay-shopping.jpg",
-    "mainAlt": "Packers Pro Shop",
+    "id": 1067,
+    "title": "Uncle Mike's Bake Shoppe",
+    "mainImg": "misc/uncle-mikes-bakery.jpg",
+    "mainAlt": "Uncle Mike's kringle, showing a cross section with the filling",
     "secondaryImg": null,
     "secondaryAlt": null,
     "category": ["Misc"],
     "tags": ["Shopping"],
-    "spotlightGuide": false,
     "rating": null,
     "favorite": false,
-    "address": null,
-    "distance": null,
-    "url": "green-bay-shopping-guide"
+    "address": [
+      {
+        "name": "Uncle Mike's - De Pere",
+        "image": "location/uncle-mikes-de-pere.jpg",
+        "alt": "Uncle Mike's Bake Shoppe signage in De Pere.",
+        "street": "1840 Dickinson Rd.",
+        "city": "De Pere",
+        "state": "WI",
+        "zip": "54115",
+        "website": "https://unclemikesbakeshoppe.com/",
+        "phone": "(920) 330-0300",
+        "hours": [
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 4:00pm",
+          "5:00am - 12:00pm"
+        ]
+      },
+      {
+        "name": "Uncle Mike's - Green Bay",
+        "image": "location/uncle-mikes-green-bay.jpg",
+        "alt": "Uncle Mike's Bake Shoppe signage",
+        "street": "2999 E. Mason St",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54311",
+        "website": "https://unclemikesbakeshoppe.com/",
+        "phone": "(920) 544-0330",
+        "hours": [
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 4:00pm",
+          "5:00am - 12:00pm"
+        ]
+      },
+      {
+        "name": "Uncle Mike's - Suamico",
+        "image": "location/uncle-mikes-suamico.jpg",
+        "alt": "Uncle Mike's signature signage, showing a turtle crossing sign. Below the turtle crossing states, 'cheesecakes, cookies, donuts, tortes'.",
+        "street": "2514 Lineville Rd.",
+        "city": "Suamico",
+        "state": "WI",
+        "zip": "54313",
+        "website": "https://unclemikesbakeshoppe.com/",
+        "phone": "(920) 434-0100",
+        "hours": [
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 6:00pm",
+          "5:00am - 4:00pm",
+          "5:00am - 12:00pm"
+        ]
+      }
+    ],
+    "distance": 7.7,
+    "url": "uncle-mikes-bake-shoppe",
+    "searchTerms": ["Kringle"]
   },
   {
     "id": 1005,
