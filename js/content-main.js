@@ -277,7 +277,11 @@ function searchResults(itemData, search) {
       searchResults.push(item);
     }
 
-    if (item.address[0].city.toLowerCase().trim().includes(userSearch)) {
+    if (
+      item.address &&
+      item.address.length > 0 &&
+      item.address[0].city.toLowerCase().trim().includes(userSearch)
+    ) {
       searchResults.push(item);
     }
 
