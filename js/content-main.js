@@ -1,4 +1,4 @@
-const lgContainer = document.querySelector(".locals-guide-container");
+const contentContainer = document.querySelector(".content-container");
 let milesFromLambeau;
 
 // Fetch proper data
@@ -6,7 +6,7 @@ function localsGuideContent() {
   let path = window.location.pathname;
   let guideData;
 
-  if (path.includes("/podcasts")) {
+  if (path.includes("podcast")) {
     guideData = "podcasts.json";
   } else {
     guideData = "locals-guide.json";
@@ -15,14 +15,14 @@ function localsGuideContent() {
   if (guideData) {
     fetch(`/data/${guideData}`)
       .then((response) => response.json())
-      .then((data) => sortGuides(path, data))
+      .then((data) => serveProperData(path, data))
       .catch((error) => console.log(error));
   }
 }
 
-function sortGuides(path, allItems) {
+function serveProperData(path, allItems) {
   // Homepage
-  if (path === "/" || path.includes("/index")) {
+  if (path === "/" || path === "/index.html") {
     const miscContainer = document.querySelector(".misc-container");
     const goToContainer = document.querySelector(".go-to-container");
 
@@ -54,9 +54,16 @@ function sortGuides(path, allItems) {
   ) {
     // Local's Guide Category Pages
     lgCategoryPageContent(path, allItems);
-  } else if (path.includes("/locals-guide/")) {
-    //Individual Page
-    const container = document.querySelector(".locals-guide-container");
+  } else if (path === "/podcast/" || path === "/podcast/index.html") {
+    // Build items
+    buildResultsCounter(allItems);
+    buildResults(contentContainer, allItems);
+    filterFunctionality(allItems);
+  } else if (
+    path.includes("/locals-guide/") ||
+    path.includes("/podcast/episode")
+  ) {
+    //Individual Content Page
     let currentSlug = window.location.pathname.split("/")[2].split(".")[0];
     let currentPage;
 
@@ -69,7 +76,7 @@ function sortGuides(path, allItems) {
 
     // Build Recommendation List for individual pages
     if (recommendedList) {
-      buildResults(container, recommendedList);
+      buildResults(contentContainer, recommendedList);
     }
   }
 }
@@ -105,7 +112,7 @@ function lgCategoryPageContent(path, data) {
 
   // Build items
   buildResultsCounter(lgData);
-  buildResults(lgContainer, lgData);
+  buildResults(contentContainer, lgData);
 
   filterFunctionality(lgData);
 }
@@ -147,13 +154,13 @@ function filterFunctionality(itemData) {
 
       // Build results and results counter
       buildResultsCounter(filteredData);
-      buildResults(lgContainer, filteredData);
+      buildResults(contentContainer, filteredData);
 
       // Clear search results
       clearResultsBtn.addEventListener("click", () => {
         searchInput.value = "";
         resetBtn.classList.remove("reset-btn-active");
-        buildResults(lgContainer, unfilteredData);
+        buildResults(contentContainer, unfilteredData);
         buildResultsCounter(unfilteredData);
         resetFilters();
         clearResultsBtn.style.display = "none";
@@ -231,7 +238,7 @@ function moreFiltersFunctionality(itemData) {
 
     moreFilters.classList.remove("more-filters-active");
     filteredResults = removeDuplicateResults(filteredResults);
-    buildResults(lgContainer, filteredResults);
+    buildResults(contentContainer, filteredResults);
     buildResultsCounter(filteredResults);
   });
 }
@@ -359,22 +366,29 @@ function buildResultsCounter(itemData) {
   results.appendChild(resultsCount);
 }
 
-// Create Local's Guide card
+// Create Content Item
 function buildGuide(container, item) {
   let path = window.location.pathname;
+  let contentType;
 
-  //Lg Container
-  const lgItem = document.createElement("article");
-  lgItem.classList.add("locals-guide-item");
-  lgItem.tabIndex = 0;
-  container.appendChild(lgItem);
+  if (path.includes("podcast")) {
+    contentType = "podcast";
+  } else {
+    contentType = "locals-guide";
+  }
 
-  //Lg Rating, no rating if drink category (except coffee)
+  //Content Container
+  const contentItem = document.createElement("article");
+  contentItem.classList.add("content-item");
+  contentItem.tabIndex = 0;
+  container.appendChild(contentItem);
+
+  //Content Rating, no rating if drink category (except coffee)
   if (item.rating) {
     if (!path.includes("drink") || item.tags.includes("Coffee")) {
       const lgRatingContainer = document.createElement("div");
       lgRatingContainer.classList.add("locals-guide-grade");
-      lgItem.appendChild(lgRatingContainer);
+      contentItem.appendChild(lgRatingContainer);
 
       const lgRating = document.createElement("p");
       lgRating.textContent = item.rating;
@@ -382,65 +396,70 @@ function buildGuide(container, item) {
     }
   }
 
-  //Lg Image
-  const lgFigure = document.createElement("figure");
-  lgItem.appendChild(lgFigure);
+  //Content Image
+  const contentFigure = document.createElement("figure");
+  contentItem.appendChild(contentFigure);
 
+  const contentImg = document.createElement("img");
   if (path.includes("drink") && item.secondaryImg) {
-    const lgImg = document.createElement("img");
-    lgImg.src = `../assets/locals-guide/${item.secondaryImg}`;
-    lgImg.alt = item.secondaryAlt;
-    lgFigure.appendChild(lgImg);
+    contentImg.src = `../assets/${contentType}/${item.secondaryImg}`;
+    contentImg.alt = item.secondaryAlt;
   } else {
-    const lgImg = document.createElement("img");
-    lgImg.src = `../assets/locals-guide/${item.mainImg}`;
-    lgImg.alt = item.alt;
-    lgFigure.appendChild(lgImg);
+    contentImg.src = `../assets/${contentType}/${item.mainImg}`;
+    contentImg.alt = item.alt;
+  }
+  contentFigure.appendChild(contentImg);
+
+  //Content Tags
+  if (item.tags) {
+    const contentTags = document.createElement("div");
+    contentTags.classList.add("content-tags");
+    contentItem.appendChild(contentTags);
+
+    item.tags.forEach((tag) => {
+      const contentTagContainer = document.createElement("div");
+      contentTagContainer.classList.add("content-tag");
+      contentTagContainer.style.backgroundColor = generateTagColor(tag);
+      contentTags.appendChild(contentTagContainer);
+
+      const contentTag = document.createElement("p");
+      contentTag.textContent = tag;
+      contentTagContainer.appendChild(contentTag);
+    });
   }
 
-  //Lg Tags
-  const lgTags = document.createElement("div");
-  lgTags.classList.add("locals-guide-tags");
-  lgItem.appendChild(lgTags);
+  //Content Details
+  const contentDetails = document.createElement("div");
+  contentDetails.classList.add("content-details");
+  contentItem.appendChild(contentDetails);
 
-  item.tags.forEach((tag) => {
-    const lgTagContainer = document.createElement("div");
-    lgTagContainer.classList.add("locals-guide-tag");
-    lgTagContainer.style.backgroundColor = generateTagColor(tag);
-    lgTags.appendChild(lgTagContainer);
-
-    const lgTag = document.createElement("p");
-    lgTag.textContent = tag;
-    lgTagContainer.appendChild(lgTag);
-  });
-
-  //Lg Details
-  const lgDetails = document.createElement("div");
-  lgDetails.classList.add("locals-guide-details");
-  lgItem.appendChild(lgDetails);
-
-  const lgHeader = document.createElement("h3");
-  lgHeader.textContent = item.title;
-  lgDetails.appendChild(lgHeader);
+  const contentHeader = document.createElement("h3");
+  contentHeader.textContent = item.title;
+  contentDetails.appendChild(contentHeader);
 
   const hr = document.createElement("hr");
-  lgDetails.appendChild(hr);
+  contentDetails.appendChild(hr);
 
   const moreInfo = document.createElement("p");
-  if (item.distance) {
-    moreInfo.textContent = `${item.distance} miles from Lambeau Field`;
+  if (contentType === "podcast") {
+    moreInfo.textContent = `Listen to episode ${item.episodeNumber} now`;
   } else {
-    moreInfo.textContent = "Read more";
+    if (item.distance) {
+      moreInfo.textContent = `${item.distance} miles from Lambeau Field`;
+    } else {
+      moreInfo.textContent = "Read more";
+    }
   }
-  lgDetails.appendChild(moreInfo);
+  contentDetails.appendChild(moreInfo);
 
-  lgItem.addEventListener("click", () => {
-    window.location.href = `/locals-guide/${item.url}.html`;
+  // Content Item handlers
+  contentItem.addEventListener("click", () => {
+    window.location.href = `/${contentType}/${item.url}.html`;
   });
 
-  lgItem.addEventListener("keydown", (e) => {
+  contentItem.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      window.location.href = `/locals-guide/${item.url}.html`;
+      window.location.href = `/${contentType}/${item.url}.html`;
     }
   });
 }
@@ -452,36 +471,45 @@ function buildRecommendationList(allItems, currentPage) {
   let filteredGuides = [];
   let recommendedGuides = [];
 
-  currentPage.category.forEach((category) => {
-    currentPageCategories.push(category);
-  });
-
-  currentPage.tags.forEach((tag) => {
-    currentPageTags.push(tag);
-  });
-
-  // Match by current page tags
-  allItems.forEach((guide) => {
-    guide.tags.forEach((tag) => {
-      if (currentPageTags.includes(tag) && guide.title !== currentPage.title) {
-        filteredGuides.push(guide);
-      }
+  if (currentPage.category) {
+    currentPage.category.forEach((category) => {
+      currentPageCategories.push(category);
     });
-  });
+  }
+
+  if (currentPage.tags) {
+    currentPage.tags.forEach((tag) => {
+      currentPageTags.push(tag);
+    });
+
+    // Match by current page tags
+    allItems.forEach((guide) => {
+      guide.tags.forEach((tag) => {
+        if (
+          currentPageTags.includes(tag) &&
+          guide.title !== currentPage.title
+        ) {
+          filteredGuides.push(guide);
+        }
+      });
+    });
+  }
 
   // Check if filteredGuides is less than four items, if so, match by category
   if (filteredGuides.length < 4) {
     allItems.forEach((guide) => {
-      guide.category.forEach((cat) => {
-        if (
-          currentPageCategories.includes(cat) &&
-          guide.title !== currentPage.title
-        ) {
-          if (!filteredGuides.includes(guide)) {
-            filteredGuides.push(guide);
+      if (guide.category) {
+        guide.category.forEach((cat) => {
+          if (
+            currentPageCategories.includes(cat) &&
+            guide.title !== currentPage.title
+          ) {
+            if (!filteredGuides.includes(guide)) {
+              filteredGuides.push(guide);
+            }
           }
-        }
-      });
+        });
+      }
     });
   }
 

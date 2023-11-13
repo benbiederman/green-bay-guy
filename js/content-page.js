@@ -1,11 +1,24 @@
-fetch("/data/locals-guide.json")
-  .then((response) => response.json())
-  .then((data) => buildPage(data))
-  .catch((error) => console.log(error));
+// Fetch proper data
+function pageContent() {
+  let path = window.location.pathname;
+  let guideData;
+
+  if (path.includes("podcast")) {
+    guideData = "podcasts.json";
+  } else {
+    guideData = "locals-guide.json";
+  }
+
+  if (guideData) {
+    fetch(`/data/${guideData}`)
+      .then((response) => response.json())
+      .then((data) => buildPage(data))
+      .catch((error) => console.log(error));
+  }
+}
 
 function buildPage(data) {
   const mainImg = document.querySelector("#main-img");
-  const donationContainer = document.querySelector(".donation-container");
 
   let path = window.location.pathname.split("/")[2].split(".")[0];
   let pageData;
@@ -17,10 +30,35 @@ function buildPage(data) {
 
   //Add Header Image for article
   const headerImage = document.createElement("img");
-  headerImage.src = `/assets/locals-guide/${pageData.mainImg}`;
+  if (path.includes("episode")) {
+    headerImage.src = `/assets/podcast/${pageData.mainImg}`;
+  } else {
+    headerImage.src = `/assets/locals-guide/${pageData.mainImg}`;
+  }
+
   headerImage.alt = pageData.mainAlt;
   mainImg.appendChild(headerImage);
 
+  //   Podcast audio
+  if (pageData.audio) {
+    const audioData = document.querySelector(".audio-data");
+
+    const audioElement = document.createElement("audio");
+    audioElement.controls = true;
+    audioData.appendChild(audioElement);
+
+    const audioSource = document.createElement("source");
+    audioSource.src = `/assets/audio/${pageData.audio}.wav`;
+    audioElement.appendChild(audioSource);
+
+    const audioFailure = document.createElement("a");
+    audioFailure.src = `/assets/audio/${pageData.audio}.wav`;
+    audioFailure.textContent =
+      "Your browser doesn't support the audio tag. Download episode here";
+    audioElement.appendChild(audioFailure);
+  }
+
+  //   Locals Guide ratings
   if (pageData.rating) {
     const rating = document.querySelector(".rating");
 
@@ -29,6 +67,27 @@ function buildPage(data) {
     score.textContent = pageData.rating;
     rating.append(score);
   }
+
+  buildDonation();
+
+  if (pageData.address && pageData.address.length > 0) {
+    const locations = document.querySelector(".location-information-section");
+
+    pageData.address.forEach((location) => {
+      buildLocation(location);
+    });
+
+    if (pageData.address.length > 1) {
+      multiLocation();
+      locations.classList.add("multi-active");
+    } else {
+      locations.classList.add("multi-inactive");
+    }
+  }
+}
+
+function buildDonation() {
+  const donationContainer = document.querySelector(".donation-container");
 
   //Donation copy
   const donationHeader = document.createElement("h3");
@@ -50,21 +109,6 @@ function buildPage(data) {
       "_blank"
     );
   });
-
-  if (pageData.address && pageData.address.length > 0) {
-    const locations = document.querySelector(".location-information-section");
-
-    pageData.address.forEach((location) => {
-      buildLocation(location);
-    });
-
-    if (pageData.address.length > 1) {
-      multiLocation();
-      locations.classList.add("multi-active");
-    } else {
-      locations.classList.add("multi-inactive");
-    }
-  }
 }
 
 function buildLocation(data) {
@@ -161,3 +205,5 @@ function multiLocation() {
     allLocations[counter].style.display = "flex";
   });
 }
+
+pageContent();

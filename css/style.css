@@ -384,12 +384,12 @@ main {
   margin: 1.25rem auto 0;
 }
 
-.section .locals-guide-item {
+.section .content-item {
   box-shadow: 0px 0px 10px var(--lightGray);
 }
 
-.section .locals-guide-item:hover,
-.section .locals-guide-item:focus-visible {
+.section .content-item:hover,
+.section .content-item:focus-visible {
   box-shadow: 0px 0px 10px var(--darkGray);
 }
 
@@ -397,7 +397,7 @@ main {
   margin-bottom: 2.5rem;
 }
 
-.locals-guide-item {
+.content-item {
   width: 80%;
   margin: 1.25rem auto;
   background-color: var(--white);
@@ -406,12 +406,12 @@ main {
   cursor: pointer;
 }
 
-.locals-guide-item h3 {
+.content-item h3 {
   text-align: left;
 }
 
-.locals-guide-item:hover .locals-guide-details h3,
-.locals-guide-item:focus-visible .locals-guide-details h3 {
+.content-item:hover .content-details h3,
+.content-item:focus-visible .content-details h3 {
   color: var(--darkGreen);
 }
 
@@ -432,55 +432,55 @@ main {
   line-height: 1;
 }
 
-.locals-guide-item img {
+.content-item img {
   width: 100%;
   border-radius: 5px 5px 0 0;
 }
 
-.locals-guide-tags,
-.locals-guide-details {
+.content-tags,
+.content-details {
   width: 95%;
 }
 
-.locals-guide-tags {
+.content-tags {
   margin: 0.25rem auto;
 }
 
-.locals-guide-details {
+.content-details {
   margin: 0.5rem auto;
 }
 
-.locals-guide-tag {
+.content-tag {
   display: inline-block;
   padding: 0.125rem 1.25rem;
   border-radius: 5px;
   margin: 0.125rem 0.25rem;
 }
 
-.locals-guide-details h3 {
+.content-details h3 {
   font-size: 2rem;
   text-align: left;
   margin: 0;
   width: 100%;
 }
 
-.locals-guide-tag p {
+.content-tag p {
   line-height: 1;
   font-size: 1rem;
   margin-top: 0.125rem;
   color: var(--white);
 }
 
-.locals-guide-details {
+.content-details {
   padding-bottom: 0.25rem;
 }
 
-.locals-guide-details hr {
+.content-details hr {
   margin: 4px auto;
   width: 100%;
 }
 
-.locals-guide-details p {
+.content-details p {
   font-size: 1rem;
   color: var(--black);
 }
@@ -752,7 +752,7 @@ main {
   right: 0.25rem;
 }
 
-.locals-guide-page-section {
+.content-page-section {
   padding-top: 0;
 }
 
@@ -885,7 +885,7 @@ main {
   flex-direction: column;
 }
 
-.locals-guide-details h2 {
+.content-details h2 {
   margin: 0;
 }
 
@@ -914,6 +914,15 @@ main {
 
 .multi-active .location-details {
   display: none;
+}
+
+/* Podcast */
+.audio-data {
+  margin: 2.5rem auto 1.25rem;
+  width: 90%;
+}
+.audio-data audio {
+  width: 100%;
 }
 
 @media screen and (min-width: 300px) {
@@ -975,22 +984,22 @@ main {
     margin-bottom: 2.5rem;
   }
 
-  .locals-guide-details h3 {
+  .content-details h3 {
     font-size: 2rem;
     text-align: left;
     margin: 0;
     width: 100%;
   }
 
-  .locals-guide-item {
+  .content-item {
     width: 80%;
   }
 
-  .locals-guide-item figure {
+  .content-item figure {
     margin: 0;
   }
 
-  .locals-guide-item h2 {
+  .content-item h2 {
     font-size: 2rem;
   }
 
@@ -1027,14 +1036,14 @@ main {
     padding: 12.5rem 0;
   }
 
-  .locals-guide-details h3 {
+  .content-details h3 {
     font-size: 2rem;
     text-align: left;
     margin: 0;
     width: 100%;
   }
 
-  .locals-guide-container {
+  .content-container {
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -1046,11 +1055,11 @@ main {
     margin-bottom: 2.5rem;
   }
 
-  .suggestion-section .locals-guide-container {
+  .suggestion-section .content-container {
     margin: 2.5rem auto 0;
   }
 
-  .locals-guide-item {
+  .content-item {
     width: 100%;
     margin: 0.75rem 0;
   }
@@ -1119,6 +1128,12 @@ main {
   .location-details figure {
     width: 50%;
     margin: auto;
+  }
+
+  /* Podcast */
+  .audio-data {
+    margin: 2.5rem auto;
+    width: 60%;
   }
 }
 
@@ -1239,7 +1254,7 @@ main {
     margin-right: 2rem;
   }
 
-  .locals-guide-container {
+  .content-container {
     width: 95%;
     margin: 0 auto;
     display: grid;
@@ -1247,12 +1262,12 @@ main {
     grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
   }
 
-  .locals-guide-item {
+  .content-item {
     width: 100%;
     margin: 0.75rem 0;
   }
 
-  .locals-guide-item img {
+  .content-item img {
     height: 14rem;
     object-fit: cover;
     object-position: center;
@@ -1262,28 +1277,28 @@ main {
     padding: 0.25rem;
   }
 
-  .locals-guide-details,
-  .locals-guide-tags {
+  .content-details,
+  .content-tags {
     width: 85%;
   }
 
-  .locals-guide-details {
+  .content-details {
     padding: 0;
   }
 
-  .locals-guide-details h3 {
+  .content-details h3 {
     font-size: 2rem;
     text-align: left;
     margin: 0;
     width: 100%;
   }
 
-  .locals-guide-tag {
+  .content-tag {
     padding: 0.125rem 0.5rem;
     margin: 0.125rem;
   }
 
-  .locals-guide-tag p {
+  .content-tag p {
     font-size: 0.7rem;
   }
 
@@ -1417,6 +1432,12 @@ main {
 
   .next-btn {
     right: 15%;
+  }
+
+  /* Podcast */
+  .audio-data {
+    margin: 2.5rem auto;
+    width: 40%;
   }
 }
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast | The Green Bay Guy</title>
+
+    <!--Website description -->
+    <meta
+      name="description"
+      content="Explore Green Bay like a local. Find the best dining, drinks, and attractions to make the most of your visit to Green Bay, Wisconsin."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="main-header" id="header"></header>
+    <main id="main">
+      <section class="search">
+        <div class="search-field">
+          <form class="search-form">
+            <input
+              class="search-input"
+              aria-label="search"
+              placeholder="Search..."
+            />
+            <button class="reset-btn" type="reset">
+              <img src="../assets/icons/x-icon.svg" alt="" />
+            </button>
+            <button class="search-btn" type="submit">
+              <img src="../assets/icons/magnifying-glass.svg" alt="" />
+            </button>
+            <button class="more-filters-btn" type="button">
+              <img src="../assets/icons/filter.svg" alt="" />
+            </button>
+          </form>
+          <div class="more-filters">
+            <form class="more-filters-form">
+              <div class="type-filters filters-item">
+                <fieldset class="type-filter">
+                  <legend>Meal type:</legend>
+                  <div class="check-item">
+                    <input type="checkbox" id="fan" value="Fan" checked />
+                    <label for="fan">Fan</label>
+                  </div>
+                  <div class="check-item">
+                    <input type="checkbox" id="player" value="Player" checked />
+                    <label for="player">Player</label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <button type="submit" class="show-filters-btn">
+                Show filtered results
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="results">
+          <div class="results-counter"></div>
+          <div class="clear-results"><button>Clear search</button></div>
+        </div>
+      </section>
+      <section class="section content-page-section">
+        <div class="content-container eat-container"></div>
+      </section>
+    </main>
+    <footer class="footer curved curved-dark-before"></footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/content-main.js"></script>
+  </body>
+</html>
