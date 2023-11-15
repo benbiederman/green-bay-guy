@@ -1030,7 +1030,7 @@
       }
     ],
     "distance": 11.3,
-    "url": "four-way-bar"
+    "url": "four-way-bar-and-restaurant"
   },
   {
     "id": 1027,
@@ -1315,7 +1315,7 @@
     "secondaryAlt": null,
     "category": ["Eat"],
     "tags": ["Dinner"],
-    "rating": 3.75,
+    "rating": 3.6,
     "favorite": false,
     "address": [
       {
@@ -1562,7 +1562,7 @@
       }
     ],
     "distance": 9.8,
-    "url": "luigis-pizza-palace",
+    "url": "luigis-pizza-palace-ii",
     "searchTerms": ["Pizza"]
   },
   {
@@ -2054,7 +2054,7 @@
       }
     ],
     "distance": 8.0,
-    "url": "sgambatis",
+    "url": "sgambatis-new-york-pizza",
     "searchTerms": ["Pizza"]
   },
   {

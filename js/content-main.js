@@ -86,19 +86,14 @@ function lgCategoryPageContent(path, data) {
   let category;
   let lgData = [];
 
-  switch (path) {
-    case "/locals-guide/eat.html":
-      category = "Eat";
-      break;
-    case "/locals-guide/drink.html":
-      category = "Drink";
-      break;
-    case "/locals-guide/do.html":
-      category = "Do";
-      break;
-    case "/locals-guide/misc.html":
-      category = "Misc";
-      break;
+  if (path.includes("locals-guide/eat")) {
+    category = "Eat";
+  } else if (path.includes("locals-guide/drink")) {
+    category = "Drink";
+  } else if (path.includes("locals-guide/do")) {
+    category = "Do";
+  } else if (path.includes("locals-guide/misc")) {
+    category = "Misc";
   }
 
   allItems.forEach((item) => {
