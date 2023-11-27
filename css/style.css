@@ -11,6 +11,7 @@
   --darkGray: #3a3a3a;
   --green: #4f7942;
   --darkGreen: #2e4426;
+  --red: red;
   --font-header: "League Gothic", sans-serif;
   --font-default: "Roboto", sans-serif;
 }
@@ -641,6 +642,27 @@ main {
   font-size: 1rem;
 }
 
+.types-error {
+  display: none;
+  margin-top: 0.5rem;
+  width: 60%;
+}
+
+.types-error p {
+  font-size: 1rem;
+  color: var(--red);
+  font-weight: 500;
+}
+
+.no-types label {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.no-types .types-error {
+  display: block;
+}
+
 .type-filters label {
   margin-left: 0.25rem;
 }
@@ -762,6 +784,19 @@ main {
 
 .search {
   padding-top: 85px;
+}
+
+.no-results {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.no-results h3 {
+  text-align: center;
+}
+
+.no-results p {
+  margin-bottom: 1.25rem;
 }
 
 .locals-guide-section {
@@ -1116,6 +1151,11 @@ main {
     margin: 1.25rem auto 1.25rem auto;
   }
 
+  .no-results {
+    width: 60%;
+    margin: 0 auto;
+  }
+
   #main-img {
     width: 60%;
   }
@@ -1402,6 +1442,12 @@ main {
 
   #main-img {
     width: 40%;
+  }
+
+  .no-results {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10lvh;
   }
 
   .locals-guide-content-container h1 {
