@@ -384,12 +384,19 @@ function generateTagColor(tag) {
 function buildResults(container, data) {
   container.textContent = "";
   const noResultsContainer = document.querySelector(".no-results");
+  const disclaimer = document.querySelector(".disclaimer");
 
   if (data.length === 0 && noResultsContainer) {
+    if (disclaimer) {
+      disclaimer.style.display = "none";
+    }
     buildNoResults();
   } else {
     if (noResultsContainer) {
-      noResultsContainer.textContent = "";
+      noResultsContainer.style.display = "none";
+    }
+    if (disclaimer) {
+      disclaimer.style.display = "block";
     }
     data.forEach((item) => {
       buildGuide(container, item);
@@ -399,6 +406,7 @@ function buildResults(container, data) {
 
 function buildNoResults() {
   const noResultsContainer = document.querySelector(".no-results");
+  noResultsContainer.style.display = "block";
   noResultsContainer.textContent = "";
 
   const header = document.createElement("h3");

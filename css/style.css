@@ -789,6 +789,7 @@ main {
 .no-results {
   width: 80%;
   margin: 0 auto;
+  display: none;
 }
 
 .no-results h3 {
@@ -797,6 +798,11 @@ main {
 
 .no-results p {
   margin-bottom: 1.25rem;
+}
+
+.disclaimer {
+  width: 80%;
+  margin: 2.5rem auto;
 }
 
 .locals-guide-section {
@@ -1199,6 +1205,11 @@ main {
     min-height: 60vh;
     width: 60%;
   }
+
+  .disclaimer {
+    width: 60%;
+    margin: 5rem auto 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1447,7 +1458,7 @@ main {
   .no-results {
     width: 40%;
     margin: 0 auto;
-    margin-top: 10lvh;
+    margin-top: 10vh;
   }
 
   .locals-guide-content-container h1 {
