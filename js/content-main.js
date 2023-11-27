@@ -180,6 +180,7 @@ function moreFiltersFunctionality(itemData) {
   const typeFilter = document.querySelectorAll(".check-item input") || null;
   const radiusFilter = document.querySelector(".radius-filters") || null;
   const showFiltersBtn = document.querySelector(".show-filters-btn");
+  const typesContainer = document.querySelector(".type-filters");
 
   // Redirects to different page depending on category change
   if (categoryFilter) {
@@ -222,43 +223,51 @@ function moreFiltersFunctionality(itemData) {
       }
     });
 
-    if (radiusFilter) {
-      let radius = milesFromLambeau || 10000;
-
-      // Check filters applied and sorts data accordingly
-      if (tags.length === typeFilter.length && radius === 10000) {
-        filteredResults = unfilteredData;
-      } else {
-        unfilteredData.forEach((item) => {
-          if (item.tags) {
-            tags.forEach((tag) => {
-              if (item.tags.includes(tag) && item.distance < radius) {
-                filteredResults.push(item);
-              }
-            });
-          }
-        });
-      }
+    // Validate there is a tag length when filtering
+    if (tags.length === 0) {
+      typesContainer.classList.add("no-types");
     } else {
-      if (tags.length === typeFilter.length) {
-        filteredResults = unfilteredData;
-      } else {
-        unfilteredData.forEach((item) => {
-          if (item.tags) {
-            tags.forEach((tag) => {
-              if (item.tags.includes(tag)) {
-                filteredResults.push(item);
-              }
-            });
-          }
-        });
+      if (typesContainer.classList.contains("no-types")) {
+        typesContainer.classList.remove("no-types");
       }
-    }
+      if (radiusFilter) {
+        let radius = milesFromLambeau || 10000;
 
-    moreFilters.classList.remove("more-filters-active");
-    filteredResults = removeDuplicateResults(filteredResults);
-    buildResults(contentContainer, filteredResults);
-    buildResultsCounter(filteredResults);
+        // Check filters applied and sorts data accordingly
+        if (tags.length === typeFilter.length && radius === 10000) {
+          filteredResults = unfilteredData;
+        } else {
+          unfilteredData.forEach((item) => {
+            if (item.tags) {
+              tags.forEach((tag) => {
+                if (item.tags.includes(tag) && item.distance < radius) {
+                  filteredResults.push(item);
+                }
+              });
+            }
+          });
+        }
+      } else {
+        if (tags.length === typeFilter.length) {
+          filteredResults = unfilteredData;
+        } else {
+          unfilteredData.forEach((item) => {
+            if (item.tags) {
+              tags.forEach((tag) => {
+                if (item.tags.includes(tag)) {
+                  filteredResults.push(item);
+                }
+              });
+            }
+          });
+        }
+      }
+
+      moreFilters.classList.remove("more-filters-active");
+      filteredResults = removeDuplicateResults(filteredResults);
+      buildResults(contentContainer, filteredResults);
+      buildResultsCounter(filteredResults);
+    }
   });
 }
 
@@ -374,13 +383,35 @@ function generateTagColor(tag) {
 
 function buildResults(container, data) {
   container.textContent = "";
+  const noResultsContainer = document.querySelector(".no-results");
 
-  if (data.length === 0) {
+  if (data.length === 0 && noResultsContainer) {
+    buildNoResults();
   } else {
+    if (noResultsContainer) {
+      noResultsContainer.textContent = "";
+    }
     data.forEach((item) => {
       buildGuide(container, item);
     });
   }
+}
+
+function buildNoResults() {
+  const noResultsContainer = document.querySelector(".no-results");
+  noResultsContainer.textContent = "";
+
+  const header = document.createElement("h3");
+  header.textContent = "Ope.";
+  noResultsContainer.appendChild(header);
+
+  const firstParagraph = document.createElement("p");
+  firstParagraph.textContent = `Your search results came back about as empty as the trophy case in U.S. Bank Stadium.`;
+  noResultsContainer.appendChild(firstParagraph);
+
+  const secondParagraph = document.createElement("p");
+  secondParagraph.textContent = "Please adjust your search.";
+  noResultsContainer.appendChild(secondParagraph);
 }
 
 // Create page results
@@ -480,7 +511,8 @@ function buildGuide(container, item) {
   contentDetails.appendChild(moreInfo);
 
   // Content Item handlers
-  contentItem.addEventListener("click", () => {
+  contentItem.addEventListener("click", (e) => {
+    console.log(e);
     window.location.href = `/${contentType}/${item.url}.html`;
   });
 

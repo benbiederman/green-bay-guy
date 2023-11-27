@@ -59,7 +59,7 @@
                 </select>
               </div>
               <div class="type-filters filters-item">
-                <fieldset class="type-filter">
+                <fieldset class="type-filter" aria-required="true">
                   <legend>Meal type:</legend>
                   <div class="check-item">
                     <input
@@ -88,6 +88,9 @@
                     <label for="dessert">Dessert</label>
                   </div>
                 </fieldset>
+                <div class="types-error">
+                  <p>Meal type is required. Please select at least one type.</p>
+                </div>
               </div>
 
               <div class="radius-filters filters-item">
@@ -113,6 +116,7 @@
       </section>
       <section class="section content-page-section">
         <div class="content-container eat-container"></div>
+        <div class="no-results"></div>
       </section>
     </main>
     <footer class="footer curved curved-dark-before"></footer>
