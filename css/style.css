@@ -462,9 +462,29 @@ main {
     font-size: 1.25rem;
   }
 
-  .section h2,
-  .dark-section h2 {
-    width: 70%;
+  button {
+    font-size: 1.5rem;
+  }
+
+  .section-no-body h2,
+  .section-no-body h3,
+  .section-no-body h4,
+  .section-no-body h5,
+  .section-no-body h6 {
+    text-align: center;
+    width: 80%;
+  }
+
+  .curved-dark,
+  .curved-light {
+    border-bottom-left-radius: 50% 0.5%;
+    border-bottom-right-radius: 50% 0.5%;
+  }
+
+  .curved-dark-before::before,
+  .curived-light-before::before {
+    top: -1%;
+    height: 1%;
   }
 
   .nav-list {
@@ -476,20 +496,50 @@ main {
     font-size: 2.5rem;
   }
 
-  .footer-callout {
-    padding: 2.5vh 15vw;
+  .container {
+    width: 80%;
+  }
+
+  hr {
+    width: 80%;
   }
 
   .homepage-hero {
     padding: 2.5vh 15vw;
   }
 
-  .locals-guide-item {
-    width: 80%;
+  .hero-container {
+    padding: 10rem 0;
+  }
+
+  .go-to-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .locals-guide-option {
+    height: 21.5vh;
+    width: 98%;
+  }
+
+  .content-details h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  .content-item {
+    width: 90%;
+    margin: 2.5rem auto;
   }
 
   .locals-guide-item h2 {
     font-size: 2rem;
+  }
+
+  .about-me figure,
+  .about-me-information {
+    width: 80%;
   }
 }
 

@@ -1124,30 +1124,6 @@
     "url": "old-mexico"
   },
   {
-    "id": 1046,
-    "title": "R & D's House Divided",
-    "mainImg": "eat/r-&-ds-house-divided.jpg",
-    "mainAlt": "R & D's House Divided hot beef",
-    "secondaryImg": "drink/r-&-ds-house-divided.jpg",
-    "secondaryAlt": null,
-    "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3,
-    "favorite": false,
-    "address": [
-      {
-        "image": "location/r-&-ds-house-divided",
-        "alt": "#",
-        "street": "2148 University Ave.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54302"
-      }
-    ],
-    "distance": 6.1,
-    "url": "r-&-ds-house-divided"
-  },
-  {
     "id": 1047,
     "title": "Rustique Pizzeria",
     "mainImg": "eat/rustique-pizzeria.jpg",
@@ -1453,15 +1429,18 @@
         "street": "508 Greene Ave.",
         "city": "Green Bay",
         "state": "WI",
-        "zip": "54301"
-      },
-      {
-        "image": "#",
-        "alt": "#",
-        "street": "3718 Riverside Dr.",
-        "city": "De Pere",
-        "state": "WI",
-        "zip": "54115"
+        "zip": "54301",
+        "website": "https://www.zestyscustard.com/",
+        "phone": "(920) 884-0505",
+        "hours": [
+          "Closed",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm",
+          "11:00am - 9:00pm"
+        ]
       }
     ],
     "distance": 5.4,
