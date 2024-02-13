@@ -5,8 +5,8 @@ const footer = document.querySelector(".footer");
 function buildNavigation() {
   const links = [
     { name: "Home", url: "/", id: 1 },
-    { name: "Local's Guide", url: "/locals-guide", id: 2 },
-    { name: "Podcast", url: "/podcast", id: 3 },
+    { name: "Local's Guide", url: "/locals-guide/", id: 2 },
+    { name: "Podcast", url: "/podcast/", id: 3 },
   ];
 
   const skipToContentBtn = document.createElement("button");
@@ -137,31 +137,31 @@ function buildFooter() {
   const icons = [
     {
       name: "Facebook",
-      img: "./assets/icons/facebook.png",
+      img: "/assets/icons/facebook.png",
       alt: "Facebook icon",
       id: 101,
     },
     {
       name: "Instagram",
-      img: "./assets/icons/instagram.png",
+      img: "/assets/icons/instagram.png",
       alt: "Instagram icon",
       id: 102,
     },
     {
       name: "Twitter",
-      img: "./assets/icons/twitter.png",
+      img: "/assets/icons/twitter.png",
       alt: "Twitter icon",
       id: 103,
     },
     {
       name: "YouTube",
-      img: "./assets/icons/youtube.png",
+      img: "/assets/icons/youtube.png",
       alt: "YouTube icon",
       id: 104,
     },
     {
       name: "Snapchat",
-      img: "./assets/icons/snapchat.png",
+      img: "/assets/icons/snapchat.png",
       alt: "Snapchat icon",
       id: 105,
     },
@@ -172,10 +172,15 @@ function buildFooter() {
   footerCta.classList.add("footer-callout");
   footer.appendChild(footerCta);
 
+  const calloutContainer = document.createElement("div");
+  calloutContainer.classList.add("callout-container");
+  calloutContainer.classList.add("container");
+  footerCta.appendChild(calloutContainer);
+
   // Header
   const footerCtaHeader = document.createElement("h4");
   footerCtaHeader.innerHTML = "Green Bay Bound?";
-  footerCta.appendChild(footerCtaHeader);
+  calloutContainer.appendChild(footerCtaHeader);
 
   // Paragraphs
   const footerP1 = document.createElement("p");
@@ -183,24 +188,24 @@ function buildFooter() {
   represents years of anticipation, diligent saving, and meticulous
   planning. My biggest priority is to help make sure this trip surpasses
   all expectations.`;
-  footerCta.appendChild(footerP1);
+  calloutContainer.appendChild(footerP1);
 
   const footerP2 = document.createElement("p");
   footerP2.innerHTML = `If there's anything you're curious about that hasn't been covered, or
   if you simply want to reach out and say hello, please feel free to
   contact me without any hesitation. It would be my privilege to offer
   any assistance within my capabilities.`;
-  footerCta.appendChild(footerP2);
+  calloutContainer.appendChild(footerP2);
 
   const emailBtn = document.createElement("button");
   emailBtn.classList.add("color-primary-btn");
   emailBtn.innerHTML = "Email";
-  footerCta.append(emailBtn);
+  calloutContainer.append(emailBtn);
 
   const textBtn = document.createElement("button");
   textBtn.classList.add("color-secondary-btn");
   textBtn.innerHTML = "Text";
-  footerCta.append(textBtn);
+  calloutContainer.append(textBtn);
 
   // Thematic break
   const thematicBreak = document.createElement("hr");
