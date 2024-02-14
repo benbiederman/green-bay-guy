@@ -117,8 +117,8 @@ button {
 .curved-dark,
 .curved-light {
   position: relative;
-  border-bottom-left-radius: 50% 2%;
-  border-bottom-right-radius: 50% 2%;
+  border-bottom-left-radius: 50% 0.5%;
+  border-bottom-right-radius: 50% 0.5%;
 }
 
 .curved-dark,
@@ -137,9 +137,9 @@ button {
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
   position: absolute;
-  top: -2%;
+  top: -1%;
   width: 100%;
-  height: 2%;
+  height: 1%;
 }
 
 .section,
@@ -403,7 +403,7 @@ main {
 }
 
 .content-item {
-  width: 80%;
+  width: 90%;
   margin: 1.25rem auto;
   background-color: var(--white);
   border-radius: 5px;
@@ -719,10 +719,10 @@ main {
 
 .locals-guide-option {
   margin: 0;
-  height: 20vh;
+  height: 21.75vh;
   background-position: center;
   background-size: cover;
-  width: 95%;
+  width: 98%;
   font-size: 3rem;
   font-family: var(--font-header);
   color: var(--white);
@@ -1051,7 +1051,7 @@ main {
   }
 
   .content-item {
-    width: 80%;
+    width: 90%;
   }
 
   .content-item figure {
