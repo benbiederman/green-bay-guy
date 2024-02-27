@@ -1493,6 +1493,42 @@
     "searchTerms": ["Wings"]
   },
   {
+    "id": 1068,
+    "title": "La Carreta",
+    "mainImg": "eat/la-carreta.jpg",
+    "mainAlt": "La Carreta's quesabirria tacos served with a side of dipping broth",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.7,
+    "favorite": false,
+    "address": [
+      {
+        "name": "La Carreta",
+        "image": "location/la-carreta.jpg",
+        "alt": "La Carreta signage",
+        "street": "1657 Main St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302",
+        "website": "https://www.orderlacarretawi.com/",
+        "phone": "(920) 544-5662",
+        "hours": [
+          "Closed",
+          "11:00am - 6:00pm",
+          "11:00am - 6:00pm",
+          "11:00am - 6:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 6:00pm"
+        ]
+      }
+    ],
+    "distance": 5.1,
+    "url": "la-carreta"
+  },
+  {
     "id": 1038,
     "title": "Luigi's Italian Bistro",
     "mainImg": "eat/luigis-italian-bistro.jpg",
