@@ -95,7 +95,7 @@ function buildDonation() {
   donationContainer.appendChild(donationHeader);
 
   const donationBody = document.createElement("p");
-  donationBody.textContent = `Gratitude goes a long way, and if you've found our content helpful and insightful, here's a simple way to show your appreciation. Your support allows me to keep creating valuable content. So, if you want to say thanks for the helpful content, consider buying me a coffee.`;
+  donationBody.textContent = `If you've found our content helpful, consider buying me a coffee to show your appreciation. Your support enables me to create valuable content. I appreciate you!`;
   donationContainer.appendChild(donationBody);
 
   const donationCTA = document.createElement("button");

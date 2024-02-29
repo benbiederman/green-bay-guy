@@ -1493,6 +1493,42 @@
     "searchTerms": ["Wings"]
   },
   {
+    "id": 1068,
+    "title": "La Carreta",
+    "mainImg": "eat/la-carreta.jpg",
+    "mainAlt": "La Carreta's quesabirria tacos served with a side of dipping broth",
+    "secondaryImg": null,
+    "secondaryAlt": null,
+    "category": ["Eat", "Drink"],
+    "tags": ["Lunch", "Dinner", "Alcohol"],
+    "rating": 4.7,
+    "favorite": false,
+    "address": [
+      {
+        "name": "La Carreta",
+        "image": "location/la-carreta.jpg",
+        "alt": "La Carreta signage",
+        "street": "1657 Main St.",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302",
+        "website": "https://www.orderlacarretawi.com/",
+        "phone": "(920) 544-5662",
+        "hours": [
+          "Closed",
+          "11:00am - 6:00pm",
+          "11:00am - 6:00pm",
+          "11:00am - 6:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 7:00pm",
+          "11:00am - 6:00pm"
+        ]
+      }
+    ],
+    "distance": 5.1,
+    "url": "la-carreta"
+  },
+  {
     "id": 1038,
     "title": "Luigi's Italian Bistro",
     "mainImg": "eat/luigis-italian-bistro.jpg",
@@ -1873,42 +1909,6 @@
     ],
     "distance": 3.8,
     "url": "pepperboy-pizza"
-  },
-  {
-    "id": 1046,
-    "title": "R & D's House Divided",
-    "mainImg": "eat/r-&-ds-house-divided.jpg",
-    "mainAlt": "R & D's House Divided hot beef",
-    "secondaryImg": null,
-    "secondaryAlt": null,
-    "category": ["Eat", "Drink"],
-    "tags": ["Lunch", "Dinner", "Alcohol"],
-    "rating": 3,
-    "favorite": false,
-    "address": [
-      {
-        "name": "R & D's House Divided",
-        "image": "location/r-&-ds-house-divided.jpg",
-        "alt": "R & D's House Divided signage",
-        "street": "2148 University Ave.",
-        "city": "Green Bay",
-        "state": "WI",
-        "zip": "54302",
-        "website": "https://www.rdhousedividedgb.com/",
-        "phone": "(920) 634-2260",
-        "hours": [
-          "11:00am - 12:00am",
-          "11:00am - 12:00am",
-          "11:00am - 12:00am",
-          "11:00am - 12:00am",
-          "11:00am - 2:30am",
-          "11:00am - 2:30am",
-          "10:00am - 12:00am"
-        ]
-      }
-    ],
-    "distance": 6.1,
-    "url": "r-&-ds-house-divided"
   },
   {
     "id": 1047,
@@ -2399,26 +2399,6 @@
           "11:00am - 9:00pm",
           "11:00am - 9:00pm",
           "11:00am - 9:00pm"
-        ]
-      },
-      {
-        "name": "Zesty's - De Pere",
-        "image": "location/zestys-de-pere.jpg",
-        "alt": "Zesty's De Pere stand",
-        "street": "3718 Riverside Dr.",
-        "city": "De Pere",
-        "state": "WI",
-        "zip": "54115",
-        "website": "https://www.zestyscustard.com/",
-        "phone": "(920) 336-2601",
-        "hours": [
-          "Closed",
-          "5:00pm - 9:00pm",
-          "5:00pm - 9:00pm",
-          "5:00pm - 9:00pm",
-          "5:00pm - 9:00pm",
-          "5:00pm - 9:00pm",
-          "3:00pm - 9:00pm"
         ]
       }
     ],
