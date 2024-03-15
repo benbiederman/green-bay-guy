@@ -446,6 +446,12 @@ function buildGuide(container, item) {
   //Content Container
   const contentItem = document.createElement("article");
   contentItem.classList.add("content-item");
+  contentItem.role = "link";
+  contentItem.ariaLabel = `${item.title}, ${
+    item.rating ? item.rating + " rating" : ""
+  }, ${item.distance ? item.distance + " miles from Lambeau Field" : ""}, ${
+    item.tags ? item.tags.toString() : ""
+  }`;
   contentItem.tabIndex = 0;
   container.appendChild(contentItem);
 
@@ -520,7 +526,6 @@ function buildGuide(container, item) {
 
   // Content Item handlers
   contentItem.addEventListener("click", (e) => {
-    console.log(e);
     window.location.href = `/${contentType}/${item.url}.html`;
   });
 
